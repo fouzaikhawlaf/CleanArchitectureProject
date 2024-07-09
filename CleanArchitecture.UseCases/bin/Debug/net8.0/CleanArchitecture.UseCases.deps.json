@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "CleanArchitecture.UseCases/1.0.0": {
+        "dependencies": {
+          "CleanArchitecture.Entities": "1.0.0"
+        },
+        "runtime": {
+          "CleanArchitecture.UseCases.dll": {}
+        }
+      },
+      "CleanArchitecture.Entities/1.0.0": {
+        "runtime": {
+          "CleanArchitecture.Entities.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CleanArchitecture.UseCases/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CleanArchitecture.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

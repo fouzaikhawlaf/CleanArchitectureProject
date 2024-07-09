@@ -1,0 +1,17 @@
+G:\cleanArchitecture\CleanArchitecture.InterfaceAdapters\bin\Debug\net8.0\CleanArchitecture.InterfaceAdapters.deps.json
+G:\cleanArchitecture\CleanArchitecture.InterfaceAdapters\bin\Debug\net8.0\CleanArchitecture.InterfaceAdapters.dll
+G:\cleanArchitecture\CleanArchitecture.InterfaceAdapters\bin\Debug\net8.0\CleanArchitecture.InterfaceAdapters.pdb
+G:\cleanArchitecture\CleanArchitecture.InterfaceAdapters\bin\Debug\net8.0\CleanArchitecture.Entities.dll
+G:\cleanArchitecture\CleanArchitecture.InterfaceAdapters\bin\Debug\net8.0\CleanArchitecture.UseCases.dll
+G:\cleanArchitecture\CleanArchitecture.InterfaceAdapters\bin\Debug\net8.0\CleanArchitecture.UseCases.pdb
+G:\cleanArchitecture\CleanArchitecture.InterfaceAdapters\bin\Debug\net8.0\CleanArchitecture.Entities.pdb
+G:\cleanArchitecture\CleanArchitecture.InterfaceAdapters\obj\Debug\net8.0\CleanArchitecture.InterfaceAdapters.csproj.AssemblyReference.cache
+G:\cleanArchitecture\CleanArchitecture.InterfaceAdapters\obj\Debug\net8.0\CleanArchitecture.InterfaceAdapters.GeneratedMSBuildEditorConfig.editorconfig
+G:\cleanArchitecture\CleanArchitecture.InterfaceAdapters\obj\Debug\net8.0\CleanArchitecture.InterfaceAdapters.AssemblyInfoInputs.cache
+G:\cleanArchitecture\CleanArchitecture.InterfaceAdapters\obj\Debug\net8.0\CleanArchitecture.InterfaceAdapters.AssemblyInfo.cs
+G:\cleanArchitecture\CleanArchitecture.InterfaceAdapters\obj\Debug\net8.0\CleanArchitecture.InterfaceAdapters.csproj.CoreCompileInputs.cache
+G:\cleanArchitecture\CleanArchitecture.InterfaceAdapters\obj\Debug\net8.0\CleanArc.EE744716.Up2Date
+G:\cleanArchitecture\CleanArchitecture.InterfaceAdapters\obj\Debug\net8.0\CleanArchitecture.InterfaceAdapters.dll
+G:\cleanArchitecture\CleanArchitecture.InterfaceAdapters\obj\Debug\net8.0\refint\CleanArchitecture.InterfaceAdapters.dll
+G:\cleanArchitecture\CleanArchitecture.InterfaceAdapters\obj\Debug\net8.0\CleanArchitecture.InterfaceAdapters.pdb
+G:\cleanArchitecture\CleanArchitecture.InterfaceAdapters\obj\Debug\net8.0\ref\CleanArchitecture.InterfaceAdapters.dll

@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "CleanArchitecture.InterfaceAdapters/1.0.0": {
+        "dependencies": {
+          "CleanArchitecture.Entities": "1.0.0",
+          "CleanArchitecture.UseCases": "1.0.0"
+        },
+        "runtime": {
+          "CleanArchitecture.InterfaceAdapters.dll": {}
+        }
+      },
+      "CleanArchitecture.Entities/1.0.0": {
+        "runtime": {
+          "CleanArchitecture.Entities.dll": {}
+        }
+      },
+      "CleanArchitecture.UseCases/1.0.0": {
+        "dependencies": {
+          "CleanArchitecture.Entities": "1.0.0"
+        },
+        "runtime": {
+          "CleanArchitecture.UseCases.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CleanArchitecture.InterfaceAdapters/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CleanArchitecture.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CleanArchitecture.UseCases/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
