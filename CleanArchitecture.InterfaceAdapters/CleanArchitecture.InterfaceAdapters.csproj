@@ -3,6 +3,8 @@
   <ItemGroup>
     <ProjectReference Include="..\CleanArchitecture.UseCases\CleanArchitecture.UseCases.csproj" />
     <ProjectReference Include="..\CleanArchitecture.Entities\CleanArchitecture.Entities.csproj" />
+	  
+    <ProjectReference Include="..\CleanArchitecture.FrameworksAndDrivers\CleanArchitecture.FrameworksAndDrivers.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

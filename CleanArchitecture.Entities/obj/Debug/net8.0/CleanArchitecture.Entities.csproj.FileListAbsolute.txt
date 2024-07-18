@@ -1,10 +1,12 @@
 G:\cleanArchitecture\CleanArchitecture.Entities\bin\Debug\net8.0\CleanArchitecture.Entities.deps.json
 G:\cleanArchitecture\CleanArchitecture.Entities\bin\Debug\net8.0\CleanArchitecture.Entities.dll
 G:\cleanArchitecture\CleanArchitecture.Entities\bin\Debug\net8.0\CleanArchitecture.Entities.pdb
+G:\cleanArchitecture\CleanArchitecture.Entities\obj\Debug\net8.0\CleanArchitecture.Entities.csproj.AssemblyReference.cache
 G:\cleanArchitecture\CleanArchitecture.Entities\obj\Debug\net8.0\CleanArchitecture.Entities.GeneratedMSBuildEditorConfig.editorconfig
 G:\cleanArchitecture\CleanArchitecture.Entities\obj\Debug\net8.0\CleanArchitecture.Entities.AssemblyInfoInputs.cache
 G:\cleanArchitecture\CleanArchitecture.Entities\obj\Debug\net8.0\CleanArchitecture.Entities.AssemblyInfo.cs
 G:\cleanArchitecture\CleanArchitecture.Entities\obj\Debug\net8.0\CleanArchitecture.Entities.csproj.CoreCompileInputs.cache
+G:\cleanArchitecture\CleanArchitecture.Entities\obj\Debug\net8.0\CleanArchitecture.Entities.sourcelink.json
 G:\cleanArchitecture\CleanArchitecture.Entities\obj\Debug\net8.0\CleanArchitecture.Entities.dll
 G:\cleanArchitecture\CleanArchitecture.Entities\obj\Debug\net8.0\refint\CleanArchitecture.Entities.dll
 G:\cleanArchitecture\CleanArchitecture.Entities\obj\Debug\net8.0\CleanArchitecture.Entities.pdb

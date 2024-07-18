@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "d3IYd81OEQ8u2tjjSPsafwXIOdCEzEDUycbRQDd1UM0q5e6Fa50svL+LGEZpzdml5+dH15rAo28JSDyLam887Q==",
+  "dgSpecHash": "J6s85bA2MX7KvMruEE101NDTAWHHXzo8VA8vRyr+EYT7fw2qwySc0eUQrbEGraY/+NYcyqkv5OQLFHvKSIwziA==",
   "success": true,
-  "projectFilePath": "G:\\cleanArchitecture\\CleanArchitecture.FrameworksAndDrivers\\CleanArchitecture.FrameworksAndDrivers.csproj",
+  "projectFilePath": "G:\\cleanArchitecture\\CleanArchitecture.FrameworksAndDrivers\\CleanArchitecture.FramworkAndDrivers.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\KHAWLA\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\KHAWLA\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
@@ -16,9 +16,9 @@
     "C:\\Users\\KHAWLA\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\KHAWLA\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.5\\microsoft.data.sqlclient.5.1.5.nupkg.sha512",
     "C:\\Users\\KHAWLA\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.1.1\\microsoft.data.sqlclient.sni.runtime.5.1.1.nupkg.sha512",
-    "C:\\Users\\KHAWLA\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.6\\microsoft.entityframeworkcore.8.0.6.nupkg.sha512",
-    "C:\\Users\\KHAWLA\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.6\\microsoft.entityframeworkcore.abstractions.8.0.6.nupkg.sha512",
-    "C:\\Users\\KHAWLA\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.6\\microsoft.entityframeworkcore.analyzers.8.0.6.nupkg.sha512",
+    "C:\\Users\\KHAWLA\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.7\\microsoft.entityframeworkcore.8.0.7.nupkg.sha512",
+    "C:\\Users\\KHAWLA\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.7\\microsoft.entityframeworkcore.abstractions.8.0.7.nupkg.sha512",
+    "C:\\Users\\KHAWLA\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.7\\microsoft.entityframeworkcore.analyzers.8.0.7.nupkg.sha512",
     "C:\\Users\\KHAWLA\\.nuget\\packages\\microsoft.entityframeworkcore.design\\8.0.6\\microsoft.entityframeworkcore.design.8.0.6.nupkg.sha512",
     "C:\\Users\\KHAWLA\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.6\\microsoft.entityframeworkcore.relational.8.0.6.nupkg.sha512",
     "C:\\Users\\KHAWLA\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\8.0.6\\microsoft.entityframeworkcore.sqlserver.8.0.6.nupkg.sha512",

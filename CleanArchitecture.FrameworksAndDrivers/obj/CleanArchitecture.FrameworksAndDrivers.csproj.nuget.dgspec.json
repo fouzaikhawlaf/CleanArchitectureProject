@@ -44,6 +44,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -90,12 +96,6 @@
             "projectReferences": {
               "G:\\cleanArchitecture\\CleanArchitecture.Entities\\CleanArchitecture.Entities.csproj": {
                 "projectPath": "G:\\cleanArchitecture\\CleanArchitecture.Entities\\CleanArchitecture.Entities.csproj"
-              },
-              "G:\\cleanArchitecture\\CleanArchitecture.InterfaceAdapters\\CleanArchitecture.InterfaceAdapters.csproj": {
-                "projectPath": "G:\\cleanArchitecture\\CleanArchitecture.InterfaceAdapters\\CleanArchitecture.InterfaceAdapters.csproj"
-              },
-              "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj": {
-                "projectPath": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj"
               }
             }
           }
@@ -130,137 +130,6 @@
               "version": "[8.0.6, )"
             }
           },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "G:\\cleanArchitecture\\CleanArchitecture.InterfaceAdapters\\CleanArchitecture.InterfaceAdapters.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "G:\\cleanArchitecture\\CleanArchitecture.InterfaceAdapters\\CleanArchitecture.InterfaceAdapters.csproj",
-        "projectName": "CleanArchitecture.InterfaceAdapters",
-        "projectPath": "G:\\cleanArchitecture\\CleanArchitecture.InterfaceAdapters\\CleanArchitecture.InterfaceAdapters.csproj",
-        "packagesPath": "C:\\Users\\KHAWLA\\.nuget\\packages\\",
-        "outputPath": "G:\\cleanArchitecture\\CleanArchitecture.InterfaceAdapters\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\KHAWLA\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {
-              "G:\\cleanArchitecture\\CleanArchitecture.Entities\\CleanArchitecture.Entities.csproj": {
-                "projectPath": "G:\\cleanArchitecture\\CleanArchitecture.Entities\\CleanArchitecture.Entities.csproj"
-              },
-              "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj": {
-                "projectPath": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        }
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj",
-        "projectName": "CleanArchitecture.UseCases",
-        "projectPath": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj",
-        "packagesPath": "C:\\Users\\KHAWLA\\.nuget\\packages\\",
-        "outputPath": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\KHAWLA\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {
-              "G:\\cleanArchitecture\\CleanArchitecture.Entities\\CleanArchitecture.Entities.csproj": {
-                "projectPath": "G:\\cleanArchitecture\\CleanArchitecture.Entities\\CleanArchitecture.Entities.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        }
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
           "imports": [
             "net461",
             "net462",
