@@ -1,7 +1,11 @@
 
+using CleanArchitecture.FrameworkAndDrivers.Middlewares;
 using CleanArchitecture.FrameworksAndDrivers;
 using CleanArchitecture.FrameworksAndDrivers.Data;
 using CleanArchitecture.FrameworksAndDrivers.Data.Interfaces;
+using CleanArchitecture.FrameworksAndDrivers.Data.Repository;
+using CleanArchitecture.FramworkAndDrivers.Data.Interfaces;
+using CleanArchitecture.FramworkAndDrivers.Data.Repository;
 using CleanArchitecture.Infrastructure.Data.Repository;
 using CleanArchitecture.UseCases.InterfacesUse;
 using CleanArchitecture.UseCases.Services;
@@ -20,19 +24,24 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 
 builder.Services.AddControllers();
+builder.Services.AddLogging();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 
+// Register Generic Repository
+builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 
 // Register repositories
-builder.Services.AddScoped<IClientRepository, ClientRepository>();
 
+builder.Services.AddScoped<IClientRepository, ClientRepository>();
+builder.Services.AddScoped<ISupplierRepository, SupplierRepository>();
 // Register services
 builder.Services.AddScoped<IClientService, ClientService>();
-
-
+builder.Services.AddScoped<ISupplierService, SupplierService>();
+// Register other services
+builder.Services.AddTransient<IPdfService, PdfService>();
 
 // Configure CORS
 builder.Services.AddCors(options =>
@@ -65,7 +74,7 @@ app.UseCors("AllowSpecificOrigin");
 
 app.UseAuthorization();
 
-
+app.UseMiddleware<ValidationMiddleware>();
 app.MapControllers(); // Ensure controllers are mapped
 
 app.Run();

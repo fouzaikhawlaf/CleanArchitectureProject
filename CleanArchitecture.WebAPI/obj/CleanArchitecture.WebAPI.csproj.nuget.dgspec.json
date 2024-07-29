@@ -45,9 +45,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.7, )"
+            },
+            "itext7": {
+              "target": "Package",
+              "version": "[8.0.5, )"
             }
           },
           "imports": [
@@ -70,14 +78,14 @@
         }
       }
     },
-    "G:\\cleanArchitecture\\CleanArchitecture.FrameworksAndDrivers\\CleanArchitecture.FramworkAndDrivers.csproj": {
+    "G:\\cleanArchitecture\\CleanArchitecture.FrameworkAndDrivers\\CleanArchitecture.FrameworkAndDrivers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\cleanArchitecture\\CleanArchitecture.FrameworksAndDrivers\\CleanArchitecture.FramworkAndDrivers.csproj",
-        "projectName": "CleanArchitecture.FramworkAndDrivers",
-        "projectPath": "G:\\cleanArchitecture\\CleanArchitecture.FrameworksAndDrivers\\CleanArchitecture.FramworkAndDrivers.csproj",
+        "projectUniqueName": "G:\\cleanArchitecture\\CleanArchitecture.FrameworkAndDrivers\\CleanArchitecture.FrameworkAndDrivers.csproj",
+        "projectName": "CleanArchitecture.FrameworkAndDrivers",
+        "projectPath": "G:\\cleanArchitecture\\CleanArchitecture.FrameworkAndDrivers\\CleanArchitecture.FrameworkAndDrivers.csproj",
         "packagesPath": "C:\\Users\\KHAWLA\\.nuget\\packages\\",
-        "outputPath": "G:\\cleanArchitecture\\CleanArchitecture.FrameworksAndDrivers\\obj\\",
+        "outputPath": "G:\\cleanArchitecture\\CleanArchitecture.FrameworkAndDrivers\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\KHAWLA\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -128,6 +136,10 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[8.0.6, )"
+            },
+            "itext7": {
+              "target": "Package",
+              "version": "[8.0.5, )"
             }
           },
           "imports": [
@@ -177,8 +189,8 @@
               "G:\\cleanArchitecture\\CleanArchitecture.Entities\\CleanArchitecture.Entities.csproj": {
                 "projectPath": "G:\\cleanArchitecture\\CleanArchitecture.Entities\\CleanArchitecture.Entities.csproj"
               },
-              "G:\\cleanArchitecture\\CleanArchitecture.FrameworksAndDrivers\\CleanArchitecture.FramworkAndDrivers.csproj": {
-                "projectPath": "G:\\cleanArchitecture\\CleanArchitecture.FrameworksAndDrivers\\CleanArchitecture.FramworkAndDrivers.csproj"
+              "G:\\cleanArchitecture\\CleanArchitecture.FrameworkAndDrivers\\CleanArchitecture.FrameworkAndDrivers.csproj": {
+                "projectPath": "G:\\cleanArchitecture\\CleanArchitecture.FrameworkAndDrivers\\CleanArchitecture.FrameworkAndDrivers.csproj"
               }
             }
           }
@@ -197,6 +209,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "itext7": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -244,8 +262,8 @@
               "G:\\cleanArchitecture\\CleanArchitecture.Entities\\CleanArchitecture.Entities.csproj": {
                 "projectPath": "G:\\cleanArchitecture\\CleanArchitecture.Entities\\CleanArchitecture.Entities.csproj"
               },
-              "G:\\cleanArchitecture\\CleanArchitecture.FrameworksAndDrivers\\CleanArchitecture.FramworkAndDrivers.csproj": {
-                "projectPath": "G:\\cleanArchitecture\\CleanArchitecture.FrameworksAndDrivers\\CleanArchitecture.FramworkAndDrivers.csproj"
+              "G:\\cleanArchitecture\\CleanArchitecture.FrameworkAndDrivers\\CleanArchitecture.FrameworkAndDrivers.csproj": {
+                "projectPath": "G:\\cleanArchitecture\\CleanArchitecture.FrameworkAndDrivers\\CleanArchitecture.FrameworkAndDrivers.csproj"
               },
               "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj": {
                 "projectPath": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj"
@@ -268,9 +286,13 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.AspNet.WebApi.Cors": {
+            "Microsoft.AspNetCore.Cors": {
               "target": "Package",
-              "version": "[5.3.0, )"
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
@@ -293,6 +315,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
+            },
+            "itext7": {
+              "target": "Package",
+              "version": "[8.0.5, )"
             }
           },
           "imports": [

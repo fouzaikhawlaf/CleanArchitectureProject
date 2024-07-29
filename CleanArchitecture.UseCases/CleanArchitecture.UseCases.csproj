@@ -1,8 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <PackageReference Include="itext7" Version="8.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\CleanArchitecture.Entities\CleanArchitecture.Entities.csproj" />
-	  <ProjectReference Include="..\CleanArchitecture.FrameworksAndDrivers\CleanArchitecture.FramworkAndDrivers.csproj" />
+	  <ProjectReference Include="..\CleanArchitecture.FrameworkAndDrivers\CleanArchitecture.FrameworkAndDrivers.csproj" />
 	  
   </ItemGroup>
 

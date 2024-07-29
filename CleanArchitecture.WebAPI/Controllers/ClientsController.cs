@@ -1,4 +1,6 @@
-﻿using CleanArchitecture.UseCases.Dtos.ClientDtos;
+﻿using CleanArchitecture.Entities.Client;
+using CleanArchitecture.FrameworkAndDrivers.Exceptions;
+using CleanArchitecture.UseCases.Dtos.ClientDtos;
 using CleanArchitecture.UseCases.InterfacesUse;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
@@ -18,14 +20,14 @@ namespace CleanArchitecture.WebAPI.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<ClientDto>>> GetClients([FromQuery] int pageNumber = 1, [FromQuery] int pageSize = 10, [FromQuery] string sortBy = "Name", [FromQuery] bool ascending = true)
+        public async Task<ActionResult<IEnumerable<ClientDto>>> GetClients([FromQuery] string sortBy = "Name", [FromQuery] bool ascending = true)
         {
             try
             {
-                var clients = await _clientService.GetClients(pageNumber, pageSize, sortBy, ascending);
+                var clients = await _clientService.GetClients(sortBy, ascending);
                 return Ok(clients);
             }
-            catch (Exception )
+            catch (Exception ex)
             {
                 // Log the exception (ex)
                 return StatusCode(StatusCodes.Status500InternalServerError, "Error retrieving data from the database");
@@ -149,6 +151,25 @@ namespace CleanArchitecture.WebAPI.Controllers
                 // Log the exception (ex)
                 return StatusCode(StatusCodes.Status500InternalServerError, "Error archiving client");
             }
+        }
+
+
+        private void ValidateClient(Client client)
+        {
+            if (string.IsNullOrEmpty(client.Name))
+                throw new InvalidEntityException("Client name cannot be null or empty.");
+            if (string.IsNullOrEmpty(client.Email))
+                throw new InvalidEntityException("Client email cannot be null or empty.");
+            if (string.IsNullOrEmpty(client.Phone))
+                throw new InvalidEntityException("Client phone cannot be null or empty.");
+            if (string.IsNullOrEmpty(client.Address))
+                throw new InvalidEntityException("Client address cannot be null or empty.");
+            if (string.IsNullOrEmpty(client.BillingAddress))
+                throw new InvalidEntityException("Client billing address cannot be null or empty.");
+            if (string.IsNullOrEmpty(client.IndustryType))
+                throw new InvalidEntityException("Client industry type cannot be null or empty.");
+            if (string.IsNullOrEmpty(client.Tax))
+                throw new InvalidEntityException("Client tax cannot be null or empty.");
         }
     }
 }

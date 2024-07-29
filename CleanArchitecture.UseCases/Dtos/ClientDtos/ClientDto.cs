@@ -1,4 +1,4 @@
-﻿using CleanArchitecture.Entities.Client;
+﻿using CleanArchitecture.Entities.Enum;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,6 +20,7 @@ namespace CleanArchitecture.UseCases.Dtos.ClientDtos
         public double CreditLimit { get; set; }
         public string IndustryType { get; set; } = string.Empty;
         public string Tax { get; set; } = string.Empty;
-        public ClientType Type { get; set; } // Ajout de l'énumération
+        
+        public EntityType Type { get; set; } // Ajout de l'énumération
     }
 }

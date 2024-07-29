@@ -46,13 +46,11 @@ namespace CleanArchitecture.UseCases.Services
             }
             return client.MapToDto();
         }
-
-        public async Task<IEnumerable<ClientDto>> GetClients(int pageNumber, int pageSize, string sortBy, bool ascending)
+        public async Task<IEnumerable<ClientDto>> GetClients(string sortBy, bool ascending)
         {
-            var clients = await _clientRepository.GetClients(pageNumber, pageSize, sortBy, ascending);
+            var clients = await _clientRepository.GetClients(sortBy, ascending);
             return clients.Select(c => c.MapToDto());
         }
-
         public async Task<IEnumerable<ClientDto>> SearchClients(string query, string sortBy, bool ascending)
         {
             var clients = await _clientRepository.SearchClients(query, sortBy, ascending);

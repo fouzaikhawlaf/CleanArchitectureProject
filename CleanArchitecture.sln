@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.Entities"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.UseCases", "CleanArchitecture.UseCases\CleanArchitecture.UseCases.csproj", "{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.FramworkAndDrivers", "CleanArchitecture.FrameworksAndDrivers\CleanArchitecture.FramworkAndDrivers.csproj", "{F9E53DFA-9ABE-41FE-BE6B-54030A567B5F}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.WebAPI", "CleanArchitecture.WebAPI\CleanArchitecture.WebAPI.csproj", "{D1082A60-9F3D-4BC3-85EA-BB0F536534BD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.FrameworkAndDrivers", "CleanArchitecture.FrameworkAndDrivers\CleanArchitecture.FrameworkAndDrivers.csproj", "{72E231EE-94C6-43AA-ABB2-8D8C36162228}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,14 +25,14 @@ Global
 		{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F9E53DFA-9ABE-41FE-BE6B-54030A567B5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F9E53DFA-9ABE-41FE-BE6B-54030A567B5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F9E53DFA-9ABE-41FE-BE6B-54030A567B5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F9E53DFA-9ABE-41FE-BE6B-54030A567B5F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D1082A60-9F3D-4BC3-85EA-BB0F536534BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D1082A60-9F3D-4BC3-85EA-BB0F536534BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1082A60-9F3D-4BC3-85EA-BB0F536534BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1082A60-9F3D-4BC3-85EA-BB0F536534BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72E231EE-94C6-43AA-ABB2-8D8C36162228}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72E231EE-94C6-43AA-ABB2-8D8C36162228}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72E231EE-94C6-43AA-ABB2-8D8C36162228}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72E231EE-94C6-43AA-ABB2-8D8C36162228}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

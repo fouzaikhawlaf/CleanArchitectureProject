@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using CleanArchitecture.Entities.Enum;
 
 /// <summary>
 /// Summary description for Class1
@@ -23,7 +24,7 @@ namespace CleanArchitecture.Entities.Client
         public double CreditLimit { get; set; }
         public string IndustryType { get; set; } = string.Empty;
         public string Tax { get; set; } = string.Empty;
-        public ClientType Type;
+        public EntityType Type;
     }
 
 }

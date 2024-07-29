@@ -2,9 +2,9 @@ G:\cleanArchitecture\CleanArchitecture.UseCases\bin\Debug\net8.0\CleanArchitectu
 G:\cleanArchitecture\CleanArchitecture.UseCases\bin\Debug\net8.0\CleanArchitecture.UseCases.dll
 G:\cleanArchitecture\CleanArchitecture.UseCases\bin\Debug\net8.0\CleanArchitecture.UseCases.pdb
 G:\cleanArchitecture\CleanArchitecture.UseCases\bin\Debug\net8.0\CleanArchitecture.Entities.dll
-G:\cleanArchitecture\CleanArchitecture.UseCases\bin\Debug\net8.0\CleanArchitecture.FramworkAndDrivers.dll
+G:\cleanArchitecture\CleanArchitecture.UseCases\bin\Debug\net8.0\CleanArchitecture.FrameworkAndDrivers.dll
 G:\cleanArchitecture\CleanArchitecture.UseCases\bin\Debug\net8.0\CleanArchitecture.Entities.pdb
-G:\cleanArchitecture\CleanArchitecture.UseCases\bin\Debug\net8.0\CleanArchitecture.FramworkAndDrivers.pdb
+G:\cleanArchitecture\CleanArchitecture.UseCases\bin\Debug\net8.0\CleanArchitecture.FrameworkAndDrivers.pdb
 G:\cleanArchitecture\CleanArchitecture.UseCases\obj\Debug\net8.0\CleanArchitecture.UseCases.csproj.AssemblyReference.cache
 G:\cleanArchitecture\CleanArchitecture.UseCases\obj\Debug\net8.0\CleanArchitecture.UseCases.GeneratedMSBuildEditorConfig.editorconfig
 G:\cleanArchitecture\CleanArchitecture.UseCases\obj\Debug\net8.0\CleanArchitecture.UseCases.AssemblyInfoInputs.cache
