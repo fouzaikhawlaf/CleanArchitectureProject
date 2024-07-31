@@ -29,7 +29,7 @@ namespace CleanArchitecture.WebAPI.Controllers
                 var products = await _productService.GetProductsAsync(sortBy, ascending);
                 return Ok(products);
             }
-            catch (Exception ex)
+            catch (Exception )
             {
                 // Log the exception (ex)
                 return StatusCode(StatusCodes.Status500InternalServerError, "Error retrieving data from the database");

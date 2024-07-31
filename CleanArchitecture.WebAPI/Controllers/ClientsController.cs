@@ -1,4 +1,4 @@
-﻿using CleanArchitecture.Entities.Client;
+﻿using CleanArchitecture.Entities.Clients;
 using CleanArchitecture.FrameworkAndDrivers.Exceptions;
 using CleanArchitecture.UseCases.Dtos.ClientDtos;
 using CleanArchitecture.UseCases.InterfacesUse;
@@ -27,7 +27,7 @@ namespace CleanArchitecture.WebAPI.Controllers
                 var clients = await _clientService.GetClients(sortBy, ascending);
                 return Ok(clients);
             }
-            catch (Exception ex)
+            catch (Exception )
             {
                 // Log the exception (ex)
                 return StatusCode(StatusCodes.Status500InternalServerError, "Error retrieving data from the database");

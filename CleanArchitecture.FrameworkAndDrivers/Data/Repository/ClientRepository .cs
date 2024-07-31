@@ -1,4 +1,4 @@
-﻿using CleanArchitecture.Entities.Client;
+﻿using CleanArchitecture.Entities.Clients;
 using CleanArchitecture.FrameworksAndDrivers;
 using CleanArchitecture.FrameworksAndDrivers.Data.Interfaces;
 using CleanArchitecture.FrameworksAndDrivers.Data.Repository;

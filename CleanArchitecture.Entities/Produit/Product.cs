@@ -6,6 +6,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CleanArchitecture.Entities.Sales;
 
 namespace CleanArchitecture.Entities.Produit
 {
@@ -19,5 +20,7 @@ namespace CleanArchitecture.Entities.Produit
         public decimal Price { get; set; }
         public bool IsArchived { get; set; } = false;
         public ProductType ProductType { get; set; }
+      
+        public ICollection<Sale> Sales { get; set; }
     }
 }

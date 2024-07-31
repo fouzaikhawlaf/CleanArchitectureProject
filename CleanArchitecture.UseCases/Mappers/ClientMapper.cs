@@ -1,4 +1,4 @@
-﻿using CleanArchitecture.Entities.Client;
+﻿using CleanArchitecture.Entities.Clients;
 using CleanArchitecture.UseCases.Dtos.ClientDtos;
 using System;
 using System.Collections.Generic;

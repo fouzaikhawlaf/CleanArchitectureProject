@@ -1,5 +1,5 @@
 ﻿
-using CleanArchitecture.Entities.Client;
+using CleanArchitecture.Entities.Clients;
 using System;
 using System.Collections.Generic;
 using System.Linq;

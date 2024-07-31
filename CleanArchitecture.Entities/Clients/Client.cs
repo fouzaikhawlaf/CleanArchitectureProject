@@ -2,11 +2,12 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using CleanArchitecture.Entities.Enum;
+using CleanArchitecture.Entities.Sales;
 
 /// <summary>
 /// Summary description for Class1
 /// </summary>
-namespace CleanArchitecture.Entities.Client
+namespace CleanArchitecture.Entities.Clients
 {
     public class Client
     {
@@ -25,6 +26,7 @@ namespace CleanArchitecture.Entities.Client
         public string IndustryType { get; set; } = string.Empty;
         public string Tax { get; set; } = string.Empty;
         public EntityType Type;
+        public ICollection<Sale> Sales { get; set; }
     }
 
 }
