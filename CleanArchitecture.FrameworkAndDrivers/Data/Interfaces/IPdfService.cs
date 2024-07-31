@@ -1,4 +1,5 @@
-﻿using CleanArchitecture.Entities.Supplier;
+﻿using CleanArchitecture.Entities.Produit;
+using CleanArchitecture.Entities.Supplier;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,5 +11,6 @@ namespace CleanArchitecture.FramworkAndDrivers.Data.Interfaces
     public interface IPdfService
     {
         byte[] GenerateSupplierPdf(IEnumerable<Supplier> suppliers);
+        byte[] GenerateProductPdf(IEnumerable<Product> products);
     }
 }

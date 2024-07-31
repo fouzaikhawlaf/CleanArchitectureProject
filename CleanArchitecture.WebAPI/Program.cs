@@ -1,4 +1,6 @@
 
+using CleanArchitecture.FrameworkAndDrivers.Data.Interfaces;
+using CleanArchitecture.FrameworkAndDrivers.Data.Repository;
 using CleanArchitecture.FrameworkAndDrivers.Middlewares;
 using CleanArchitecture.FrameworksAndDrivers;
 using CleanArchitecture.FrameworksAndDrivers.Data;
@@ -37,12 +39,15 @@ builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepositor
 
 builder.Services.AddScoped<IClientRepository, ClientRepository>();
 builder.Services.AddScoped<ISupplierRepository, SupplierRepository>();
+
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
 // Register services
 builder.Services.AddScoped<IClientService, ClientService>();
 builder.Services.AddScoped<ISupplierService, SupplierService>();
+builder.Services.AddScoped<IProductService, ProductService>();
 // Register other services
 builder.Services.AddTransient<IPdfService, PdfService>();
-
+builder.Services.AddLogging();
 // Configure CORS
 builder.Services.AddCors(options =>
 {

@@ -1,4 +1,5 @@
 ﻿using CleanArchitecture.Entities.Client;
+using CleanArchitecture.Entities.Produit;
 using CleanArchitecture.Entities.Supplier;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -16,8 +17,8 @@ namespace CleanArchitecture.FrameworksAndDrivers
 
         public DbSet<Client> Clients { get; set; }
         public DbSet<Supplier> Suppliers { get; set; }
-        // Ajoutez d'autres DbSet pour vos autres entités ici
-
+       
+        public DbSet<Product> Products { get; set; } // Ajouter le DbSet pour les produits
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -35,6 +36,11 @@ namespace CleanArchitecture.FrameworksAndDrivers
                 entity.HasKey(e => e.SupplierID);
             });
 
+
+            modelBuilder.Entity<Product>(entity =>
+            {
+                entity.HasKey(e => e.ProductID);
+            });
         }
 
     }

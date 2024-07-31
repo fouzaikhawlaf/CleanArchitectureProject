@@ -7,13 +7,7 @@ G:\cleanArchitecture\CleanArchitecture.WebAPI\bin\Debug\net8.0\CleanArchitecture
 G:\cleanArchitecture\CleanArchitecture.WebAPI\bin\Debug\net8.0\CleanArchitecture.WebAPI.pdb
 G:\cleanArchitecture\CleanArchitecture.WebAPI\bin\Debug\net8.0\Azure.Core.dll
 G:\cleanArchitecture\CleanArchitecture.WebAPI\bin\Debug\net8.0\Azure.Identity.dll
-G:\cleanArchitecture\CleanArchitecture.WebAPI\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
 G:\cleanArchitecture\CleanArchitecture.WebAPI\bin\Debug\net8.0\Humanizer.dll
-G:\cleanArchitecture\CleanArchitecture.WebAPI\bin\Debug\net8.0\itextsharp.dll
-G:\cleanArchitecture\CleanArchitecture.WebAPI\bin\Debug\net8.0\System.Web.Cors.dll
-G:\cleanArchitecture\CleanArchitecture.WebAPI\bin\Debug\net8.0\System.Net.Http.Formatting.dll
-G:\cleanArchitecture\CleanArchitecture.WebAPI\bin\Debug\net8.0\System.Web.Http.dll
-G:\cleanArchitecture\CleanArchitecture.WebAPI\bin\Debug\net8.0\System.Web.Http.Cors.dll
 G:\cleanArchitecture\CleanArchitecture.WebAPI\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
 G:\cleanArchitecture\CleanArchitecture.WebAPI\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 G:\cleanArchitecture\CleanArchitecture.WebAPI\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
@@ -137,14 +131,6 @@ G:\cleanArchitecture\CleanArchitecture.WebAPI\obj\Debug\net8.0\CleanArchitecture
 G:\cleanArchitecture\CleanArchitecture.WebAPI\obj\Debug\net8.0\CleanArchitecture.WebAPI.MvcApplicationPartsAssemblyInfo.cs
 G:\cleanArchitecture\CleanArchitecture.WebAPI\obj\Debug\net8.0\CleanArchitecture.WebAPI.MvcApplicationPartsAssemblyInfo.cache
 G:\cleanArchitecture\CleanArchitecture.WebAPI\obj\Debug\net8.0\CleanArchitecture.WebAPI.sourcelink.json
-G:\cleanArchitecture\CleanArchitecture.WebAPI\obj\Debug\net8.0\staticwebassets.build.json
-G:\cleanArchitecture\CleanArchitecture.WebAPI\obj\Debug\net8.0\staticwebassets.development.json
-G:\cleanArchitecture\CleanArchitecture.WebAPI\obj\Debug\net8.0\staticwebassets\msbuild.CleanArchitecture.WebAPI.Microsoft.AspNetCore.StaticWebAssets.props
-G:\cleanArchitecture\CleanArchitecture.WebAPI\obj\Debug\net8.0\staticwebassets\msbuild.build.CleanArchitecture.WebAPI.props
-G:\cleanArchitecture\CleanArchitecture.WebAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.CleanArchitecture.WebAPI.props
-G:\cleanArchitecture\CleanArchitecture.WebAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.CleanArchitecture.WebAPI.props
-G:\cleanArchitecture\CleanArchitecture.WebAPI\obj\Debug\net8.0\staticwebassets.pack.json
-G:\cleanArchitecture\CleanArchitecture.WebAPI\obj\Debug\net8.0\scopedcss\bundle\CleanArchitecture.WebAPI.styles.css
 G:\cleanArchitecture\CleanArchitecture.WebAPI\obj\Debug\net8.0\CleanArc.FC1248EF.Up2Date
 G:\cleanArchitecture\CleanArchitecture.WebAPI\obj\Debug\net8.0\CleanArchitecture.WebAPI.dll
 G:\cleanArchitecture\CleanArchitecture.WebAPI\obj\Debug\net8.0\refint\CleanArchitecture.WebAPI.dll
@@ -166,3 +152,7 @@ G:\cleanArchitecture\CleanArchitecture.WebAPI\bin\Debug\net8.0\itext.commons.dll
 G:\cleanArchitecture\CleanArchitecture.WebAPI\bin\Debug\net8.0\Microsoft.DotNet.PlatformAbstractions.dll
 G:\cleanArchitecture\CleanArchitecture.WebAPI\obj\Debug\net8.0\CleanArchitecture.WebAPI.RazorAssemblyInfo.cache
 G:\cleanArchitecture\CleanArchitecture.WebAPI\obj\Debug\net8.0\CleanArchitecture.WebAPI.RazorAssemblyInfo.cs
+G:\cleanArchitecture\CleanArchitecture.WebAPI\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+G:\cleanArchitecture\CleanArchitecture.WebAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+G:\cleanArchitecture\CleanArchitecture.WebAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Razor.Language.dll
+G:\cleanArchitecture\CleanArchitecture.WebAPI\bin\Debug\net8.0\Microsoft.CodeAnalysis.Razor.dll

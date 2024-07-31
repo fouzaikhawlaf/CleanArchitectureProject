@@ -72,6 +72,36 @@ namespace CleanArchitecture.FrameworksAndDrivers.Migrations
                     b.ToTable("Clients");
                 });
 
+            modelBuilder.Entity("CleanArchitecture.Entities.Produit.Product", b =>
+                {
+                    b.Property<int>("ProductID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProductID"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsArchived")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("ProductType")
+                        .HasColumnType("int");
+
+                    b.HasKey("ProductID");
+
+                    b.ToTable("Products");
+                });
+
             modelBuilder.Entity("CleanArchitecture.Entities.Supplier.Supplier", b =>
                 {
                     b.Property<int>("SupplierID")
