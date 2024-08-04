@@ -46,6 +46,7 @@ namespace CleanArchitecture.UseCases.Services
             }
             return client.MapToDto();
         }
+
         public async Task<IEnumerable<ClientDto>> GetClients(string sortBy, bool ascending)
         {
             var clients = await _clientRepository.GetClients(sortBy, ascending);

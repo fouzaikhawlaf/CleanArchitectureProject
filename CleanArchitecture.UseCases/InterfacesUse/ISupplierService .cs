@@ -1,5 +1,5 @@
 ﻿using CleanArchitecture.Entities.Sales;
-using CleanArchitecture.Entities.Supplier;
+using CleanArchitecture.Entities.Suppliers;
 using CleanArchitecture.UseCases.Dtos.SupplierDtos;
 using System;
 using System.Collections.Generic;

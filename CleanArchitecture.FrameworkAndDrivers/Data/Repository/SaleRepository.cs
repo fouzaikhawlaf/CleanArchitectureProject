@@ -50,6 +50,20 @@ namespace CleanArchitecture.FrameworkAndDrivers.Data.Repository
             return sale;
             //bonjour
         }
+        public async Task<IEnumerable<Sale>> GetAllWithDetailsAsync()
+        {
+            return await _context.Sales
+                .Include(s => s.Client)
+                .Include(s => s.Product)
+                .ToListAsync();
+        }
+        public async Task<Sale?> GetByIdAsync(int id)
+        {
+            return await _context.Sales
+                                 .Include(s => s.Client)
+                                 .Include(s => s.Product)
+                                 .FirstOrDefaultAsync(s => s.Id == id);
+        }
     }
     
     

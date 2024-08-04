@@ -22,16 +22,19 @@ namespace CleanArchitecture.Entities.Sales
         [Required]
         [ForeignKey("Client")]
         public int ClientId { get; set; }
-        public Client? Client { get; set; }
+        public Client Client { get; set; } = null!;
 
         [Required]
         [ForeignKey("Product")]
         public int ProductId { get; set; }
-        public Product? Product { get; set; }
-
+       
+        public Product Product { get; set; } = null!;
         [Required]
         public decimal Amount { get; set; }
         public bool IsArchived { get; set; } = false;
+        public decimal TotalAmount { get; set; } // Ajouté
+        public string ClientName { get; set; } = string.Empty;
+        public string ProductName { get; set; } = string.Empty;
     }
     
 }

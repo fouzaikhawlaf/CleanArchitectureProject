@@ -1,5 +1,5 @@
 ﻿
-using CleanArchitecture.Entities.Supplier;
+using CleanArchitecture.Entities.Suppliers;
 using CleanArchitecture.FrameworksAndDrivers.Data.Interfaces;
 using System;
 using System.Collections.Generic;

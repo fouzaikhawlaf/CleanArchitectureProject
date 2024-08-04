@@ -42,11 +42,14 @@ builder.Services.AddScoped<ISupplierRepository, SupplierRepository>();
 
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<ISaleRepository, SaleRepository>();
+
+builder.Services.AddScoped<IPurchaseRepository, PurchaseRepository>();
 // Register services
 builder.Services.AddScoped<IClientService, ClientService>();
 builder.Services.AddScoped<ISupplierService, SupplierService>();
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<ISaleService, SaleService>();
+builder.Services.AddScoped<IPurchaseService, PurchaseService>();
 // Register other services
 builder.Services.AddTransient<IPdfService, PdfService>();
 builder.Services.AddLogging();

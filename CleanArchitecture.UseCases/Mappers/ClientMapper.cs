@@ -25,7 +25,8 @@ namespace CleanArchitecture.UseCases.Mappers
                 CreditLimit = client.CreditLimit,
                 IndustryType = client.IndustryType,
                 Tax = client.Tax,
-                Type = client.Type // Ajout de l'énumération
+                Type = client.Type, // Ajout de l'énumération
+                Sales = client.Sales.ToList() // Conversion explicite en List<Sale>
             };
         }
 
@@ -43,7 +44,8 @@ namespace CleanArchitecture.UseCases.Mappers
                 CreditLimit = clientDto.CreditLimit,
                 IndustryType = clientDto.IndustryType,
                 Tax = clientDto.Tax,
-                Type = clientDto.Type // Ajout de l'énumération
+                Type = clientDto.Type, // Ajout de l'énumération
+                Sales = clientDto.Sales.ToList() // Conversion explicite en List<Sale>
             };
         }
 
@@ -60,7 +62,9 @@ namespace CleanArchitecture.UseCases.Mappers
             client.IndustryType = updateClientDto.IndustryType;
             client.Tax = updateClientDto.Tax;
             client.Type = updateClientDto.Type; // Ajout de l'énumération
+            client.Sales = updateClientDto.Sales.ToList(); // Conversion explicite en List<Sale>
         }
     }
+
 }
 

@@ -146,13 +146,12 @@ namespace CleanArchitecture.WebAPI.Controllers
 
                 return Ok(archivedClient);
             }
-            catch (Exception )
+            catch (Exception ex)
             {
                 // Log the exception (ex)
-                return StatusCode(StatusCodes.Status500InternalServerError, "Error archiving client");
+                return StatusCode(StatusCodes.Status500InternalServerError, $"Error archiving client: {ex.Message}");
             }
         }
-
 
         private void ValidateClient(Client client)
         {

@@ -21,5 +21,6 @@ namespace CleanArchitecture.UseCases.Dtos.SalesDtos
         [Required]
         public decimal Amount { get; set; }
         public bool IsArchived { get; set; } = false;
+        public decimal TotalAmount { get; set; } // Ajouté
     }
 }

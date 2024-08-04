@@ -1,4 +1,5 @@
 ﻿using CleanArchitecture.Entities.Enum;
+using CleanArchitecture.Entities.Sales;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,5 +23,6 @@ namespace CleanArchitecture.UseCases.Dtos.ClientDtos
         public string Tax { get; set; } = string.Empty;
         
         public EntityType Type { get; set; } // Ajout de l'énumération
+        public List<Sale> Sales { get; set; } = new List<Sale>();
     }
 }

@@ -1,5 +1,5 @@
 ﻿using CleanArchitecture.Entities.Produit;
-using CleanArchitecture.Entities.Supplier;
+using CleanArchitecture.Entities.Suppliers;
 using CleanArchitecture.FramworkAndDrivers.Data.Interfaces;
 using iText.Kernel.Pdf;
 using iText.Layout;

@@ -10,9 +10,10 @@ namespace CleanArchitecture.FrameworkAndDrivers.Data.Interfaces
 {
     public interface ISaleRepository : IGenericRepository<Sale>
     {
-        
+        Task<IEnumerable<Sale>> GetAllWithDetailsAsync();
         Task<IEnumerable<Sale>> SearchAsync(string query, string sortBy, bool ascending);
         Task<Sale?> ArchiveSale(int saleId);
+        Task<Sale?> GetByIdAsync(int id); // Ajouter cette méthode
     }
     
     

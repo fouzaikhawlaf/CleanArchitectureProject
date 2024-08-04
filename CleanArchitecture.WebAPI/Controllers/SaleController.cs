@@ -1,18 +1,22 @@
 ﻿using CleanArchitecture.UseCases.Dtos.SalesDtos;
 using CleanArchitecture.UseCases.InterfacesUse;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CleanArchitecture.WebAPI.Controllers
 {
+    [EnableCors("AllowSpecificOrigin")]
     [ApiController]
     [Route("api/[controller]")]
     public class SaleController : ControllerBase
     {
         private readonly ISaleService _saleService;
+        
 
         public SaleController(ISaleService saleService)
         {
             _saleService = saleService;
+            
         }
 
         [HttpGet("{id:int}")]
@@ -42,6 +46,20 @@ namespace CleanArchitecture.WebAPI.Controllers
             }
         }
 
+        [HttpGet("calculate-total-amount/{saleId:int}/{clientId:int}/{productId:int}")]
+        public async Task<ActionResult<decimal>> CalculateTotalAmount(int saleId, int clientId, int productId)
+        {
+            try
+            {
+                var totalAmount = await _saleService.CalculateTotalAmountAsync(saleId, clientId, productId);
+                return Ok(totalAmount);
+            }
+            catch (Exception )
+            {
+                // Log the exception (ex)
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error calculating total amount");
+            }
+        }
 
         [HttpPost]
         public async Task<ActionResult<SaleDto>> CreateSale([FromBody] CreateSaleDto createSaleDto)
@@ -111,23 +129,6 @@ namespace CleanArchitecture.WebAPI.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, "Error archiving sale");
             }
         }
-
-        [HttpGet("calculate-amount/{id:int}")]
-        public async Task<ActionResult<decimal>> CalculateTotalAmount(int id)
-        {
-            try
-            {
-                var amount = await _saleService.CalculateTotalAmountAsync(id);
-                return Ok(amount);
-            }
-            catch (KeyNotFoundException ex)
-            {
-                return NotFound(ex.Message);
-            }
-            catch (Exception)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, "Error calculating total amount");
-            }
-        }
+         
     }
 }

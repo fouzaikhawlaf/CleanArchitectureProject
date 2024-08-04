@@ -1,5 +1,5 @@
 ﻿using CleanArchitecture.Entities.Produit;
-using CleanArchitecture.Entities.Supplier;
+using CleanArchitecture.Entities.Suppliers;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -26,7 +26,7 @@ namespace CleanArchitecture.Entities.Clients
         public string IndustryType { get; set; } = string.Empty;
         public string Tax { get; set; } = string.Empty;
         public EntityType Type;
-        public ICollection<Sale> Sales { get; set; }
+        public ICollection<Sale> Sales { get; set; } = new List<Sale>();
     }
 
 }

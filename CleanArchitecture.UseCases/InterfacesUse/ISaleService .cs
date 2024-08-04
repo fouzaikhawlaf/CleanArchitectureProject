@@ -12,7 +12,8 @@ namespace CleanArchitecture.UseCases.InterfacesUse
     {
         Task<IEnumerable<SaleDto>> SearchSalesAsync(string query, string sortBy, bool ascending);
         Task<SaleDto> ArchiveSaleAsync(int id);
-        Task<decimal> CalculateTotalAmountAsync(int id);
+        Task<decimal> CalculateTotalAmountAsync(int saleId, int clientId, int productId);
         Task<IEnumerable<SaleDto>> GetAllSalesAsync();
+        new Task<SaleDto> GetByIdAsync(int id);
     }
 }

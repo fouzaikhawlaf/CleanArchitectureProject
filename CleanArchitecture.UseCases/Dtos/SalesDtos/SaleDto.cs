@@ -12,7 +12,10 @@ namespace CleanArchitecture.UseCases.Dtos.SalesDtos
         public DateTime SaleDate { get; set; }
         public int ClientId { get; set; }
         public int ProductId { get; set; }
+        public string ClientName { get; set; } = string.Empty;
+        public string ProductName { get; set; } = string.Empty;
         public decimal Amount { get; set; }
         public bool IsArchived { get; set; } = false;
+        public decimal TotalAmount { get; set; } // Ajouté
     }
 }

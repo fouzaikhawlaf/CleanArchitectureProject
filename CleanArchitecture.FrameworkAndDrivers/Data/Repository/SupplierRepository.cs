@@ -1,4 +1,4 @@
-﻿using CleanArchitecture.Entities.Supplier;
+﻿using CleanArchitecture.Entities.Suppliers;
 using CleanArchitecture.FrameworksAndDrivers;
 using CleanArchitecture.FrameworksAndDrivers.Data.Repository;
 using CleanArchitecture.FramworkAndDrivers.Data.Interfaces;

@@ -21,9 +21,13 @@ namespace CleanArchitecture.UseCases.Services
             _saleRepository = saleRepository;
         }
 
-        protected override SaleDto MapToDto(Sale sale)
+        protected override SaleDto MapToDto(Sale entity)
         {
-            return sale.MapToDto();
+            // Map the Sale entity to SaleDto, including clientName and productName
+            var dto = entity.MapToDto();
+            dto.ClientName = entity.Client?.Name;
+            dto.ProductName = entity.Product?.Name;
+            return dto;
         }
 
         protected override Sale MapToEntity(CreateSaleDto createSaleDto)
@@ -37,8 +41,8 @@ namespace CleanArchitecture.UseCases.Services
         }
         public async Task<IEnumerable<SaleDto>> GetAllSalesAsync()
         {
-            var sales = await _saleRepository.GetAllAsync();
-            return sales.Select(s => s.MapToDto());
+            var sales = await _saleRepository.GetAllWithDetailsAsync();
+            return sales.Select(s => s.MapToDto()).ToList();
         }
 
         public async Task<IEnumerable<SaleDto>> SearchSalesAsync(string query, string sortBy, bool ascending)
@@ -62,16 +66,22 @@ namespace CleanArchitecture.UseCases.Services
             }
         }
 
-        public async Task<decimal> CalculateTotalAmountAsync(int id)
+        public async Task<decimal> CalculateTotalAmountAsync(int saleId, int clientId, int productId)
         {
-            var sale = await _saleRepository.GetByIdAsync(id);
-            if (sale == null)
+            var sales = await _saleRepository.GetAllWithDetailsAsync();
+            var totalAmount = sales.Where(s => s.ClientId == clientId && s.ProductId == productId && s.Id == saleId).Sum(s => s.Amount);
+
+            // Mettre à jour TotalAmount
+            var saleToUpdate = await _saleRepository.GetByIdAsync(saleId);
+            if (saleToUpdate != null)
             {
-                throw new KeyNotFoundException($"Sale with ID {id} not found.");
+                saleToUpdate.TotalAmount = totalAmount;
+                await _saleRepository.UpdateAsync(saleToUpdate);
             }
 
-            return sale.Amount;
+            return totalAmount;
         }
+
 
     }
 }

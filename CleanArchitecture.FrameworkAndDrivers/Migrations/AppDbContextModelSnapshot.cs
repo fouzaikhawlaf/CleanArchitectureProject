@@ -103,6 +103,49 @@ namespace CleanArchitecture.FrameworksAndDrivers.Migrations
                     b.ToTable("Products");
                 });
 
+            modelBuilder.Entity("CleanArchitecture.Entities.Purchases.Purchase", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<decimal>("Amount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<bool>("IsArchived")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ProductName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("PurchaseDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("SupplierId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("SupplierName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("TotalAmount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.HasIndex("SupplierId");
+
+                    b.ToTable("Purchases");
+                });
+
             modelBuilder.Entity("CleanArchitecture.Entities.Sales.Sale", b =>
                 {
                     b.Property<int>("Id")
@@ -117,14 +160,25 @@ namespace CleanArchitecture.FrameworksAndDrivers.Migrations
                     b.Property<int>("ClientId")
                         .HasColumnType("int");
 
+                    b.Property<string>("ClientName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<bool>("IsArchived")
                         .HasColumnType("bit");
 
                     b.Property<int>("ProductId")
                         .HasColumnType("int");
 
+                    b.Property<string>("ProductName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("SaleDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<decimal>("TotalAmount")
+                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
 
@@ -135,7 +189,7 @@ namespace CleanArchitecture.FrameworksAndDrivers.Migrations
                     b.ToTable("Sales");
                 });
 
-            modelBuilder.Entity("CleanArchitecture.Entities.Supplier.Supplier", b =>
+            modelBuilder.Entity("CleanArchitecture.Entities.Suppliers.Supplier", b =>
                 {
                     b.Property<int>("SupplierID")
                         .ValueGeneratedOnAdd()
@@ -175,6 +229,25 @@ namespace CleanArchitecture.FrameworksAndDrivers.Migrations
                     b.ToTable("Suppliers");
                 });
 
+            modelBuilder.Entity("CleanArchitecture.Entities.Purchases.Purchase", b =>
+                {
+                    b.HasOne("CleanArchitecture.Entities.Produit.Product", "Product")
+                        .WithMany("Purchases")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CleanArchitecture.Entities.Suppliers.Supplier", "Supplier")
+                        .WithMany("Purchases")
+                        .HasForeignKey("SupplierId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+
+                    b.Navigation("Supplier");
+                });
+
             modelBuilder.Entity("CleanArchitecture.Entities.Sales.Sale", b =>
                 {
                     b.HasOne("CleanArchitecture.Entities.Clients.Client", "Client")
@@ -201,7 +274,14 @@ namespace CleanArchitecture.FrameworksAndDrivers.Migrations
 
             modelBuilder.Entity("CleanArchitecture.Entities.Produit.Product", b =>
                 {
+                    b.Navigation("Purchases");
+
                     b.Navigation("Sales");
+                });
+
+            modelBuilder.Entity("CleanArchitecture.Entities.Suppliers.Supplier", b =>
+                {
+                    b.Navigation("Purchases");
                 });
 #pragma warning restore 612, 618
         }

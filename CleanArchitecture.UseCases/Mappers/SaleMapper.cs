@@ -18,8 +18,11 @@ namespace CleanArchitecture.UseCases.Mappers
                 SaleDate = sale.SaleDate,
                 ClientId = sale.ClientId,
                 ProductId = sale.ProductId,
+                ClientName = sale.Client?.Name ?? string.Empty, // Ajout de ClientName
+                ProductName = sale.Product?.Name ?? string.Empty, // Ajout de ProductName
                 Amount = sale.Amount,
-                IsArchived = sale.IsArchived
+                IsArchived = sale.IsArchived,
+                 TotalAmount = 0
             };
         }
 

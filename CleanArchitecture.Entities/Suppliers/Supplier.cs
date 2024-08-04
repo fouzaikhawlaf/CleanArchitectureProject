@@ -6,8 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CleanArchitecture.Entities.Enum;
+using CleanArchitecture.Entities.Purchases;
 
-namespace CleanArchitecture.Entities.Supplier
+namespace CleanArchitecture.Entities.Suppliers
 {
     public class Supplier
     {
@@ -23,6 +24,7 @@ namespace CleanArchitecture.Entities.Supplier
         public int MinimumOrderQuantity { get; set; }
         public double  TotalChiffreDAffaire { get; set; }
         public EntityType SupplierType { get; set; }
+        public ICollection<Purchase> Purchases { get; set; } = new List<Purchase>();
 
     }
 }
