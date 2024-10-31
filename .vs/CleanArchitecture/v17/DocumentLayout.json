@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "G:\\cleanArchitecture\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|g:\\cleanarchitecture\\cleanarchitecture.usecases\\dtos\\userdtos\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|solutionrelative:cleanarchitecture.usecases\\dtos\\userdtos\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|g:\\cleanarchitecture\\cleanarchitecture.usecases\\services\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|solutionrelative:cleanarchitecture.usecases\\services\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|g:\\cleanarchitecture\\cleanarchitecture.usecases\\dtos\\userdtos\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|solutionrelative:cleanarchitecture.usecases\\dtos\\userdtos\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1082A60-9F3D-4BC3-85EA-BB0F536534BD}|CleanArchitecture.WebAPI\\CleanArchitecture.WebAPI.csproj|g:\\cleanarchitecture\\cleanarchitecture.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -86,7 +86,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 20,
           "Children": [
             {
               "$type": "Bookmark",
@@ -176,7 +176,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CreateUserDto.cs",
               "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Dtos\\UserDtos\\CreateUserDto.cs",
               "RelativeDocumentMoniker": "CleanArchitecture.UseCases\\Dtos\\UserDtos\\CreateUserDto.cs",
@@ -327,13 +327,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "AdminService.cs",
               "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Services\\AdminService.cs",
               "RelativeDocumentMoniker": "CleanArchitecture.UseCases\\Services\\AdminService.cs",
               "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Services\\AdminService.cs",
               "RelativeToolTip": "CleanArchitecture.UseCases\\Services\\AdminService.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAAAEcAAAA5AAAA",
+              "ViewState": "AQIAAK0AAAAAAAAAAAAgwLAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T22:47:35.808Z",
               "EditorCaption": ""
