@@ -188,7 +188,9 @@ namespace CleanArchitecture.UseCases.Services
                 var profile = new UserProfile
                 {
                     UserId = employee.Id, // Setting the UserId for the profile
-                    User = employee // Setting the User navigation property
+                    User = employee, // Setting the User navigation property
+
+
                 };
 
                 _context.UserProfiles.Add(profile);
