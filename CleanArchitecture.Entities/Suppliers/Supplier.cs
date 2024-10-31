@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using CleanArchitecture.Entities.Enum;
 using CleanArchitecture.Entities.Purchases;
+using CleanArchitecture.Entities.Orders;
 
 namespace CleanArchitecture.Entities.Suppliers
 {
@@ -14,7 +15,7 @@ namespace CleanArchitecture.Entities.Suppliers
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int SupplierID { get; set; }
+        public int SupplierId { get; set; }
         public string? Name { get; set; }
         public string? Email { get; set; }
         public int Phone { get; set; }
@@ -25,6 +26,8 @@ namespace CleanArchitecture.Entities.Suppliers
         public double  TotalChiffreDAffaire { get; set; }
         public EntityType SupplierType { get; set; }
         public ICollection<Purchase> Purchases { get; set; } = new List<Purchase>();
+        public ICollection<OrderSupplier> OrderSuppliers { get; set; } = new List<OrderSupplier>();
+
 
     }
 }

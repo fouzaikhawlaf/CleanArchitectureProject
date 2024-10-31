@@ -1,5 +1,5 @@
 ﻿using CleanArchitecture.Entities.Produit;
-using CleanArchitecture.UseCases.Dtos.ProduitDtos;
+using CleanArchitecture.UseCases.Dtos.ItemDtos.ProduitDtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;

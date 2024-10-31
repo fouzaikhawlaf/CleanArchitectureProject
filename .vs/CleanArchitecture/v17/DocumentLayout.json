@@ -3,216 +3,80 @@
   "WorkspaceRootPath": "G:\\cleanArchitecture\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B8B6330-FAD7-4A21-8833-94923CF3897B}|CleanArchitecture.Entities\\CleanArchitecture.Entities.csproj|g:\\cleanarchitecture\\cleanarchitecture.entities\\produit\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B8B6330-FAD7-4A21-8833-94923CF3897B}|CleanArchitecture.Entities\\CleanArchitecture.Entities.csproj|solutionrelative:cleanarchitecture.entities\\produit\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|g:\\cleanarchitecture\\cleanarchitecture.usecases\\dtos\\userdtos\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|solutionrelative:cleanarchitecture.usecases\\dtos\\userdtos\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|g:\\cleanarchitecture\\cleanarchitecture.usecases\\dtos\\produitdtos\\createproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|solutionrelative:cleanarchitecture.usecases\\dtos\\produitdtos\\createproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|g:\\cleanarchitecture\\cleanarchitecture.usecases\\dtos\\produitdtos\\updateproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|solutionrelative:cleanarchitecture.usecases\\dtos\\produitdtos\\updateproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|g:\\cleanarchitecture\\cleanarchitecture.usecases\\dtos\\produitdtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|solutionrelative:cleanarchitecture.usecases\\dtos\\produitdtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B8B6330-FAD7-4A21-8833-94923CF3897B}|CleanArchitecture.Entities\\CleanArchitecture.Entities.csproj|g:\\cleanarchitecture\\cleanarchitecture.entities\\enum\\producttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B8B6330-FAD7-4A21-8833-94923CF3897B}|CleanArchitecture.Entities\\CleanArchitecture.Entities.csproj|solutionrelative:cleanarchitecture.entities\\enum\\producttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B8B6330-FAD7-4A21-8833-94923CF3897B}|CleanArchitecture.Entities\\CleanArchitecture.Entities.csproj|g:\\cleanarchitecture\\cleanarchitecture.entities\\enum\\entitytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B8B6330-FAD7-4A21-8833-94923CF3897B}|CleanArchitecture.Entities\\CleanArchitecture.Entities.csproj|solutionrelative:cleanarchitecture.entities\\enum\\entitytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B8B6330-FAD7-4A21-8833-94923CF3897B}|CleanArchitecture.Entities\\CleanArchitecture.Entities.csproj|g:\\cleanarchitecture\\cleanarchitecture.entities\\clients\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B8B6330-FAD7-4A21-8833-94923CF3897B}|CleanArchitecture.Entities\\CleanArchitecture.Entities.csproj|solutionrelative:cleanarchitecture.entities\\clients\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|g:\\cleanarchitecture\\cleanarchitecture.usecases\\mappers\\productmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|solutionrelative:cleanarchitecture.usecases\\mappers\\productmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72E231EE-94C6-43AA-ABB2-8D8C36162228}|CleanArchitecture.FrameworkAndDrivers\\CleanArchitecture.FrameworkAndDrivers.csproj|g:\\cleanarchitecture\\cleanarchitecture.frameworkanddrivers\\data\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72E231EE-94C6-43AA-ABB2-8D8C36162228}|CleanArchitecture.FrameworkAndDrivers\\CleanArchitecture.FrameworkAndDrivers.csproj|solutionrelative:cleanarchitecture.frameworkanddrivers\\data\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{120122A0-EDD9-411E-9C35-6FF2AC31AF63}|\u00C9l\u00E9ments de solution{120122A0-EDD9-411E-9C35-6FF2AC31AF63}|G:\\cleanArchitecture\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{120122A0-EDD9-411E-9C35-6FF2AC31AF63}|\u00C9l\u00E9ments de solution{120122A0-EDD9-411E-9C35-6FF2AC31AF63}|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72E231EE-94C6-43AA-ABB2-8D8C36162228}|CleanArchitecture.FrameworkAndDrivers\\CleanArchitecture.FrameworkAndDrivers.csproj|g:\\cleanarchitecture\\cleanarchitecture.frameworkanddrivers\\data\\repository\\salerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72E231EE-94C6-43AA-ABB2-8D8C36162228}|CleanArchitecture.FrameworkAndDrivers\\CleanArchitecture.FrameworkAndDrivers.csproj|solutionrelative:cleanarchitecture.frameworkanddrivers\\data\\repository\\salerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1082A60-9F3D-4BC3-85EA-BB0F536534BD}|CleanArchitecture.WebAPI\\CleanArchitecture.WebAPI.csproj|g:\\cleanarchitecture\\cleanarchitecture.webapi\\controllers\\purchasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1082A60-9F3D-4BC3-85EA-BB0F536534BD}|CleanArchitecture.WebAPI\\CleanArchitecture.WebAPI.csproj|solutionrelative:cleanarchitecture.webapi\\controllers\\purchasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|g:\\cleanarchitecture\\cleanarchitecture.usecases\\mappers\\purchasemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|solutionrelative:cleanarchitecture.usecases\\mappers\\purchasemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|g:\\cleanarchitecture\\cleanarchitecture.usecases\\services\\purchaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|solutionrelative:cleanarchitecture.usecases\\services\\purchaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|g:\\cleanarchitecture\\cleanarchitecture.usecases\\services\\saleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|solutionrelative:cleanarchitecture.usecases\\services\\saleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1082A60-9F3D-4BC3-85EA-BB0F536534BD}|CleanArchitecture.WebAPI\\CleanArchitecture.WebAPI.csproj|g:\\cleanarchitecture\\cleanarchitecture.webapi\\controllers\\salecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1082A60-9F3D-4BC3-85EA-BB0F536534BD}|CleanArchitecture.WebAPI\\CleanArchitecture.WebAPI.csproj|solutionrelative:cleanarchitecture.webapi\\controllers\\salecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|g:\\cleanarchitecture\\cleanarchitecture.usecases\\services\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|solutionrelative:cleanarchitecture.usecases\\services\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1082A60-9F3D-4BC3-85EA-BB0F536534BD}|CleanArchitecture.WebAPI\\CleanArchitecture.WebAPI.csproj|g:\\cleanarchitecture\\cleanarchitecture.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1082A60-9F3D-4BC3-85EA-BB0F536534BD}|CleanArchitecture.WebAPI\\CleanArchitecture.WebAPI.csproj|solutionrelative:cleanarchitecture.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1082A60-9F3D-4BC3-85EA-BB0F536534BD}|CleanArchitecture.WebAPI\\CleanArchitecture.WebAPI.csproj|g:\\cleanarchitecture\\cleanarchitecture.webapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1082A60-9F3D-4BC3-85EA-BB0F536534BD}|CleanArchitecture.WebAPI\\CleanArchitecture.WebAPI.csproj|solutionrelative:cleanarchitecture.webapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B8B6330-FAD7-4A21-8833-94923CF3897B}|CleanArchitecture.Entities\\CleanArchitecture.Entities.csproj|g:\\cleanarchitecture\\cleanarchitecture.entities\\users\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B8B6330-FAD7-4A21-8833-94923CF3897B}|CleanArchitecture.Entities\\CleanArchitecture.Entities.csproj|solutionrelative:cleanarchitecture.entities\\users\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1082A60-9F3D-4BC3-85EA-BB0F536534BD}|CleanArchitecture.WebAPI\\CleanArchitecture.WebAPI.csproj|g:\\cleanarchitecture\\cleanarchitecture.webapi\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1082A60-9F3D-4BC3-85EA-BB0F536534BD}|CleanArchitecture.WebAPI\\CleanArchitecture.WebAPI.csproj|solutionrelative:cleanarchitecture.webapi\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|g:\\cleanarchitecture\\cleanarchitecture.usecases\\mappers\\userprofilemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|solutionrelative:cleanarchitecture.usecases\\mappers\\userprofilemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|g:\\cleanarchitecture\\cleanarchitecture.usecases\\services\\genericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|solutionrelative:cleanarchitecture.usecases\\services\\genericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B8B6330-FAD7-4A21-8833-94923CF3897B}|CleanArchitecture.Entities\\CleanArchitecture.Entities.csproj|g:\\cleanarchitecture\\cleanarchitecture.entities\\users\\emplyee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B8B6330-FAD7-4A21-8833-94923CF3897B}|CleanArchitecture.Entities\\CleanArchitecture.Entities.csproj|solutionrelative:cleanarchitecture.entities\\users\\emplyee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72E231EE-94C6-43AA-ABB2-8D8C36162228}|CleanArchitecture.FrameworkAndDrivers\\CleanArchitecture.FrameworkAndDrivers.csproj|g:\\cleanarchitecture\\cleanarchitecture.frameworkanddrivers\\data\\repository\\purchaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72E231EE-94C6-43AA-ABB2-8D8C36162228}|CleanArchitecture.FrameworkAndDrivers\\CleanArchitecture.FrameworkAndDrivers.csproj|solutionrelative:cleanarchitecture.frameworkanddrivers\\data\\repository\\purchaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B8B6330-FAD7-4A21-8833-94923CF3897B}|CleanArchitecture.Entities\\CleanArchitecture.Entities.csproj|g:\\cleanarchitecture\\cleanarchitecture.entities\\purchases\\purchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B8B6330-FAD7-4A21-8833-94923CF3897B}|CleanArchitecture.Entities\\CleanArchitecture.Entities.csproj|solutionrelative:cleanarchitecture.entities\\purchases\\purchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B8B6330-FAD7-4A21-8833-94923CF3897B}|CleanArchitecture.Entities\\CleanArchitecture.Entities.csproj|g:\\cleanarchitecture\\cleanarchitecture.entities\\sales\\sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B8B6330-FAD7-4A21-8833-94923CF3897B}|CleanArchitecture.Entities\\CleanArchitecture.Entities.csproj|solutionrelative:cleanarchitecture.entities\\sales\\sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|g:\\cleanarchitecture\\cleanarchitecture.usecases\\dtos\\invoicesdto\\invoiceclientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|solutionrelative:cleanarchitecture.usecases\\dtos\\invoicesdto\\invoiceclientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{72E231EE-94C6-43AA-ABB2-8D8C36162228}|CleanArchitecture.FrameworkAndDrivers\\CleanArchitecture.FrameworkAndDrivers.csproj|g:\\cleanarchitecture\\cleanarchitecture.frameworkanddrivers\\data\\appdbcontext .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{72E231EE-94C6-43AA-ABB2-8D8C36162228}|CleanArchitecture.FrameworkAndDrivers\\CleanArchitecture.FrameworkAndDrivers.csproj|solutionrelative:cleanarchitecture.frameworkanddrivers\\data\\appdbcontext .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|g:\\cleanarchitecture\\cleanarchitecture.usecases\\dtos\\purchasedtos\\purchasedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|solutionrelative:cleanarchitecture.usecases\\dtos\\purchasedtos\\purchasedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{72E231EE-94C6-43AA-ABB2-8D8C36162228}|CleanArchitecture.FrameworkAndDrivers\\CleanArchitecture.FrameworkAndDrivers.csproj|g:\\cleanarchitecture\\cleanarchitecture.frameworkanddrivers\\migrations\\20241031185145_adduserprofilerelation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72E231EE-94C6-43AA-ABB2-8D8C36162228}|CleanArchitecture.FrameworkAndDrivers\\CleanArchitecture.FrameworkAndDrivers.csproj|solutionrelative:cleanarchitecture.frameworkanddrivers\\migrations\\20241031185145_adduserprofilerelation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|g:\\cleanarchitecture\\cleanarchitecture.usecases\\dtos\\purchasedtos\\updatepurchasedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|solutionrelative:cleanarchitecture.usecases\\dtos\\purchasedtos\\updatepurchasedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{72E231EE-94C6-43AA-ABB2-8D8C36162228}|CleanArchitecture.FrameworkAndDrivers\\CleanArchitecture.FrameworkAndDrivers.csproj|g:\\cleanarchitecture\\cleanarchitecture.frameworkanddrivers\\migrations\\20241023200754_updateuserprofileandaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72E231EE-94C6-43AA-ABB2-8D8C36162228}|CleanArchitecture.FrameworkAndDrivers\\CleanArchitecture.FrameworkAndDrivers.csproj|solutionrelative:cleanarchitecture.frameworkanddrivers\\migrations\\20241023200754_updateuserprofileandaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|g:\\cleanarchitecture\\cleanarchitecture.usecases\\dtos\\purchasedtos\\createpurchasedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|solutionrelative:cleanarchitecture.usecases\\dtos\\purchasedtos\\createpurchasedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|g:\\cleanarchitecture\\cleanarchitecture.usecases\\services\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|solutionrelative:cleanarchitecture.usecases\\services\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72E231EE-94C6-43AA-ABB2-8D8C36162228}|CleanArchitecture.FrameworkAndDrivers\\CleanArchitecture.FrameworkAndDrivers.csproj|g:\\cleanarchitecture\\cleanarchitecture.frameworkanddrivers\\data\\interfaces\\ipdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72E231EE-94C6-43AA-ABB2-8D8C36162228}|CleanArchitecture.FrameworkAndDrivers\\CleanArchitecture.FrameworkAndDrivers.csproj|solutionrelative:cleanarchitecture.frameworkanddrivers\\data\\interfaces\\ipdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|g:\\cleanarchitecture\\cleanarchitecture.usecases\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|solutionrelative:cleanarchitecture.usecases\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72E231EE-94C6-43AA-ABB2-8D8C36162228}|CleanArchitecture.FrameworkAndDrivers\\CleanArchitecture.FrameworkAndDrivers.csproj|g:\\cleanarchitecture\\cleanarchitecture.frameworkanddrivers\\data\\repository\\pdfservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72E231EE-94C6-43AA-ABB2-8D8C36162228}|CleanArchitecture.FrameworkAndDrivers\\CleanArchitecture.FrameworkAndDrivers.csproj|solutionrelative:cleanarchitecture.frameworkanddrivers\\data\\repository\\pdfservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|g:\\cleanarchitecture\\cleanarchitecture.usecases\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|solutionrelative:cleanarchitecture.usecases\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|g:\\cleanarchitecture\\cleanarchitecture.usecases\\services\\supplierservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|solutionrelative:cleanarchitecture.usecases\\services\\supplierservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D1082A60-9F3D-4BC3-85EA-BB0F536534BD}|CleanArchitecture.WebAPI\\CleanArchitecture.WebAPI.csproj|g:\\cleanarchitecture\\cleanarchitecture.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D1082A60-9F3D-4BC3-85EA-BB0F536534BD}|CleanArchitecture.WebAPI\\CleanArchitecture.WebAPI.csproj|solutionrelative:cleanarchitecture.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|g:\\cleanarchitecture\\cleanarchitecture.usecases\\services\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|solutionrelative:cleanarchitecture.usecases\\services\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D1082A60-9F3D-4BC3-85EA-BB0F536534BD}|CleanArchitecture.WebAPI\\CleanArchitecture.WebAPI.csproj|g:\\cleanarchitecture\\cleanarchitecture.webapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1082A60-9F3D-4BC3-85EA-BB0F536534BD}|CleanArchitecture.WebAPI\\CleanArchitecture.WebAPI.csproj|solutionrelative:cleanarchitecture.webapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|g:\\cleanarchitecture\\cleanarchitecture.usecases\\interfacesuse\\ipurchaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|solutionrelative:cleanarchitecture.usecases\\interfacesuse\\ipurchaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|g:\\cleanarchitecture\\cleanarchitecture.usecases\\dtos\\userdtos\\tokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|solutionrelative:cleanarchitecture.usecases\\dtos\\userdtos\\tokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72E231EE-94C6-43AA-ABB2-8D8C36162228}|CleanArchitecture.FrameworkAndDrivers\\CleanArchitecture.FrameworkAndDrivers.csproj|g:\\cleanarchitecture\\cleanarchitecture.frameworkanddrivers\\data\\interfaces\\ipurchaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72E231EE-94C6-43AA-ABB2-8D8C36162228}|CleanArchitecture.FrameworkAndDrivers\\CleanArchitecture.FrameworkAndDrivers.csproj|solutionrelative:cleanarchitecture.frameworkanddrivers\\data\\interfaces\\ipurchaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D1082A60-9F3D-4BC3-85EA-BB0F536534BD}|CleanArchitecture.WebAPI\\CleanArchitecture.WebAPI.csproj|g:\\cleanarchitecture\\cleanarchitecture.webapi\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1082A60-9F3D-4BC3-85EA-BB0F536534BD}|CleanArchitecture.WebAPI\\CleanArchitecture.WebAPI.csproj|solutionrelative:cleanarchitecture.webapi\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B8B6330-FAD7-4A21-8833-94923CF3897B}|CleanArchitecture.Entities\\CleanArchitecture.Entities.csproj|g:\\cleanarchitecture\\cleanarchitecture.entities\\suppliers\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B8B6330-FAD7-4A21-8833-94923CF3897B}|CleanArchitecture.Entities\\CleanArchitecture.Entities.csproj|solutionrelative:cleanarchitecture.entities\\suppliers\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|g:\\cleanarchitecture\\cleanarchitecture.usecases\\interfacesuse\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|solutionrelative:cleanarchitecture.usecases\\interfacesuse\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1082A60-9F3D-4BC3-85EA-BB0F536534BD}|CleanArchitecture.WebAPI\\CleanArchitecture.WebAPI.csproj|g:\\cleanarchitecture\\cleanarchitecture.webapi\\controllers\\suppliercontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1082A60-9F3D-4BC3-85EA-BB0F536534BD}|CleanArchitecture.WebAPI\\CleanArchitecture.WebAPI.csproj|solutionrelative:cleanarchitecture.webapi\\controllers\\suppliercontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72E231EE-94C6-43AA-ABB2-8D8C36162228}|CleanArchitecture.FrameworkAndDrivers\\CleanArchitecture.FrameworkAndDrivers.csproj|g:\\cleanarchitecture\\cleanarchitecture.frameworkanddrivers\\data\\repository\\supplierrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72E231EE-94C6-43AA-ABB2-8D8C36162228}|CleanArchitecture.FrameworkAndDrivers\\CleanArchitecture.FrameworkAndDrivers.csproj|solutionrelative:cleanarchitecture.frameworkanddrivers\\data\\repository\\supplierrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72E231EE-94C6-43AA-ABB2-8D8C36162228}|CleanArchitecture.FrameworkAndDrivers\\CleanArchitecture.FrameworkAndDrivers.csproj|g:\\cleanarchitecture\\cleanarchitecture.frameworkanddrivers\\data\\interfaces\\isupplierrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72E231EE-94C6-43AA-ABB2-8D8C36162228}|CleanArchitecture.FrameworkAndDrivers\\CleanArchitecture.FrameworkAndDrivers.csproj|solutionrelative:cleanarchitecture.frameworkanddrivers\\data\\interfaces\\isupplierrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|g:\\cleanarchitecture\\cleanarchitecture.usecases\\interfacesuse\\isupplierservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|solutionrelative:cleanarchitecture.usecases\\interfacesuse\\isupplierservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|g:\\cleanarchitecture\\cleanarchitecture.usecases\\mappers\\suppliermapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|solutionrelative:cleanarchitecture.usecases\\mappers\\suppliermapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|g:\\cleanarchitecture\\cleanarchitecture.usecases\\dtos\\supplierdtos\\supplierdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|solutionrelative:cleanarchitecture.usecases\\dtos\\supplierdtos\\supplierdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B8B6330-FAD7-4A21-8833-94923CF3897B}|CleanArchitecture.Entities\\CleanArchitecture.Entities.csproj|g:\\cleanarchitecture\\cleanarchitecture.entities\\cleanarchitecture.entities.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{1B8B6330-FAD7-4A21-8833-94923CF3897B}|CleanArchitecture.Entities\\CleanArchitecture.Entities.csproj|solutionrelative:cleanarchitecture.entities\\cleanarchitecture.entities.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|g:\\cleanarchitecture\\cleanarchitecture.usecases\\interfacesuse\\isaleservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|solutionrelative:cleanarchitecture.usecases\\interfacesuse\\isaleservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|g:\\cleanarchitecture\\cleanarchitecture.usecases\\mappers\\salemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|solutionrelative:cleanarchitecture.usecases\\mappers\\salemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|g:\\cleanarchitecture\\cleanarchitecture.usecases\\dtos\\salesdtos\\createsaledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|solutionrelative:cleanarchitecture.usecases\\dtos\\salesdtos\\createsaledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|g:\\cleanarchitecture\\cleanarchitecture.usecases\\dtos\\salesdtos\\updatesaledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|solutionrelative:cleanarchitecture.usecases\\dtos\\salesdtos\\updatesaledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|g:\\cleanarchitecture\\cleanarchitecture.usecases\\dtos\\salesdtos\\saledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|solutionrelative:cleanarchitecture.usecases\\dtos\\salesdtos\\saledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72E231EE-94C6-43AA-ABB2-8D8C36162228}|CleanArchitecture.FrameworkAndDrivers\\CleanArchitecture.FrameworkAndDrivers.csproj|g:\\cleanarchitecture\\cleanarchitecture.frameworkanddrivers\\data\\interfaces\\isalerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72E231EE-94C6-43AA-ABB2-8D8C36162228}|CleanArchitecture.FrameworkAndDrivers\\CleanArchitecture.FrameworkAndDrivers.csproj|solutionrelative:cleanarchitecture.frameworkanddrivers\\data\\interfaces\\isalerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|g:\\cleanarchitecture\\cleanarchitecture.usecases\\dtos\\clientdtos\\clientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|solutionrelative:cleanarchitecture.usecases\\dtos\\clientdtos\\clientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|g:\\cleanarchitecture\\cleanarchitecture.usecases\\mappers\\clientmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|solutionrelative:cleanarchitecture.usecases\\mappers\\clientmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|g:\\cleanarchitecture\\cleanarchitecture.usecases\\dtos\\clientdtos\\updateclientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|solutionrelative:cleanarchitecture.usecases\\dtos\\clientdtos\\updateclientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|g:\\cleanarchitecture\\cleanarchitecture.usecases\\dtos\\clientdtos\\createclientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|solutionrelative:cleanarchitecture.usecases\\dtos\\clientdtos\\createclientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72E231EE-94C6-43AA-ABB2-8D8C36162228}|CleanArchitecture.FrameworkAndDrivers\\CleanArchitecture.FrameworkAndDrivers.csproj|g:\\cleanarchitecture\\cleanarchitecture.frameworkanddrivers\\data\\interfaces\\iclientrepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72E231EE-94C6-43AA-ABB2-8D8C36162228}|CleanArchitecture.FrameworkAndDrivers\\CleanArchitecture.FrameworkAndDrivers.csproj|solutionrelative:cleanarchitecture.frameworkanddrivers\\data\\interfaces\\iclientrepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|g:\\cleanarchitecture\\cleanarchitecture.usecases\\interfacesuse\\iclientservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|solutionrelative:cleanarchitecture.usecases\\interfacesuse\\iclientservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|g:\\cleanarchitecture\\cleanarchitecture.usecases\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0150EAD8-E282-40F4-AFA0-EA8BEC2313AA}|CleanArchitecture.UseCases\\CleanArchitecture.UseCases.csproj|solutionrelative:cleanarchitecture.usecases\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -222,687 +86,257 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProductType.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.Entities\\Enum\\ProductType.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.Entities\\Enum\\ProductType.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.Entities\\Enum\\ProductType.cs",
-              "RelativeToolTip": "CleanArchitecture.Entities\\Enum\\ProductType.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T23:13:18.423Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EntityType.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.Entities\\Enum\\EntityType.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.Entities\\Enum\\EntityType.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.Entities\\Enum\\EntityType.cs",
-              "RelativeToolTip": "CleanArchitecture.Entities\\Enum\\EntityType.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T23:12:56.878Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ProductMapper.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Mappers\\ProductMapper.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.UseCases\\Mappers\\ProductMapper.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Mappers\\ProductMapper.cs",
-              "RelativeToolTip": "CleanArchitecture.UseCases\\Mappers\\ProductMapper.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAmwCAAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T23:10:35.545Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ProductRepository.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.FrameworkAndDrivers\\Data\\Repository\\ProductRepository.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.FrameworkAndDrivers\\Data\\Repository\\ProductRepository.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.FrameworkAndDrivers\\Data\\Repository\\ProductRepository.cs",
-              "RelativeToolTip": "CleanArchitecture.FrameworkAndDrivers\\Data\\Repository\\ProductRepository.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAcwDUAAABKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T23:09:23.305Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Product.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.Entities\\Produit\\Product.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.Entities\\Produit\\Product.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.Entities\\Produit\\Product.cs",
-              "RelativeToolTip": "CleanArchitecture.Entities\\Produit\\Product.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAgwBQAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T10:57:45.443Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Client.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.Entities\\Clients\\Client.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.Entities\\Clients\\Client.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.Entities\\Clients\\Client.cs",
-              "RelativeToolTip": "CleanArchitecture.Entities\\Clients\\Client.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAASwBsAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T19:03:02.754Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ProductDto.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Dtos\\ProduitDtos\\ProductDto.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.UseCases\\Dtos\\ProduitDtos\\ProductDto.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Dtos\\ProduitDtos\\ProductDto.cs",
-              "RelativeToolTip": "CleanArchitecture.UseCases\\Dtos\\ProduitDtos\\ProductDto.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAABjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T09:48:37.606Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UpdateProductDto.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Dtos\\ProduitDtos\\UpdateProductDto.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.UseCases\\Dtos\\ProduitDtos\\UpdateProductDto.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Dtos\\ProduitDtos\\UpdateProductDto.cs",
-              "RelativeToolTip": "CleanArchitecture.UseCases\\Dtos\\ProduitDtos\\UpdateProductDto.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAgwA0AAABjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T11:22:08.544Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CreateProductDto.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Dtos\\ProduitDtos\\CreateProductDto.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.UseCases\\Dtos\\ProduitDtos\\CreateProductDto.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Dtos\\ProduitDtos\\CreateProductDto.cs",
-              "RelativeToolTip": "CleanArchitecture.UseCases\\Dtos\\ProduitDtos\\CreateProductDto.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAewAwAAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T19:03:51.415Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": ".gitignore",
-              "DocumentMoniker": "G:\\cleanArchitecture\\.gitignore",
-              "RelativeDocumentMoniker": ".gitignore",
-              "ToolTip": "G:\\cleanArchitecture\\.gitignore",
-              "RelativeToolTip": ".gitignore",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAEAAAA",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVDhPjVNLTgJBEG1lwpoFB3GNK9fieA48hD8iwT/ihwgSDAIHgAGXXsEV18CNzL/LquqZdsYM6kteXqcy3fWqpmpNRBgOhyABBEgpAFVKPIMUcYzUyOU\u002BXM/b2qtU3vkSfRjjZTCAMAw1A2LwzdFoBPP5HNqdzuL27n4juibWI\u002BUshBA1DIkhEx9iEorFotgslQqGYbxxAGFEqt1MxmPWJLbLZdZ\u002Bv89q5PMFPiTR6z2zdaxR0fXA0XTBcVywkb4fwHXjRteecIDNQ7UmExVYAdPcxYaqclN46na5WenMKjtlVnTYwcXlVYaDqImW9beD5N/TeGy32QHXm6hZ03ZgiSQHp2fnWQ4oBmJqWSqwAqZpZjt4aLXAD4J0VqyZsmoubfB8H2r1eoaD6NXZ9HcHO\u002BSA3f4AjifXl8rItOETM8ckB9WTWpYD9RdeZ1PWVWAHWXPQaDb59f/w8LiqHeh1pvGkCaP6qB8yXusoxmuNZ7XmII4O9vGuEF86osuDYRkpYQAAAABJRU5ErkJggg==",
-              "WhenOpened": "2024-08-04T23:07:07.795Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "SaleRepository.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.FrameworkAndDrivers\\Data\\Repository\\SaleRepository.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.FrameworkAndDrivers\\Data\\Repository\\SaleRepository.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.FrameworkAndDrivers\\Data\\Repository\\SaleRepository.cs",
-              "RelativeToolTip": "CleanArchitecture.FrameworkAndDrivers\\Data\\Repository\\SaleRepository.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAAwwDoAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T17:33:32.807Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "PurchaseController.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.WebAPI\\Controllers\\PurchaseController.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.WebAPI\\Controllers\\PurchaseController.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.WebAPI\\Controllers\\PurchaseController.cs",
-              "RelativeToolTip": "CleanArchitecture.WebAPI\\Controllers\\PurchaseController.cs",
-              "ViewState": "AQIAAJYAAAAAAAAAAAAgwKYAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T18:25:57.219Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Purchase.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.Entities\\Purchases\\Purchase.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.Entities\\Purchases\\Purchase.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.Entities\\Purchases\\Purchase.cs",
-              "RelativeToolTip": "CleanArchitecture.Entities\\Purchases\\Purchase.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAgwA8AAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T11:00:15.976Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "PurchaseMapper.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Mappers\\PurchaseMapper.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.UseCases\\Mappers\\PurchaseMapper.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Mappers\\PurchaseMapper.cs",
-              "RelativeToolTip": "CleanArchitecture.UseCases\\Mappers\\PurchaseMapper.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAowDMAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T11:52:06.42Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "SaleService.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Services\\SaleService.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.UseCases\\Services\\SaleService.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Services\\SaleService.cs",
-              "RelativeToolTip": "CleanArchitecture.UseCases\\Services\\SaleService.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAQwFcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T14:56:53.637Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "PurchaseService.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Services\\PurchaseService.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.UseCases\\Services\\PurchaseService.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Services\\PurchaseService.cs",
-              "RelativeToolTip": "CleanArchitecture.UseCases\\Services\\PurchaseService.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAgwEoAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T11:22:14.439Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "PurchaseRepository.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.FrameworkAndDrivers\\Data\\Repository\\PurchaseRepository.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.FrameworkAndDrivers\\Data\\Repository\\PurchaseRepository.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.FrameworkAndDrivers\\Data\\Repository\\PurchaseRepository.cs",
-              "RelativeToolTip": "CleanArchitecture.FrameworkAndDrivers\\Data\\Repository\\PurchaseRepository.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAmwCkAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T10:56:56.528Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "SaleController.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.WebAPI\\Controllers\\SaleController.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.WebAPI\\Controllers\\SaleController.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.WebAPI\\Controllers\\SaleController.cs",
-              "RelativeToolTip": "CleanArchitecture.WebAPI\\Controllers\\SaleController.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAmwIMAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T15:41:53.835Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
               "Title": "Program.cs",
               "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.WebAPI\\Program.cs",
               "RelativeDocumentMoniker": "CleanArchitecture.WebAPI\\Program.cs",
               "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.WebAPI\\Program.cs",
               "RelativeToolTip": "CleanArchitecture.WebAPI\\Program.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAmwDMAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T14:46:14.151Z",
+              "WhenOpened": "2024-10-31T22:38:48.146Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "GenericService.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Services\\GenericService.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.UseCases\\Services\\GenericService.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Services\\GenericService.cs",
-              "RelativeToolTip": "CleanArchitecture.UseCases\\Services\\GenericService.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAmwAAAAAAAAAAA",
+              "DocumentIndex": 4,
+              "Title": "UserProfileMapper.cs",
+              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Mappers\\UserProfileMapper.cs",
+              "RelativeDocumentMoniker": "CleanArchitecture.UseCases\\Mappers\\UserProfileMapper.cs",
+              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Mappers\\UserProfileMapper.cs",
+              "RelativeToolTip": "CleanArchitecture.UseCases\\Mappers\\UserProfileMapper.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAADwvw8AAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T19:02:35.374Z",
+              "WhenOpened": "2024-10-31T22:27:11.239Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.WebAPI\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.WebAPI\\Controllers\\ProductController.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.WebAPI\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "CleanArchitecture.WebAPI\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAAFAAAAAAAAAAAAAIwGsAAAAJAAAA",
+              "DocumentIndex": 6,
+              "Title": "InvoiceClientDto.cs",
+              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Dtos\\InvoicesDto\\InvoiceClientDto.cs",
+              "RelativeDocumentMoniker": "CleanArchitecture.UseCases\\Dtos\\InvoicesDto\\InvoiceClientDto.cs",
+              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Dtos\\InvoicesDto\\InvoiceClientDto.cs",
+              "RelativeToolTip": "CleanArchitecture.UseCases\\Dtos\\InvoicesDto\\InvoiceClientDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T19:02:57.841Z",
+              "WhenOpened": "2024-10-31T21:45:23.02Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ClientsController.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.WebAPI\\Controllers\\ClientsController.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.WebAPI\\Controllers\\ClientsController.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.WebAPI\\Controllers\\ClientsController.cs",
-              "RelativeToolTip": "CleanArchitecture.WebAPI\\Controllers\\ClientsController.cs",
-              "ViewState": "AQIAAEQAAAAAAAAAAADwv5QAAAAfAAAA",
+              "DocumentIndex": 9,
+              "Title": "20241023200754_UpdateUserProfileAndAccount.cs",
+              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.FrameworkAndDrivers\\Migrations\\20241023200754_UpdateUserProfileAndAccount.cs",
+              "RelativeDocumentMoniker": "CleanArchitecture.FrameworkAndDrivers\\Migrations\\20241023200754_UpdateUserProfileAndAccount.cs",
+              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.FrameworkAndDrivers\\Migrations\\20241023200754_UpdateUserProfileAndAccount.cs",
+              "RelativeToolTip": "CleanArchitecture.FrameworkAndDrivers\\Migrations\\20241023200754_UpdateUserProfileAndAccount.cs",
+              "ViewState": "AQIAAHsAAAAAAAAAAAAowAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T17:29:06.307Z",
+              "WhenOpened": "2024-10-31T21:37:52.431Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 8,
+              "Title": "20241031185145_AddUserProfileRelation.cs",
+              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.FrameworkAndDrivers\\Migrations\\20241031185145_AddUserProfileRelation.cs",
+              "RelativeDocumentMoniker": "CleanArchitecture.FrameworkAndDrivers\\Migrations\\20241031185145_AddUserProfileRelation.cs",
+              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.FrameworkAndDrivers\\Migrations\\20241031185145_AddUserProfileRelation.cs",
+              "RelativeToolTip": "CleanArchitecture.FrameworkAndDrivers\\Migrations\\20241031185145_AddUserProfileRelation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T21:37:43.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RoleService.cs",
+              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Services\\RoleService.cs",
+              "RelativeDocumentMoniker": "CleanArchitecture.UseCases\\Services\\RoleService.cs",
+              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Services\\RoleService.cs",
+              "RelativeToolTip": "CleanArchitecture.UseCases\\Services\\RoleService.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T20:49:28.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CreateUserDto.cs",
+              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Dtos\\UserDtos\\CreateUserDto.cs",
+              "RelativeDocumentMoniker": "CleanArchitecture.UseCases\\Dtos\\UserDtos\\CreateUserDto.cs",
+              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Dtos\\UserDtos\\CreateUserDto.cs",
+              "RelativeToolTip": "CleanArchitecture.UseCases\\Dtos\\UserDtos\\CreateUserDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T20:17:37.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "AppDbContext .cs",
               "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.FrameworkAndDrivers\\Data\\AppDbContext .cs",
               "RelativeDocumentMoniker": "CleanArchitecture.FrameworkAndDrivers\\Data\\AppDbContext .cs",
               "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.FrameworkAndDrivers\\Data\\AppDbContext .cs",
               "RelativeToolTip": "CleanArchitecture.FrameworkAndDrivers\\Data\\AppDbContext .cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAqwEYAAAAJAAAA",
+              "ViewState": "AQIAAE0BAAAAAAAAAADwv1wBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T11:53:02.014Z",
+              "WhenOpened": "2024-10-31T16:48:56.528Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "PurchaseDto.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Dtos\\PurchaseDtos\\PurchaseDto.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.UseCases\\Dtos\\PurchaseDtos\\PurchaseDto.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Dtos\\PurchaseDtos\\PurchaseDto.cs",
-              "RelativeToolTip": "CleanArchitecture.UseCases\\Dtos\\PurchaseDtos\\PurchaseDto.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T11:30:49.139Z",
+              "DocumentIndex": 13,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.WebAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "CleanArchitecture.WebAPI\\appsettings.json",
+              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.WebAPI\\appsettings.json",
+              "RelativeToolTip": "CleanArchitecture.WebAPI\\appsettings.json",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-29T19:15:43.396Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Sale.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.Entities\\Sales\\Sale.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.Entities\\Sales\\Sale.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.Entities\\Sales\\Sale.cs",
-              "RelativeToolTip": "CleanArchitecture.Entities\\Sales\\Sale.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAwwCUAAAAFAAAA",
+              "DocumentIndex": 12,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "CleanArchitecture.UseCases\\Services\\TokenService.cs",
+              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Services\\TokenService.cs",
+              "RelativeToolTip": "CleanArchitecture.UseCases\\Services\\TokenService.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAYwD0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T09:47:26.548Z",
+              "WhenOpened": "2024-10-29T19:14:58.27Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "UpdatePurchaseDto.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Dtos\\PurchaseDtos\\UpdatePurchaseDto.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.UseCases\\Dtos\\PurchaseDtos\\UpdatePurchaseDto.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Dtos\\PurchaseDtos\\UpdatePurchaseDto.cs",
-              "RelativeToolTip": "CleanArchitecture.UseCases\\Dtos\\PurchaseDtos\\UpdatePurchaseDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABBAAAA",
+              "DocumentIndex": 14,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.WebAPI\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "CleanArchitecture.WebAPI\\Controllers\\AuthController.cs",
+              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.WebAPI\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "CleanArchitecture.WebAPI\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T11:45:56.021Z",
+              "WhenOpened": "2024-10-29T18:42:44.245Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TokenDto.cs",
+              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Dtos\\UserDtos\\TokenDto.cs",
+              "RelativeDocumentMoniker": "CleanArchitecture.UseCases\\Dtos\\UserDtos\\TokenDto.cs",
+              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Dtos\\UserDtos\\TokenDto.cs",
+              "RelativeToolTip": "CleanArchitecture.UseCases\\Dtos\\UserDtos\\TokenDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T18:40:18.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "CleanArchitecture.UseCases\\Services\\AuthService.cs",
+              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Services\\AuthService.cs",
+              "RelativeToolTip": "CleanArchitecture.UseCases\\Services\\AuthService.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAADwv1gAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T18:12:08.17Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "CreatePurchaseDto.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Dtos\\PurchaseDtos\\CreatePurchaseDto.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.UseCases\\Dtos\\PurchaseDtos\\CreatePurchaseDto.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Dtos\\PurchaseDtos\\CreatePurchaseDto.cs",
-              "RelativeToolTip": "CleanArchitecture.UseCases\\Dtos\\PurchaseDtos\\CreatePurchaseDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABHAAAA",
+              "DocumentIndex": 5,
+              "Title": "Emplyee.cs",
+              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.Entities\\Users\\Emplyee.cs",
+              "RelativeDocumentMoniker": "CleanArchitecture.Entities\\Users\\Emplyee.cs",
+              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.Entities\\Users\\Emplyee.cs",
+              "RelativeToolTip": "CleanArchitecture.Entities\\Users\\Emplyee.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowCgAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T11:38:02.2Z",
+              "WhenOpened": "2024-10-29T11:13:05.357Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "IPdfService.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.FrameworkAndDrivers\\Data\\Interfaces\\IPdfService.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.FrameworkAndDrivers\\Data\\Interfaces\\IPdfService.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.FrameworkAndDrivers\\Data\\Interfaces\\IPdfService.cs",
-              "RelativeToolTip": "CleanArchitecture.FrameworkAndDrivers\\Data\\Interfaces\\IPdfService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAqAAAA",
+              "DocumentIndex": 3,
+              "Title": "UserProfile.cs",
+              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.Entities\\Users\\UserProfile.cs",
+              "RelativeDocumentMoniker": "CleanArchitecture.Entities\\Users\\UserProfile.cs",
+              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.Entities\\Users\\UserProfile.cs",
+              "RelativeToolTip": "CleanArchitecture.Entities\\Users\\UserProfile.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAwwBcAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T08:54:17.049Z",
+              "WhenOpened": "2024-10-29T11:09:58.299Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "PdfService .cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.FrameworkAndDrivers\\Data\\Repository\\PdfService .cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.FrameworkAndDrivers\\Data\\Repository\\PdfService .cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.FrameworkAndDrivers\\Data\\Repository\\PdfService .cs",
-              "RelativeToolTip": "CleanArchitecture.FrameworkAndDrivers\\Data\\Repository\\PdfService .cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAdAAAA",
+              "DocumentIndex": 17,
+              "Title": "IAdminService.cs",
+              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\InterfacesUse\\IAdminService.cs",
+              "RelativeDocumentMoniker": "CleanArchitecture.UseCases\\InterfacesUse\\IAdminService.cs",
+              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\InterfacesUse\\IAdminService.cs",
+              "RelativeToolTip": "CleanArchitecture.UseCases\\InterfacesUse\\IAdminService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAABWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T11:26:02.091Z",
+              "WhenOpened": "2024-10-29T11:04:31.419Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.WebAPI\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "CleanArchitecture.WebAPI\\Controllers\\AdminController.cs",
+              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.WebAPI\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "CleanArchitecture.WebAPI\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAiwC8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T22:26:52.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Services\\EmailService.cs",
+              "RelativeDocumentMoniker": "CleanArchitecture.UseCases\\Services\\EmailService.cs",
+              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Services\\EmailService.cs",
+              "RelativeToolTip": "CleanArchitecture.UseCases\\Services\\EmailService.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAQwDcAAABXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T22:23:44.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminService.cs",
+              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Services\\AdminService.cs",
+              "RelativeDocumentMoniker": "CleanArchitecture.UseCases\\Services\\AdminService.cs",
+              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Services\\AdminService.cs",
+              "RelativeToolTip": "CleanArchitecture.UseCases\\Services\\AdminService.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAAAEcAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T22:47:35.808Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "SupplierService.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Services\\SupplierService.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.UseCases\\Services\\SupplierService.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Services\\SupplierService.cs",
-              "RelativeToolTip": "CleanArchitecture.UseCases\\Services\\SupplierService.cs",
-              "ViewState": "AQIAADMAAAAAAAAAAAAcwEIAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T11:25:21.959Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "ClientService.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Services\\ClientService.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.UseCases\\Services\\ClientService.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Services\\ClientService.cs",
-              "RelativeToolTip": "CleanArchitecture.UseCases\\Services\\ClientService.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAQwBoAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T21:53:52.295Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "IPurchaseService.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\InterfacesUse\\IPurchaseService.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.UseCases\\InterfacesUse\\IPurchaseService.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\InterfacesUse\\IPurchaseService.cs",
-              "RelativeToolTip": "CleanArchitecture.UseCases\\InterfacesUse\\IPurchaseService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T17:23:44.913Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "IPurchaseRepository.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.FrameworkAndDrivers\\Data\\Interfaces\\IPurchaseRepository.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.FrameworkAndDrivers\\Data\\Interfaces\\IPurchaseRepository.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.FrameworkAndDrivers\\Data\\Interfaces\\IPurchaseRepository.cs",
-              "RelativeToolTip": "CleanArchitecture.FrameworkAndDrivers\\Data\\Interfaces\\IPurchaseRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T10:51:20.476Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "SupplierRepository.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.FrameworkAndDrivers\\Data\\Repository\\SupplierRepository.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.FrameworkAndDrivers\\Data\\Repository\\SupplierRepository.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.FrameworkAndDrivers\\Data\\Repository\\SupplierRepository.cs",
-              "RelativeToolTip": "CleanArchitecture.FrameworkAndDrivers\\Data\\Repository\\SupplierRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T11:26:14.346Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "Supplier.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.Entities\\Suppliers\\Supplier.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.Entities\\Suppliers\\Supplier.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.Entities\\Suppliers\\Supplier.cs",
-              "RelativeToolTip": "CleanArchitecture.Entities\\Suppliers\\Supplier.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAAABoAAABUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T11:04:23.825Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "ISupplierService .cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\InterfacesUse\\ISupplierService .cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.UseCases\\InterfacesUse\\ISupplierService .cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\InterfacesUse\\ISupplierService .cs",
-              "RelativeToolTip": "CleanArchitecture.UseCases\\InterfacesUse\\ISupplierService .cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T11:25:10.517Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "SupplierMapper.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Mappers\\SupplierMapper.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.UseCases\\Mappers\\SupplierMapper.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Mappers\\SupplierMapper.cs",
-              "RelativeToolTip": "CleanArchitecture.UseCases\\Mappers\\SupplierMapper.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAowAAAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T11:24:50.087Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "SupplierDto.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Dtos\\SupplierDtos\\SupplierDto.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.UseCases\\Dtos\\SupplierDtos\\SupplierDto.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Dtos\\SupplierDtos\\SupplierDto.cs",
-              "RelativeToolTip": "CleanArchitecture.UseCases\\Dtos\\SupplierDtos\\SupplierDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T11:24:37.374Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "ISupplierRepository.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.FrameworkAndDrivers\\Data\\Interfaces\\ISupplierRepository.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.FrameworkAndDrivers\\Data\\Interfaces\\ISupplierRepository.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.FrameworkAndDrivers\\Data\\Interfaces\\ISupplierRepository.cs",
-              "RelativeToolTip": "CleanArchitecture.FrameworkAndDrivers\\Data\\Interfaces\\ISupplierRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T11:05:24.475Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "SupplierContoller.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.WebAPI\\Controllers\\SupplierContoller.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.WebAPI\\Controllers\\SupplierContoller.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.WebAPI\\Controllers\\SupplierContoller.cs",
-              "RelativeToolTip": "CleanArchitecture.WebAPI\\Controllers\\SupplierContoller.cs",
-              "ViewState": "AQIAAHIAAAAAAAAAAAAmwAgAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T22:42:32.138Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "CleanArchitecture.Entities.csproj",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.Entities\\CleanArchitecture.Entities.csproj",
-              "RelativeDocumentMoniker": "CleanArchitecture.Entities\\CleanArchitecture.Entities.csproj",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.Entities\\CleanArchitecture.Entities.csproj",
-              "RelativeToolTip": "CleanArchitecture.Entities\\CleanArchitecture.Entities.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-03T10:58:54.499Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "CreateSaleDto.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Dtos\\SalesDtos\\CreateSaleDto.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.UseCases\\Dtos\\SalesDtos\\CreateSaleDto.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Dtos\\SalesDtos\\CreateSaleDto.cs",
-              "RelativeToolTip": "CleanArchitecture.UseCases\\Dtos\\SalesDtos\\CreateSaleDto.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBcAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T08:58:09.194Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "ISaleService .cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\InterfacesUse\\ISaleService .cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.UseCases\\InterfacesUse\\ISaleService .cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\InterfacesUse\\ISaleService .cs",
-              "RelativeToolTip": "CleanArchitecture.UseCases\\InterfacesUse\\ISaleService .cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T14:43:45.082Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "SaleDto.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Dtos\\SalesDtos\\SaleDto.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.UseCases\\Dtos\\SalesDtos\\SaleDto.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Dtos\\SalesDtos\\SaleDto.cs",
-              "RelativeToolTip": "CleanArchitecture.UseCases\\Dtos\\SalesDtos\\SaleDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBIAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T19:09:27.394Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "SaleMapper.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Mappers\\SaleMapper.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.UseCases\\Mappers\\SaleMapper.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Mappers\\SaleMapper.cs",
-              "RelativeToolTip": "CleanArchitecture.UseCases\\Mappers\\SaleMapper.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAAwBcAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T09:49:39.599Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "ISaleRepository.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.FrameworkAndDrivers\\Data\\Interfaces\\ISaleRepository.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.FrameworkAndDrivers\\Data\\Interfaces\\ISaleRepository.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.FrameworkAndDrivers\\Data\\Interfaces\\ISaleRepository.cs",
-              "RelativeToolTip": "CleanArchitecture.FrameworkAndDrivers\\Data\\Interfaces\\ISaleRepository.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAqwA8AAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T17:30:57.64Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "UpdateSaleDto.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Dtos\\SalesDtos\\UpdateSaleDto.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.UseCases\\Dtos\\SalesDtos\\UpdateSaleDto.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Dtos\\SalesDtos\\UpdateSaleDto.cs",
-              "RelativeToolTip": "CleanArchitecture.UseCases\\Dtos\\SalesDtos\\UpdateSaleDto.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAgwBcAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T09:49:06.565Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "ClientDto.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Dtos\\ClientDtos\\ClientDto.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.UseCases\\Dtos\\ClientDtos\\ClientDto.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Dtos\\ClientDtos\\ClientDto.cs",
-              "RelativeToolTip": "CleanArchitecture.UseCases\\Dtos\\ClientDtos\\ClientDto.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAAAA0AAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T19:04:00.769Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "UpdateClientDto.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Dtos\\ClientDtos\\UpdateClientDto.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.UseCases\\Dtos\\ClientDtos\\UpdateClientDto.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Dtos\\ClientDtos\\UpdateClientDto.cs",
-              "RelativeToolTip": "CleanArchitecture.UseCases\\Dtos\\ClientDtos\\UpdateClientDto.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAwwBcAAABBAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T19:04:10.922Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "ClientMapper.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Mappers\\ClientMapper.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.UseCases\\Mappers\\ClientMapper.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Mappers\\ClientMapper.cs",
-              "RelativeToolTip": "CleanArchitecture.UseCases\\Mappers\\ClientMapper.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAiwEMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T21:37:49.968Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "CreateClientDto.cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Dtos\\ClientDtos\\CreateClientDto.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.UseCases\\Dtos\\ClientDtos\\CreateClientDto.cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\Dtos\\ClientDtos\\CreateClientDto.cs",
-              "RelativeToolTip": "CleanArchitecture.UseCases\\Dtos\\ClientDtos\\CreateClientDto.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAA5wBYAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T19:04:04.491Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "IClientRepository .cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.FrameworkAndDrivers\\Data\\Interfaces\\IClientRepository .cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.FrameworkAndDrivers\\Data\\Interfaces\\IClientRepository .cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.FrameworkAndDrivers\\Data\\Interfaces\\IClientRepository .cs",
-              "RelativeToolTip": "CleanArchitecture.FrameworkAndDrivers\\Data\\Interfaces\\IClientRepository .cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T17:31:09.369Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "IClientService .cs",
-              "DocumentMoniker": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\InterfacesUse\\IClientService .cs",
-              "RelativeDocumentMoniker": "CleanArchitecture.UseCases\\InterfacesUse\\IClientService .cs",
-              "ToolTip": "G:\\cleanArchitecture\\CleanArchitecture.UseCases\\InterfacesUse\\IClientService .cs",
-              "RelativeToolTip": "CleanArchitecture.UseCases\\InterfacesUse\\IClientService .cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T17:25:45.108Z"
             }
           ]
         }

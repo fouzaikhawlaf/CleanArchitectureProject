@@ -14,7 +14,7 @@ namespace CleanArchitecture.UseCases.Mappers
         {
             return new ClientDto
             {
-                ClientID = client.ClientID,
+                ClientID = client.ClientId,
                 Name = client.Name,
                 Email = client.Email,
                 Phone = client.Phone,

@@ -1,50 +1,74 @@
 ﻿using CleanArchitecture.Entities.Sales;
 using CleanArchitecture.UseCases.Dtos.SalesDtos;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace CleanArchitecture.UseCases.Mappers
+public static class SaleMapper
 {
-    public static class SaleMapper
+    // Convertir Sale en SaleDto
+    public static SaleDto ToDto(Sale sale)
     {
-        public static SaleDto MapToDto(this Sale sale)
-        {
-            return new SaleDto
-            {
-                Id = sale.Id,
-                SaleDate = sale.SaleDate,
-                ClientId = sale.ClientId,
-                ProductId = sale.ProductId,
-                ClientName = sale.Client?.Name ?? string.Empty, // Ajout de ClientName
-                ProductName = sale.Product?.Name ?? string.Empty, // Ajout de ProductName
-                Amount = sale.Amount,
-                IsArchived = sale.IsArchived,
-                 TotalAmount = 0
-            };
-        }
+        if (sale == null)
+            return null;
 
-        public static Sale MapToEntity(this CreateSaleDto saleDto)
+        return new SaleDto
         {
-            return new Sale
-            {
-                SaleDate = saleDto.SaleDate,
-                ClientId = saleDto.ClientId,
-                ProductId = saleDto.ProductId,
-                Amount = saleDto.Amount,
-                IsArchived = false // Assuming new sales are not archived by default
-            };
-        }
+            Id = sale.SaleId,
+            InvoiceId = sale.InvoiceClientInvoiceId,
+            ClientId = sale.ClientId,
+            SaleDate = sale.SaleDate,
+            TotalAmount = sale.TotalAmount,
+            Status = sale.Status, // Assurez-vous que ces propriétés existent dans votre entité
+            IsArchived = sale.IsArchived // Assurez-vous que ces propriétés existent dans votre entité
+        };
+    }
 
-        public static void MapToEntity(this UpdateSaleDto saleDto, Sale sale)
+    // Convertir SaleDto en Sale
+    public static Sale FromDto(SaleDto saleDto)
+    {
+        if (saleDto == null)
+            return null;
+
+        return new Sale
         {
-            sale.SaleDate = saleDto.SaleDate;
-            sale.ClientId = saleDto.ClientId;
-            sale.ProductId = saleDto.ProductId;
-            sale.Amount = saleDto.Amount;
-            sale.IsArchived = saleDto.IsArchived;
-        }
+            SaleId = saleDto.Id,
+            InvoiceClientInvoiceId = saleDto.InvoiceId,
+            ClientId = saleDto.ClientId,
+            SaleDate = saleDto.SaleDate,
+            TotalAmount = saleDto.TotalAmount,
+            Status = saleDto.Status,
+            IsArchived = saleDto.IsArchived
+        };
+    }
+
+    // Convertir CreateSaleDto en Sale
+    public static Sale FromCreateDto(CreateSaleDto createSaleDto)
+    {
+        if (createSaleDto == null)
+            return null;
+
+        return new Sale
+        {
+            InvoiceClientInvoiceId = createSaleDto.InvoiceId,
+            ClientId = createSaleDto.ClientId,
+            SaleDate = createSaleDto.SaleDate,
+            TotalAmount = createSaleDto.TotalAmount
+        };
+    }
+
+    // Convertir UpdateSaleDto en Sale
+    public static Sale FromUpdateDto(UpdateSaleDto updateSaleDto)
+    {
+        if (updateSaleDto == null)
+            return null;
+
+        return new Sale
+        {
+            SaleId = updateSaleDto.Id,
+            InvoiceClientInvoiceId = updateSaleDto.InvoiceId,
+            ClientId = updateSaleDto.ClientId,
+            SaleDate = updateSaleDto.SaleDate,
+            TotalAmount = updateSaleDto.TotalAmount,
+            Status = updateSaleDto.Status,
+            IsArchived = updateSaleDto.IsArchived
+        };
     }
 }

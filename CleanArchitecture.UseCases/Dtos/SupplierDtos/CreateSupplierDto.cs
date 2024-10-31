@@ -17,6 +17,7 @@ namespace CleanArchitecture.UseCases.Dtos.SupplierDtos
         public int MinimumOrderQuantity { get; set; }
         public EntityType SupplierType { get; set; }
         public double TotalChiffreDAffaire { get; set; }
-       
+        public string? UpdatedBy { get; set; }  // Person responsible for creating the fournisseur
+
     }
 }

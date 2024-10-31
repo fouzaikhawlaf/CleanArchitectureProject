@@ -1,14 +1,16 @@
-﻿using CleanArchitecture.FrameworkAndDrivers.Exceptions;
+﻿using CleanArchitecture.Entities.Invoices; // Assurez-vous d'ajouter cet espace de noms
+using CleanArchitecture.FrameworkAndDrivers.Exceptions;
 using CleanArchitecture.UseCases.Dtos.PurchaseDtos;
 using CleanArchitecture.UseCases.InterfacesUse;
-using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
-namespace CleanArchitecture.WebAPI.Controllers
+namespace CleanArchitecture.Api.Controllers
 {
-    [EnableCors("AllowSpecificOrigin")]
-    [ApiController]
     [Route("api/[controller]")]
+    [ApiController]
     public class PurchaseController : ControllerBase
     {
         private readonly IPurchaseService _purchaseService;
@@ -18,152 +20,142 @@ namespace CleanArchitecture.WebAPI.Controllers
             _purchaseService = purchaseService;
         }
 
+        // GET: api/purchase/history
+        [HttpGet("history")]
+        public async Task<ActionResult<IEnumerable<PurchaseDto>>> GetPurchasesHistory()
+        {
+            var purchases = await _purchaseService.GetPurchasesHistoryAsync();
+            return Ok(purchases); // Retourne les achats en statut 200 OK
+        }
+
+        // GET: api/purchase
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<PurchaseDto>>> GetPurchases()
+        public async Task<ActionResult<IEnumerable<PurchaseDto>>> GetAllPurchases()
+        {
+            var purchases = await _purchaseService.GetPurchasesHistoryAsync();
+            return Ok(purchases); // Retourne tous les achats
+        }
+
+        // GET: api/purchase/{id}
+        [HttpGet("{id}")]
+        public async Task<ActionResult<PurchaseDto>> GetPurchaseById(int id)
         {
             try
             {
-                var purchases = await _purchaseService.GetAllPurchasesAsync();
-                return Ok(purchases);
+                var purchase = await _purchaseService.GetByIdAsync(id);
+                return Ok(purchase); // Retourne l'achat
             }
-            catch (Exception)
+            catch (PurchaseNotFoundException ex)
             {
-                // Log the exception (ex)
-                return StatusCode(StatusCodes.Status500InternalServerError, "Error retrieving data from the database");
+                return NotFound(ex.Message); // Retourne un statut 404 Not Found avec message personnalisé
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}"); // Retourne un statut 500 en cas d'erreur
             }
         }
 
-        [HttpGet("{id:int}")]
-        public async Task<ActionResult<PurchaseDto>> GetPurchase(int id)
-        {
-            var purchase = await _purchaseService.GetByIdAsync(id);
-            if (purchase == null)
-            {
-                return NotFound($"Purchase with Id = {id} not found");
-            }
-
-            return Ok(purchase);
-        }
-
+        // POST: api/purchase
         [HttpPost]
-        public async Task<ActionResult<PurchaseDto>> CreatePurchase([FromBody] CreatePurchaseDto purchaseDto)
+        public async Task<ActionResult<PurchaseDto>> RegisterPurchase([FromBody] InvoiceSupplier invoice)
         {
-            try
+            if (invoice == null)
             {
-                if (purchaseDto == null)
-                    return BadRequest();
-
-                var createdPurchase = await _purchaseService.AddAsync(purchaseDto);
-
-                return CreatedAtAction(nameof(GetPurchase), new { id = createdPurchase.Id }, createdPurchase);
+                return BadRequest("Invoice cannot be null."); // Retourne un statut 400 Bad Request
             }
-            catch (Exception)
-            {
-                // Log the exception (ex)
-                return StatusCode(StatusCodes.Status500InternalServerError, "Error creating new purchase record");
-            }
+
+            await _purchaseService.RegisterPurchaseAsync(invoice);
+            return CreatedAtAction(nameof(GetPurchasesHistory), new { /* Vous pouvez inclure l'ID ou d'autres paramètres ici */ }); // Retourne un statut 201 Created
         }
 
-        [HttpPut("{id:int}")]
-        public async Task<ActionResult<PurchaseDto>> UpdatePurchase([FromRoute] int id, [FromBody] UpdatePurchaseDto purchaseDto)
+        // PUT: api/purchase/{id}
+        [HttpPut("{id}")]
+        public async Task<ActionResult<PurchaseDto>> UpdatePurchase(int id, [FromBody] UpdatePurchaseDto updatePurchaseDto)
         {
+            if (updatePurchaseDto == null)
+            {
+                return BadRequest("Purchase data cannot be null."); // Retourne un statut 400 Bad Request
+            }
+
             try
             {
-                if (!ModelState.IsValid)
-                    return BadRequest(ModelState);
-
-                var purchaseToUpdate = await _purchaseService.GetByIdAsync(id);
-                if (purchaseToUpdate == null)
+                var purchase = await _purchaseService.GetByIdAsync(id);
+                if (purchase == null)
                 {
-                    return NotFound($"Purchase with Id = {id} not found");
+                    throw new PurchaseNotFoundException($"Purchase with Id = {id} not found."); // Lève une exception personnalisée
                 }
 
-                await _purchaseService.UpdateAsync(id, purchaseDto);
-                return Ok(purchaseDto);
+                await _purchaseService.UpdateAsync(id, updatePurchaseDto);
+                return NoContent(); // Retourne un statut 204 No Content
             }
-            catch (InvalidEntityException ex)
+            catch (PurchaseNotFoundException ex)
             {
-                // Log the exception (ex)
-                return BadRequest(ex.Message);
+                return NotFound(ex.Message); // Retourne un statut 404 Not Found
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                // Log the exception (ex)
-                return StatusCode(StatusCodes.Status500InternalServerError, "Error updating data");
+                return StatusCode(500, $"Internal server error: {ex.Message}"); // Retourne un statut 500 en cas d'erreur
             }
         }
 
-        [HttpDelete("{id:int}")]
+        // DELETE: api/purchase/{id}
+        [HttpDelete("{id}")]
         public async Task<ActionResult> DeletePurchase(int id)
         {
             try
             {
-                var purchaseToDelete = await _purchaseService.GetByIdAsync(id);
-                if (purchaseToDelete == null)
+                var purchase = await _purchaseService.GetByIdAsync(id);
+                if (purchase == null)
                 {
-                    return NotFound($"Purchase with Id = {id} not found");
+                    throw new PurchaseNotFoundException($"Purchase with Id = {id} not found."); // Lève une exception personnalisée
                 }
 
-                await _purchaseService.DeleteAsync(id);
-                return Ok();
+                await _purchaseService.DeleteAsync(id); // Méthode à créer dans votre service pour supprimer l'achat
+                return NoContent(); // Retourne un statut 204 No Content
             }
-            catch (Exception)
+            catch (PurchaseNotFoundException ex)
             {
-                // Log the exception (ex)
-                return StatusCode(StatusCodes.Status500InternalServerError, "Error deleting data");
+                return NotFound(ex.Message); // Retourne un statut 404 Not Found
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}"); // Retourne un statut 500 en cas d'erreur
             }
         }
 
-        [HttpPut("archive/{id:int}")]
+        // PUT: api/purchase/archive/{id}
+        [HttpPut("archive/{id}")]
         public async Task<ActionResult<PurchaseDto>> ArchivePurchase(int id)
         {
             try
             {
                 var archivedPurchase = await _purchaseService.ArchivePurchaseAsync(id);
-
-                if (archivedPurchase == null)
-                {
-                    return NotFound($"Purchase with Id = {id} not found");
-                }
-
-                return Ok(archivedPurchase);
+                return Ok(archivedPurchase); // Retourne l'achat archivé
             }
-            catch (Exception)
+            catch (PurchaseNotFoundException ex)
             {
-                // Log the exception (ex)
-                return StatusCode(StatusCodes.Status500InternalServerError, "Error archiving purchase");
+                return NotFound(ex.Message); // Retourne un statut 404 Not Found
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}"); // Retourne un statut 500 en cas d'erreur
             }
         }
 
+        // GET: api/purchase/search
         [HttpGet("search")]
-        public async Task<ActionResult<IEnumerable<PurchaseDto>>> SearchPurchases(string query, string sortBy, bool ascending)
+        public async Task<ActionResult<IEnumerable<PurchaseDto>>> SearchPurchases([FromQuery] string query, [FromQuery] string sortBy = "Id", [FromQuery] bool ascending = true)
         {
-            try
-            {
-                var purchases = await _purchaseService.SearchPurchasesAsync(query, sortBy, ascending);
-                return Ok(purchases);
-            }
-            catch (Exception)
-            {
-                // Log the exception (ex)
-                return StatusCode(StatusCodes.Status500InternalServerError, "Error searching purchases");
-            }
+            var purchases = await _purchaseService.SearchPurchasesAsync(query, sortBy, ascending);
+            return Ok(purchases); // Retourne les résultats de la recherche
         }
 
-        [HttpGet("calculateTotalAmount/{supplierId:int}/{productId:int}")]
-        public async Task<ActionResult<decimal>> CalculateTotalAmount(int supplierId, int productId)
+        // GET: api/purchase/filters
+        [HttpGet("filters")]
+        public async Task<ActionResult<IEnumerable<PurchaseDto>>> GetPurchasesByFilters(DateTime? startDate, DateTime? endDate, int? supplierId, string productName)
         {
-            try
-            {
-                var totalAmount = await _purchaseService.CalculateTotalAmountAsync(supplierId, productId);
-                return Ok(totalAmount);
-            }
-            catch (Exception)
-            {
-                // Log the exception (ex)
-                return StatusCode(StatusCodes.Status500InternalServerError, "Error calculating total amount");
-            }
+            var purchases = await _purchaseService.GetPurchasesByFiltersAsync(startDate, endDate, supplierId, productName);
+            return Ok(purchases); // Retourne les achats selon les filtres
         }
     }
 }
-

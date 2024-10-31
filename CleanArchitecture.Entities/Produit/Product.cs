@@ -8,20 +8,29 @@ using System.Text;
 using System.Threading.Tasks;
 using CleanArchitecture.Entities.Sales;
 using CleanArchitecture.Entities.Purchases;
+using CleanArchitecture.Entities.Orders;
+using System.Collections;
+using CleanArchitecture.Entities.Invoices;
 
 namespace CleanArchitecture.Entities.Produit
 {
-    public class Product
+    public class Product : Item
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int ProductID { get; set; }
-        public string Name { get; set; } = string.Empty; // Ensure non-nullable
+       
+     
+       
         public string Description { get; set; } = string.Empty; // Ensure non-nullable
-        public decimal Price { get; set; }
+        public int StockQuantity { get; set; }
+        public double Price { get; set; }
+      
         public ProductType ProductType { get; set; } // Ensure non-nullable
         public bool IsArchived { get; set; } = false;
         public ICollection<Sale> Sales { get; set; } = new List<Sale>(); // Ensure non-nullable
         public ICollection<Purchase> Purchases { get; set; } = new List<Purchase>(); // Ensure non-nullable
+        public ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
+        public int Quantity { get; set; } // Add this property
+        public virtual ICollection<Stock> ? Stocks { get; set; } // Relation avec les entités Stock
+
+        public ICollection<InvoiceLineItem> ? InvoiceLineItems { get; set; }
     }
 }

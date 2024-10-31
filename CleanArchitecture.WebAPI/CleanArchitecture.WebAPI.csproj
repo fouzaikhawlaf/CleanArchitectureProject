@@ -7,9 +7,15 @@
   </PropertyGroup>
 
 	<ItemGroup>
+		<PackageReference Include="DinkToPdf" Version="1.0.8" />
+		<PackageReference Include="FluentValidation" Version="11.10.0" />
 		<PackageReference Include="itext7" Version="8.0.5" />
+		<PackageReference Include="MailKit" Version="4.8.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.7" />
 		<PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.7" />
 		<PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.1.0" />
 		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.2" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.7" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.7">
@@ -17,6 +23,7 @@
 			<PrivateAssets>all</PrivateAssets>
 		</PackageReference>
 		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.7" />
+		<PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.0.1" />
 		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
 	</ItemGroup>
 
@@ -24,6 +31,10 @@
     <ProjectReference Include="..\CleanArchitecture.FrameworkAndDrivers\CleanArchitecture.FrameworkAndDrivers.csproj" />
     <ProjectReference Include="..\CleanArchitecture.UseCases\CleanArchitecture.UseCases.csproj" />
     <ProjectReference Include="..\CleanArchitecture.Entities\CleanArchitecture.Entities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="CleanArchitecture.WebAPI\" />
   </ItemGroup>
 
 </Project>

@@ -22,5 +22,6 @@ namespace CleanArchitecture.UseCases.Dtos.ClientDtos
         public string Tax { get; set; } = string.Empty;
         public EntityType Type { get; set; } // Ajout de l'énumération
         public List<Sale> Sales { get; set; } = new List<Sale>();
+        public string UpdatedBy { get; set; }  // Person responsible for creating the client
     }
 }

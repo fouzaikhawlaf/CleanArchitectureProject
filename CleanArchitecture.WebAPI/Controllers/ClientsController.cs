@@ -2,21 +2,24 @@
 using CleanArchitecture.FrameworkAndDrivers.Exceptions;
 using CleanArchitecture.UseCases.Dtos.ClientDtos;
 using CleanArchitecture.UseCases.InterfacesUse;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CleanArchitecture.WebAPI.Controllers
 {
+    [Authorize]
     [EnableCors("AllowSpecificOrigin")]
     [ApiController]
     [Route("api/[controller]")]
     public class ClientsController : ControllerBase
     {
         private readonly IClientService _clientService;
-
+       
         public ClientsController(IClientService clientService)
         {
             _clientService = clientService;
+           
         }
 
         [HttpGet]
@@ -62,14 +65,17 @@ namespace CleanArchitecture.WebAPI.Controllers
 
                 var createdClient = await _clientService.AddAsync(clientDto);
 
+                // Start the workflow for the newly created client
+             
+
                 return CreatedAtAction(nameof(GetClient), new { id = createdClient.ClientID }, createdClient);
             }
-            catch (Exception )
+            catch (Exception)
             {
-                // Log the exception (ex)
                 return StatusCode(StatusCodes.Status500InternalServerError, "Error creating new client record");
             }
         }
+
 
         [HttpPut("{id:int}")]
         public async Task<ActionResult<ClientDto>> UpdateClient([FromRoute] int id, [FromBody] UpdateClientDto clientDto)
@@ -86,14 +92,17 @@ namespace CleanArchitecture.WebAPI.Controllers
                     return NotFound($"Client with Id = {id} not found");
                 }
 
+                // Validate the workflow after updating the client
+              
+
                 return Ok(clientToUpdate);
             }
-            catch (Exception )
+            catch (Exception)
             {
-                // Log the exception (ex)
                 return StatusCode(StatusCodes.Status500InternalServerError, "Error updating data");
             }
         }
+
 
         [HttpDelete("{id:int}")]
         public async Task<ActionResult<ClientDto>> DeleteClient(int id)
@@ -144,11 +153,13 @@ namespace CleanArchitecture.WebAPI.Controllers
                     return NotFound($"Client with Id = {id} not found");
                 }
 
+             
+              
+
                 return Ok(archivedClient);
             }
             catch (Exception ex)
             {
-                // Log the exception (ex)
                 return StatusCode(StatusCodes.Status500InternalServerError, $"Error archiving client: {ex.Message}");
             }
         }
@@ -170,6 +181,13 @@ namespace CleanArchitecture.WebAPI.Controllers
             if (string.IsNullOrEmpty(client.Tax))
                 throw new InvalidEntityException("Client tax cannot be null or empty.");
         }
+
+        
+
+       
+
+
+
     }
 }
     

@@ -3,10 +3,8 @@ using CleanArchitecture.FrameworkAndDrivers.Data.Interfaces;
 using CleanArchitecture.FrameworksAndDrivers.Data.Repository;
 using CleanArchitecture.FrameworksAndDrivers;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace CleanArchitecture.FrameworkAndDrivers.Data.Repository
@@ -15,25 +13,30 @@ namespace CleanArchitecture.FrameworkAndDrivers.Data.Repository
     {
         private readonly AppDbContext _context;
 
+        // Pass the context to the base repository class and initialize it locally
         public SaleRepository(AppDbContext context) : base(context)
         {
             _context = context;
         }
 
-     
         public async Task<IEnumerable<Sale>> SearchAsync(string query, string sortBy, bool ascending)
         {
             var sales = _context.Sales.AsQueryable();
 
             if (!string.IsNullOrEmpty(query))
             {
-                sales = sales.Where(s => s.Client.Name.Contains(query) ||
-                                         s.Product.Name.Contains(query) ||
-                                         s.Amount.ToString().Contains(query));
+                sales = sales.Where(sale => sale.Invoice.ClientId.ToString().Contains(query) ||
+                                             sale.TotalAmount.ToString().Contains(query) ||
+                                             sale.SaleDate.ToString().Contains(query));
             }
 
-            sales = ascending ? sales.OrderBy(s => EF.Property<object>(s, sortBy))
-                              : sales.OrderByDescending(s => EF.Property<object>(s, sortBy));
+            // Tri des ventes
+            sales = sortBy.ToLower() switch
+            {
+                "totalamount" => ascending ? sales.OrderBy(sale => sale.TotalAmount) : sales.OrderByDescending(sale => sale.TotalAmount),
+                "saledate" => ascending ? sales.OrderBy(sale => sale.SaleDate) : sales.OrderByDescending(sale => sale.SaleDate),
+                _ => sales.OrderBy(sale => sale.InvoiceClientInvoiceId) // Tri par défaut
+            };
 
             return await sales.ToListAsync();
         }
@@ -43,28 +46,47 @@ namespace CleanArchitecture.FrameworkAndDrivers.Data.Repository
             var sale = await _context.Sales.FindAsync(saleId);
             if (sale != null)
             {
+                // Logique pour archiver (ex : changer le statut)
                 sale.IsArchived = true;
-                _context.Sales.Update(sale);
                 await _context.SaveChangesAsync();
             }
             return sale;
-            //bonjour
         }
-        public async Task<IEnumerable<Sale>> GetAllWithDetailsAsync()
+
+        public async Task<IEnumerable<Sale>> GetSalesByOrderClientAsync(int orderClientId)
         {
             return await _context.Sales
-                .Include(s => s.Client)
-                .Include(s => s.Product)
+                .Where(sale => sale.Invoice.ClientId == orderClientId)
                 .ToListAsync();
         }
-        public async Task<Sale?> GetByIdAsync(int id)
+
+        public async Task<IEnumerable<Sale>> GetSalesByDateRangeAsync(DateTime startDate, DateTime endDate)
         {
             return await _context.Sales
-                                 .Include(s => s.Client)
-                                 .Include(s => s.Product)
-                                 .FirstOrDefaultAsync(s => s.Id == id);
+                .Where(sale => sale.SaleDate >= startDate && sale.SaleDate <= endDate)
+                .ToListAsync();
         }
+
+        public async Task<IEnumerable<Sale>> GetSalesByClientIdAsync(int clientId)
+        {
+            return await _context.Sales
+                .Where(sale => sale.ClientId == clientId)
+                .ToListAsync();
+        }
+
+        public async Task<IEnumerable<Sale>> GetSalesByStatusAsync(string status)
+        {
+            return await _context.Sales
+                .Where(sale => sale.Status.Equals(status, StringComparison.OrdinalIgnoreCase))
+                .ToListAsync();
+        }
+
+        public async Task<IEnumerable<Sale>> GetSalesByProductNameAsync(string productName)
+        {
+            return await _context.Sales
+                .Where(sale => sale.Invoice.Items.Any(item => item.ProductName.Contains(productName)))
+                .ToListAsync();
+        }
+
     }
-    
-    
 }

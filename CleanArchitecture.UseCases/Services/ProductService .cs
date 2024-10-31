@@ -1,7 +1,7 @@
 ﻿using CleanArchitecture.Entities.Produit;
 using CleanArchitecture.FrameworkAndDrivers.Data.Interfaces;
 using CleanArchitecture.FramworkAndDrivers.Data.Interfaces;
-using CleanArchitecture.UseCases.Dtos.ProduitDtos;
+using CleanArchitecture.UseCases.Dtos.ItemDtos.ProduitDtos;
 using CleanArchitecture.UseCases.InterfacesUse;
 using CleanArchitecture.UseCases.Mappers;
 using Microsoft.Extensions.Logging;

@@ -7,34 +7,34 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CleanArchitecture.Entities.Clients;
+using CleanArchitecture.Entities.Orders;
+using CleanArchitecture.Entities.Invoices;
 
 namespace CleanArchitecture.Entities.Sales
 {
     public class Sale
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
-
-        [Required]
-        public DateTime SaleDate { get; set; }
-
-        [Required]
-        [ForeignKey("Client")]
-        public int ClientId { get; set; }
-        public Client Client { get; set; } = null!;
-
-        [Required]
-        [ForeignKey("Product")]
-        public int ProductId { get; set; }
-       
-        public Product Product { get; set; } = null!;
-        [Required]
-        public decimal Amount { get; set; }
-        public bool IsArchived { get; set; } = false;
-        public decimal TotalAmount { get; set; } // Ajouté
-        public string ClientName { get; set; } = string.Empty;
-        public string ProductName { get; set; } = string.Empty;
+        [Key] // Assurez-vous d'avoir cet attribut pour définir la clé primaire
+        public int SaleId { get; set; }
+        [ForeignKey("InvoiceClient")]// Identifiant unique pour chaque vente
+        public int InvoiceClientInvoiceId { get; set; }    // Référence à l'identifiant de la facture
+        public int ClientId { get; set; }     // Référence à l'identifiant du client
+        public DateTime SaleDate { get; set; }  // Date de la vente
+        public double TotalAmount { get; set; } // Montant total de la vente
+        public string? Status { get; set; } // Ajoutez cette ligne
+        public bool IsArchived { get; set; } // Ajoutez cette ligne si nécessaire
+                                             // Relations
+      
+        public InvoiceClient? Invoice { get; set; }  // Relation avec l'entité facture
+        [ForeignKey("ClientId")]
+        public Client? Client { get; set; }
+        [ForeignKey("ProductId")]// Relation avec l'entité client
+        public int ProductId { get; set; }          // Référence à l'identifiant du produit
+      
+        public Product? Product { get; set; }        // Relation avec l'entité produit
+        [NotMapped]
+        public string? ProductName { get; set; } // Assurez-vous que cette propriété existe
     }
-    
+
+
 }

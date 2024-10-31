@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CleanArchitecture.Entities.Enum;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,12 +9,14 @@ namespace CleanArchitecture.UseCases.Dtos.PurchaseDtos
 {
     public class UpdatePurchaseDto
     {
-        public DateTime PurchaseDate { get; set; }
-        public int SupplierId { get; set; }
-        public int ProductId { get; set; }
-        public decimal Amount { get; set; }
-        public decimal TotalAmount { get; set; } // Nouveau champ
-        public bool IsArchived { get; set; }
+        public int Id { get; set; } // Identifiant de l'achat à mettre à jour
+        public int InvoiceId { get; set; } // Référence à la facture générée
+        public int SupplierId { get; set; } // Référence au fournisseur
+        public int ProductId { get; set; } // Référence au produit
+        public double TotalAmount { get; set; } // Montant total de l'achat
+        public DateTime PurchaseDate { get; set; } // Date de l'achat
+        public PaymentStatus PaymentStatus { get; set; } // Statut du paiement
+        public bool IsArchived { get; set; } // Indique si l'achat est archivé
 
     }
 }

@@ -1,53 +1,81 @@
 ﻿using CleanArchitecture.Entities.Purchases;
 using CleanArchitecture.UseCases.Dtos.PurchaseDtos;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace CleanArchitecture.UseCases.Mappers
 {
-
     public static class PurchaseMapper
     {
-        public static PurchaseDto MapToDto(this Purchase purchase)
+        // Mapper une entité Purchase vers un DTO PurchaseDto
+        public static PurchaseDto MapToDto(Purchase purchase)
         {
+            if (purchase == null)
+                return null;
+
             return new PurchaseDto
             {
                 Id = purchase.Id,
-                PurchaseDate = purchase.PurchaseDate,
+                InvoiceId = purchase.InvoiceId,
                 SupplierId = purchase.SupplierId,
+                SupplierName = purchase.Supplier?.Name, // Assurez-vous que la relation est chargée
                 ProductId = purchase.ProductId,
-                Amount = purchase.Amount,
-                TotalAmount = purchase.TotalAmount,
+                ProductName = purchase.Product?.Name, // Assurez-vous que la relation est chargée
                 IsArchived = purchase.IsArchived,
-                SupplierName = purchase.Supplier?.Name ?? string.Empty, // Ensure non-nullable
-                ProductName = purchase.Product?.Name ?? string.Empty // Ensure non-nullable
+                PurchaseDate = purchase.PurchaseDate,
+                TotalAmount = purchase.TotalAmount,
+                PaymentStatus = purchase.PaymentStatus
             };
         }
 
-        public static Purchase MapToEntity(this CreatePurchaseDto purchaseDto)
+        // Mapper un DTO CreatePurchaseDto vers une entité Purchase
+        public static Purchase MapToEntity(CreatePurchaseDto createPurchaseDto)
         {
+            if (createPurchaseDto == null)
+                return null;
+
             return new Purchase
             {
-                PurchaseDate = purchaseDto.PurchaseDate,
-                SupplierId = purchaseDto.SupplierId,
-                ProductId = purchaseDto.ProductId,
-                Amount = purchaseDto.Amount,
-                TotalAmount = purchaseDto.TotalAmount,
-                IsArchived = false // Assuming new purchases are not archived by default
+                InvoiceId = createPurchaseDto.InvoiceId,
+                SupplierId = createPurchaseDto.SupplierId,
+                ProductId = createPurchaseDto.ProductId,
+                TotalAmount = createPurchaseDto.TotalAmount,
+                PurchaseDate = createPurchaseDto.PurchaseDate,
+                PaymentStatus = createPurchaseDto.PaymentStatus,
+                IsArchived = false // Par défaut, un nouvel achat n'est pas archivé
             };
         }
-
-        public static void MapToEntity(this UpdatePurchaseDto purchaseDto, Purchase purchase)
+        public static void MapToEntity(UpdatePurchaseDto updatePurchaseDto, Purchase purchase)
         {
-            purchase.PurchaseDate = purchaseDto.PurchaseDate;
-            purchase.SupplierId = purchaseDto.SupplierId;
-            purchase.ProductId = purchaseDto.ProductId;
-            purchase.Amount = purchaseDto.Amount;
-            purchase.TotalAmount = purchaseDto.TotalAmount;
-            purchase.IsArchived = purchaseDto.IsArchived;
+            if (updatePurchaseDto == null || purchase == null)
+                throw new ArgumentNullException("Les entités ne peuvent pas être nulles");
+
+            purchase.InvoiceId = updatePurchaseDto.InvoiceId;
+            purchase.SupplierId = updatePurchaseDto.SupplierId;
+            purchase.ProductId = updatePurchaseDto.ProductId;
+            purchase.TotalAmount = updatePurchaseDto.TotalAmount;
+            purchase.PurchaseDate = updatePurchaseDto.PurchaseDate;
+            purchase.PaymentStatus = updatePurchaseDto.PaymentStatus;
+            purchase.IsArchived = updatePurchaseDto.IsArchived;
+        }
+
+
+        // Mapper un DTO PurchaseDto vers une entité Purchase
+        public static Purchase MapToEntity(PurchaseDto purchaseDto)
+        {
+            if (purchaseDto == null)
+                return null;
+
+            return new Purchase
+            {
+                Id = purchaseDto.Id,
+                InvoiceId = purchaseDto.InvoiceId,
+                SupplierId = purchaseDto.SupplierId,
+                ProductId = purchaseDto.ProductId,
+                TotalAmount = purchaseDto.TotalAmount,
+                PurchaseDate = purchaseDto.PurchaseDate,
+                PaymentStatus = purchaseDto.PaymentStatus,
+                IsArchived = purchaseDto.IsArchived
+            };
         }
     }
 }

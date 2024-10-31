@@ -14,7 +14,7 @@ namespace CleanArchitecture.UseCases.Mappers
         {
             return new SupplierDto
             {
-                SupplierID = supplier.SupplierID,
+                SupplierID = supplier.SupplierId,
                 Name = supplier.Name,
                 Email = supplier.Email,
                 Phone = supplier.Phone,

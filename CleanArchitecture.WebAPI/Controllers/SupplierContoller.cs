@@ -1,21 +1,24 @@
 ﻿using CleanArchitecture.UseCases.Dtos.SupplierDtos;
 using CleanArchitecture.UseCases.InterfacesUse;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 
 namespace CleanArchitecture.WebAPI.Controllers
 {
+    [Authorize]
     [EnableCors("AllowSpecificOrigin")]
     [ApiController]
     [Route("api/[controller]")]
     public class SuppliersController : ControllerBase
     {
         private readonly ISupplierService _supplierService;
-
+        
         public SuppliersController(ISupplierService supplierService)
         {
             _supplierService = supplierService;
+            
         }
 
         [HttpGet]
@@ -49,25 +52,29 @@ namespace CleanArchitecture.WebAPI.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, "Error retrieving data from the database");
             }
         }
-
+        // POST: api/suppliers
         [HttpPost]
         public async Task<ActionResult<SupplierDto>> CreateSupplier([FromBody] CreateSupplierDto supplierDto)
         {
             try
             {
                 if (supplierDto == null)
-                    return BadRequest();
+                    return BadRequest("Supplier data cannot be null.");
 
+                // Create supplier
                 var createdSupplier = await _supplierService.AddAsync(supplierDto);
+
+                // Start workflow for the newly created supplier
+              
 
                 return CreatedAtAction(nameof(GetSupplier), new { id = createdSupplier.SupplierID }, createdSupplier);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                // Log the exception (ex)
-                return StatusCode(StatusCodes.Status500InternalServerError, "Error creating new supplier record");
+                return StatusCode(StatusCodes.Status500InternalServerError, $"Error creating new supplier: {ex.Message}");
             }
         }
+        // PUT: api/suppliers/{id}
         [HttpPut("{id:int}")]
         public async Task<ActionResult> UpdateSupplier([FromRoute] int id, [FromBody] UpdateSupplierDto supplierDto)
         {
@@ -76,20 +83,23 @@ namespace CleanArchitecture.WebAPI.Controllers
                 if (!ModelState.IsValid)
                     return BadRequest(ModelState);
 
-                await _supplierService.UpdateAsync(id, supplierDto); // Appel sans assignation
+                await _supplierService.UpdateAsync(id, supplierDto);
 
-                return NoContent(); // Retourne 204 No Content pour indiquer que la mise à jour a réussi
+                // Validate the workflow after updating the supplier
+               
+
+                return NoContent();
             }
             catch (KeyNotFoundException ex)
             {
                 return NotFound(ex.Message);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                // Log the exception
-                return StatusCode(StatusCodes.Status500InternalServerError, "Error updating data");
+                return StatusCode(StatusCodes.Status500InternalServerError, $"Error updating supplier: {ex.Message}");
             }
         }
+
 
 
         [HttpDelete("{id:int}")]
@@ -129,11 +139,14 @@ namespace CleanArchitecture.WebAPI.Controllers
         }
 
         [HttpPut("archive/{id:int}")]
-        public async Task<ActionResult<SupplierDto>> ArchiveSupplier(int id)
+        public async Task<ActionResult<SupplierDto>> ArchiveSupplier(int id, [FromBody] string updatedBy)
         {
             try
             {
+                // Archive the supplier
                 await _supplierService.ArchiveSupplierAsync(id);
+
+                // Get the archived supplier data
                 var archivedSupplier = await _supplierService.GetByIdAsync(id);
 
                 if (archivedSupplier == null)
@@ -141,12 +154,15 @@ namespace CleanArchitecture.WebAPI.Controllers
                     return NotFound($"Supplier with Id = {id} not found");
                 }
 
+                // Validate the workflow after archiving the supplier
+              
+
                 return Ok(archivedSupplier);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 // Log the exception (ex)
-                return StatusCode(StatusCodes.Status500InternalServerError, "Error archiving supplier");
+                return StatusCode(StatusCodes.Status500InternalServerError, $"Error archiving supplier: {ex.Message}");
             }
         }
 
@@ -164,5 +180,8 @@ namespace CleanArchitecture.WebAPI.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, "Error exporting suppliers to PDF");
             }
         }
+
+
+        
     }
 }

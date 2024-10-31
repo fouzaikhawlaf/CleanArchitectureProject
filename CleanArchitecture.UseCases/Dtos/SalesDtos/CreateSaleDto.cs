@@ -9,18 +9,11 @@ namespace CleanArchitecture.UseCases.Dtos.SalesDtos
 {
     public class CreateSaleDto
     {
-        [Required]
-        public DateTime SaleDate { get; set; }
-
-        [Required]
+        public int Id { get; set; } // Identifiant de la vente à mettre à jour
+        public int InvoiceId { get; set; }
         public int ClientId { get; set; }
-
-        [Required]
-        public int ProductId { get; set; }
-
-        [Required]
-        public decimal Amount { get; set; }
-        public bool IsArchived { get; set; } = false;
-        public decimal TotalAmount { get; set; } // Ajouté
+        public DateTime SaleDate { get; set; }
+        public double TotalAmount { get; set; }
+        public string? ProductName { get; set; } // Assurez-vous que cette propriété existe
     }
 }

@@ -19,7 +19,6 @@ namespace CleanArchitecture.FrameworksAndDrivers.Data.Repository
         {
             _context = context;
         }
-
         public async Task<T> GetByIdAsync(int id)
         {
             return await _context.Set<T>().FindAsync(id);
@@ -51,7 +50,6 @@ namespace CleanArchitecture.FrameworksAndDrivers.Data.Repository
                 await _context.SaveChangesAsync();
             }
         }
+
     }
-    
-    
 }

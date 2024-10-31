@@ -1,22 +1,22 @@
 ﻿using CleanArchitecture.UseCases.Dtos.SalesDtos;
 using CleanArchitecture.UseCases.InterfacesUse;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CleanArchitecture.WebAPI.Controllers
 {
+    [Authorize]
     [EnableCors("AllowSpecificOrigin")]
     [ApiController]
     [Route("api/[controller]")]
     public class SaleController : ControllerBase
     {
         private readonly ISaleService _saleService;
-        
 
         public SaleController(ISaleService saleService)
         {
             _saleService = saleService;
-            
         }
 
         [HttpGet("{id:int}")]
@@ -36,30 +36,17 @@ namespace CleanArchitecture.WebAPI.Controllers
         {
             try
             {
-                var sales = await _saleService.GetAllSalesAsync();
+                var sales = await _saleService.GetAllAsync();
                 return Ok(sales);
             }
-            catch (Exception )
+            catch (Exception)
             {
                 // Log the exception (ex)
                 return StatusCode(StatusCodes.Status500InternalServerError, "Error retrieving data from the database");
             }
         }
 
-        [HttpGet("calculate-total-amount/{saleId:int}/{clientId:int}/{productId:int}")]
-        public async Task<ActionResult<decimal>> CalculateTotalAmount(int saleId, int clientId, int productId)
-        {
-            try
-            {
-                var totalAmount = await _saleService.CalculateTotalAmountAsync(saleId, clientId, productId);
-                return Ok(totalAmount);
-            }
-            catch (Exception )
-            {
-                // Log the exception (ex)
-                return StatusCode(StatusCodes.Status500InternalServerError, "Error calculating total amount");
-            }
-        }
+        
 
         [HttpPost]
         public async Task<ActionResult<SaleDto>> CreateSale([FromBody] CreateSaleDto createSaleDto)
@@ -129,6 +116,125 @@ namespace CleanArchitecture.WebAPI.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, "Error archiving sale");
             }
         }
-         
+
+        [HttpGet("history")]
+        public async Task<ActionResult<IEnumerable<SaleDto>>> GetSalesHistory()
+        {
+            try
+            {
+                var salesHistory = await _saleService.GetSalesHistoryAsync();
+                return Ok(salesHistory);
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error retrieving sales history");
+            }
+        }
+
+        [HttpGet("filter")]
+        public async Task<ActionResult<IEnumerable<SaleDto>>> GetSalesByFilters([FromQuery] DateTime? startDate, [FromQuery] DateTime? endDate, [FromQuery] int? clientId, [FromQuery] string productName)
+        {
+            try
+            {
+                var filteredSales = await _saleService.GetSalesByFiltersAsync(startDate, endDate, clientId, productName);
+                return Ok(filteredSales);
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error retrieving filtered sales");
+            }
+        }
+
+        [HttpGet("client/{clientId:int}")]
+        public async Task<ActionResult<IEnumerable<SaleDto>>> GetSalesByClientId(int clientId)
+        {
+            try
+            {
+                var clientSales = await _saleService.GetSalesByClientIdAsync(clientId);
+                return Ok(clientSales);
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error retrieving sales by client");
+            }
+        }
+
+        [HttpGet("order/{orderClientId:int}")]
+        public async Task<ActionResult<IEnumerable<SaleDto>>> GetSalesByOrderClientId(int orderClientId)
+        {
+            try
+            {
+                var sales = await _saleService.GetSalesByOrderClientIdAsync(orderClientId);
+                return Ok(sales);
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error retrieving sales by order client");
+            }
+        }
+
+        [HttpGet("date-range")]
+        public async Task<ActionResult<IEnumerable<SaleDto>>> GetSalesByDateRange([FromQuery] DateTime startDate, [FromQuery] DateTime endDate)
+        {
+            try
+            {
+                var sales = await _saleService.GetSalesByDateRangeAsync(startDate, endDate);
+                return Ok(sales);
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error retrieving sales by date range");
+            }
+        }
+
+        [HttpGet("status/{status}")]
+        public async Task<ActionResult<IEnumerable<SaleDto>>> GetSalesByStatus(string status)
+        {
+            try
+            {
+                var sales = await _saleService.GetSalesByStatusAsync(status);
+                return Ok(sales);
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error retrieving sales by status");
+            }
+        }
+
+        [HttpGet("product-name/{productName}")]
+        public async Task<ActionResult<IEnumerable<SaleDto>>> GetSalesByProductName(string productName)
+        {
+            try
+            {
+                var sales = await _saleService.GetSalesByProductNameAsync(productName);
+                return Ok(sales);
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error retrieving sales by product name");
+            }
+        }
+
+        [HttpGet("export-csv")]
+        public async Task<ActionResult<string>> ExportSalesToCsv()
+        {
+            try
+            {
+                var sales = await _saleService.GetAllAsync();
+                if (sales == null || !sales.Any())
+                {
+                    return NotFound("No sales available for export.");
+                }
+
+                var filePath = await _saleService.ExportSalesToCsvAsync(sales);
+                return Ok(new { filePath });
+            }
+            catch (Exception ex)
+            {
+                // Log the exception for more details
+                return StatusCode(StatusCodes.Status500InternalServerError, $"Error exporting sales to CSV: {ex.Message}");
+            }
+        }
+
     }
 }

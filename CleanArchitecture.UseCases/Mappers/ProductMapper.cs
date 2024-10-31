@@ -1,5 +1,5 @@
 ﻿using CleanArchitecture.Entities.Produit;
-using CleanArchitecture.UseCases.Dtos.ProduitDtos;
+using CleanArchitecture.UseCases.Dtos.ItemDtos.ProduitDtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +14,7 @@ namespace CleanArchitecture.UseCases.Mappers
         {
             return new ProductDto
             {
-                ProductID = product.ProductID,
+                ProductID = product.Id,
                 Name = product.Name,
                 Description = product.Description,
                 Price = product.Price,

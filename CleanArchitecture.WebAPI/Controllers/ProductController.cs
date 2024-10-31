@@ -1,12 +1,14 @@
 ﻿using CleanArchitecture.Entities.Produit;
 using CleanArchitecture.FrameworkAndDrivers.Exceptions;
-using CleanArchitecture.UseCases.Dtos.ProduitDtos;
+using CleanArchitecture.UseCases.Dtos.ItemDtos.ProduitDtos;
 using CleanArchitecture.UseCases.InterfacesUse;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CleanArchitecture.WebAPI.Controllers
 {
+    [Authorize]
     [EnableCors("AllowSpecificOrigin")]
     [ApiController]
     [Route("api/[controller]")]
