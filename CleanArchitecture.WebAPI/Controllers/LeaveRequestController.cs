@@ -3,6 +3,7 @@ using CleanArchitecture.UseCases.Dtos.LeaveRequestDtos;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 using System.Collections.Generic;
+using CleanArchitecture.UseCases.InterfacesUse;
 
 namespace CleanArchitecture.WebApi.Controllers
 {
@@ -10,9 +11,9 @@ namespace CleanArchitecture.WebApi.Controllers
     [Route("api/[controller]")]
     public class LeaveRequestController : ControllerBase
     {
-        private readonly LeaveRequestService _leaveRequestService;
+        private readonly ILeaveRequestService _leaveRequestService;
 
-        public LeaveRequestController(LeaveRequestService leaveRequestService)
+        public LeaveRequestController(ILeaveRequestService leaveRequestService)
         {
             _leaveRequestService = leaveRequestService;
         }

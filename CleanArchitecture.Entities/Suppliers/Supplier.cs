@@ -16,10 +16,10 @@ namespace CleanArchitecture.Entities.Suppliers
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int SupplierId { get; set; }
-        public string? Name { get; set; }
-        public string? Email { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty;
         public int Phone { get; set; }
-        public string? Address { get; set; }
+        public string Address { get; set; } = string.Empty;
         public bool IsArchived { get; set; } = false;
         public PaymentTerms  PaymentTerms { get; set; }
         public int MinimumOrderQuantity { get; set; }

@@ -22,6 +22,8 @@ namespace CleanArchitecture.UseCases.Mappers
                 BillingAddress = client.BillingAddress,
                 IsArchived = client.IsArchived,
                 PaymentTerms = client.PaymentTerms,
+                Notes = client.Notes,
+                Preferences = client.Preferences,
                 CreditLimit = client.CreditLimit,
                 IndustryType = client.IndustryType,
                 Tax = client.Tax,
@@ -41,6 +43,8 @@ namespace CleanArchitecture.UseCases.Mappers
                 BillingAddress = clientDto.BillingAddress,
                 IsArchived = false,
                 PaymentTerms = clientDto.PaymentTerms,
+                Notes = clientDto.Notes,
+                Preferences = clientDto.Preferences,
                 CreditLimit = clientDto.CreditLimit,
                 IndustryType = clientDto.IndustryType,
                 Tax = clientDto.Tax,
@@ -58,6 +62,8 @@ namespace CleanArchitecture.UseCases.Mappers
             client.BillingAddress = updateClientDto.BillingAddress;
             client.IsArchived = updateClientDto.IsArchived;
             client.PaymentTerms = updateClientDto.PaymentTerms;
+            client.Notes = updateClientDto.Notes;
+            client.Preferences = updateClientDto.Preferences;
             client.CreditLimit = updateClientDto.CreditLimit;
             client.IndustryType = updateClientDto.IndustryType;
             client.Tax = updateClientDto.Tax;

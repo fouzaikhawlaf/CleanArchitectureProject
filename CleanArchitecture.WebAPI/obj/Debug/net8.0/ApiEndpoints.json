@@ -391,18 +391,7 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "sortBy",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "ascending",
-        "Type": "System.Boolean",
-        "IsRequired": false
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.IEnumerable\u00601[[CleanArchitecture.UseCases.Dtos.ClientDtos.ClientDto, CleanArchitecture.UseCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
@@ -827,32 +816,6 @@
   },
   {
     "ContainingType": "CleanArchitecture.WebAPI.Controllers.EmployeeController",
-    "Method": "CreateEmployee",
-    "RelativePath": "api/Employee",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "employeeCreateDto",
-        "Type": "CleanArchitecture.UseCases.Dtos.ProjectDtos.EmployeeDtos.EmployeeCreateDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "CleanArchitecture.UseCases.Dtos.ProjectDtos.EmployeeDtos.EmployeeDto",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "CleanArchitecture.WebAPI.Controllers.EmployeeController",
     "Method": "GetEmployees",
     "RelativePath": "api/Employee",
     "HttpMethod": "GET",
@@ -938,43 +901,6 @@
         "StatusCode": 200
       }
     ]
-  },
-  {
-    "ContainingType": "CleanArchitecture.WebAPI.Controllers.EmployeeController",
-    "Method": "UpdateEmployee",
-    "RelativePath": "api/Employee/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.String",
-        "IsRequired": true
-      },
-      {
-        "Name": "employeeUpdateDto",
-        "Type": "CleanArchitecture.UseCases.Dtos.ProjectDtos.EmployeeDtos.EmployeeUpdateDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "CleanArchitecture.WebAPI.Controllers.EmployeeController",
-    "Method": "DeleteEmployee",
-    "RelativePath": "api/Employee/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
   },
   {
     "ContainingType": "CleanArchitecture.WebAPI.Controllers.EmployeeController",

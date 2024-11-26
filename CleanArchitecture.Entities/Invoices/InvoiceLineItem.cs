@@ -19,7 +19,7 @@ namespace CleanArchitecture.Entities.Invoices
         [ForeignKey("Product")]
         public int ProductId { get; set; }  // Foreign key to OrderSupplier
         public Product? Product { get; set;  }
-        public string? ProductName { get; set; }
+        public string ProductName { get; set; } = string.Empty;
         public int Quantity { get; set; }
         public double Price { get; set; }
         public double Total { get; set; }

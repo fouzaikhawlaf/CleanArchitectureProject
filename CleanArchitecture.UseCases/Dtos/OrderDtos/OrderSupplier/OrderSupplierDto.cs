@@ -11,7 +11,7 @@ namespace CleanArchitecture.UseCases.Dtos.OrderDtos.OrderSupplier
     {
         public int Id { get; set; }
         public int SupplierId { get; set; }
-        public string SupplierName { get; set;  }
+        public string SupplierName { get; set; } = string.Empty;
         public DateTime ExpectedDeliveryDate { get; set; }
         public double PurchaseAmount { get; set; }
         public double TotalAmount { get; set; }
@@ -19,7 +19,7 @@ namespace CleanArchitecture.UseCases.Dtos.OrderDtos.OrderSupplier
         public double Promotion { get; set; }
         public OrderState Status { get; set; }
         public bool IsArchived { get; set; }
-        public List<OrderItemDto> Items { get; set; } // Liste des produits dans la commande
+        public List<OrderItemDto> ?Items { get; set; } // Liste des produits dans la commande
     }
 
 }

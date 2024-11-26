@@ -13,7 +13,7 @@ namespace CleanArchitecture.UseCases.Dtos.ItemDtos
 
         [Required(ErrorMessage = "Le nom est requis.")]
         [StringLength(100, ErrorMessage = "Le nom ne peut pas dépasser 100 caractères.")]
-        public string? Name { get; set; } // Nom de l'élément
+        public string Name { get; set; } = string.Empty;// Nom de l'élément
 
         [Required(ErrorMessage = "Le prix est requis.")]
         [Range(0.01, double.MaxValue, ErrorMessage = "Le prix doit être supérieur à 0.")]
@@ -22,5 +22,6 @@ namespace CleanArchitecture.UseCases.Dtos.ItemDtos
         [Required(ErrorMessage = "Le taux de TVA est requis.")]
         [Range(0, 100, ErrorMessage = "Le taux de TVA doit être compris entre 0 et 100.")]
         public double TaxRate { get; set; } // Taux de TVA en pourcentage
+
     }
 }

@@ -25,6 +25,8 @@ namespace CleanArchitecture.Entities.Clients
         public string BillingAddress { get; set; } = string.Empty;
         public bool IsArchived { get; set; } = false;
         public string PaymentTerms { get; set; } = string.Empty;
+        public string Notes { get; set; } = string.Empty;
+        public string Preferences { get; set; } = string.Empty; 
         public double CreditLimit { get; set; }
         public string IndustryType { get; set; } = string.Empty;
         public string Tax { get; set; } = string.Empty;

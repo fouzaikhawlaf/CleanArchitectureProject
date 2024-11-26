@@ -9,6 +9,6 @@ namespace CleanArchitecture.Entities.Users
     public class Commerciale: Employee
     {
         // Propriétés spécifiques au rôle Commercial
-        public string SalesRegion { get; set; }
+        public string SalesRegion { get; set; } = string.Empty;
     }
 }

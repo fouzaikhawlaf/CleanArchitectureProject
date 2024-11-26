@@ -51,17 +51,22 @@ namespace CleanArchitecture.UseCases.Services
             _tokenService = tokenService;
         }
 
-        // Authentification : Login
         public async Task<TokenDto> LoginAsync(UserLoginDto loginDto)
         {
             var user = await _userRepository.GetUserByUserEmailAsync(loginDto.Email);
 
-            if (user == null || !await _userManager.CheckPasswordAsync(user, loginDto.Password))
+            if (user == null)
             {
+                Console.WriteLine($"Login failed: User with email {loginDto.Email} not found.");
                 return null; // Invalid login credentials
             }
 
-            // Check if the user must change their password
+            if (!await _userManager.CheckPasswordAsync(user, loginDto.Password))
+            {
+                Console.WriteLine($"Login failed: Incorrect password for user {loginDto.Email}.");
+                return null; // Invalid login credentials
+            }
+
             if (user.MustChangePassword)
             {
                 return new TokenDto
@@ -71,24 +76,27 @@ namespace CleanArchitecture.UseCases.Services
                 };
             }
 
-            // Generate the access and refresh tokens if the password change is not required
-            var accessToken = _tokenService.GenerateAccessToken(user);
+            // Generate access and refresh tokens
+            var expirationTime = DateTime.UtcNow.AddDays(7); // 7 days expiration
+            var accessToken = _tokenService.GenerateAccessToken(user, expirationTime);
             var refreshToken = _tokenService.GenerateRefreshToken();
 
-            // Save the refresh token and set its expiry time
+            // Update the user with the new refresh token and expiration
             user.RefreshToken = refreshToken;
-            user.RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(7); // 7 days until expiration
+            user.RefreshTokenExpiryTime = expirationTime;
             await _userManager.UpdateAsync(user);
 
-            // Return the generated token along with other user info
+            Console.WriteLine($"Login successful: User {loginDto.Email}");
+
             return new TokenDto
             {
                 Token = accessToken,
-                Expiration = DateTime.UtcNow.AddMinutes(Convert.ToDouble(_configuration["JwtExpireMinutes"])),
+                Expiration = expirationTime,
                 Username = user.UserName,
                 MustChangePassword = false
             };
         }
+
 
         public async Task<bool> RevokeTokenAsync(string username)
         {

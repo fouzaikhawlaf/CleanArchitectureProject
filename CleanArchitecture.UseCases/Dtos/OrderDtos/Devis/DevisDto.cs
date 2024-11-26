@@ -18,7 +18,7 @@ namespace CleanArchitecture.UseCases.Dtos.OrderDtos.Devis
         public TVAType TVARate { get; set; }
         public double TVA { get; set; }
         public double TotalTVA { get; set; }
-        public string? Status { get; set; } // Status as string for display
+        public string Status { get; set; } = string.Empty; // Status as string for display
         public bool IsAccepted { get; set; }
     }
 }

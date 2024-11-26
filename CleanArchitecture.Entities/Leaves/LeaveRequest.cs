@@ -18,16 +18,16 @@ namespace CleanArchitecture.Entities.Leaves
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public string? LeaveRequestId { get; set; }
         [ForeignKey("EmployeeId")]
-        public string? EmployeeId { get; set; }
-        public string? Reason { get; set; }
+        public string EmployeeId { get; set; } = string.Empty;
+        public string? Reason { get; set; } = string.Empty;
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public LeaveStatus Status { get; set; } // Pending, Approved, Rejected
         public DateTime DateRequested { get; set; }
         public DateTime? DateActioned { get; set; }
-        public string? ApprovedBy { get; set; } // Manager or RH
-      
-      
+        public string ApprovedBy { get; set; } = string.Empty; // Manager or RH
+
+
         public Employee? Employee { get; set; }  // Relation avec l'entité Employee (si vous avez une telle entité)
 
         public DateTime CreatedDate { get; set; }  // Ajout de la date de création

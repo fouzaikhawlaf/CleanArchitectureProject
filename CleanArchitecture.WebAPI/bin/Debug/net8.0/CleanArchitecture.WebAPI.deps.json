@@ -1637,14 +1637,7 @@
           }
         }
       },
-      "System.Formats.Asn1/8.0.1": {
-        "runtime": {
-          "lib/net8.0/System.Formats.Asn1.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.724.31311"
-          }
-        }
-      },
+      "System.Formats.Asn1/8.0.1": {},
       "System.Globalization/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.1",
@@ -2185,12 +2178,6 @@
       "System.Text.Json/8.0.4": {
         "dependencies": {
           "System.Text.Encodings.Web": "8.0.0"
-        },
-        "runtime": {
-          "lib/net8.0/System.Text.Json.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.724.31311"
-          }
         }
       },
       "System.Text.RegularExpressions/4.3.1": {
@@ -2308,7 +2295,10 @@
           "itext7": "8.0.5"
         },
         "runtime": {
-          "CleanArchitecture.Entities.dll": {}
+          "CleanArchitecture.Entities.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "CleanArchitecture.FrameworkAndDrivers/1.0.0": {
@@ -2323,7 +2313,10 @@
           "itext7": "8.0.5"
         },
         "runtime": {
-          "CleanArchitecture.FrameworkAndDrivers.dll": {}
+          "CleanArchitecture.FrameworkAndDrivers.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "CleanArchitecture.UseCases/1.0.0": {
@@ -2342,7 +2335,10 @@
           "itext7": "8.0.5"
         },
         "runtime": {
-          "CleanArchitecture.UseCases.dll": {}
+          "CleanArchitecture.UseCases.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

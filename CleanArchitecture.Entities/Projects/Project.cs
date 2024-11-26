@@ -14,8 +14,8 @@ namespace CleanArchitecture.Entities.Projects
     public class Project
     {
         public int Id { get; set; }
-        public string? Name { get; set; }
-        public string? Description { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public string Description { get; set; } = string.Empty;
         public DateTime StartDate { get; set; }
         public DateTime? EndDate { get; set; }
         public ProjectStatus Status { get; set; }
@@ -24,7 +24,7 @@ namespace CleanArchitecture.Entities.Projects
         public RiskLevel RiskLevel { get; set; }
 
         [ForeignKey("Manager")]
-        public string? ManagerId { get; set; }
+        public string ManagerId { get; set; } = string.Empty;
         public Manager? Manager { get; set; }
 
         [InverseProperty("Projects")]

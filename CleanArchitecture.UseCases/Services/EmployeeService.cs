@@ -143,11 +143,7 @@ namespace CleanArchitecture.UseCases.Services
             return EmployeeMapper.MapToDto(employee);
         }
 
-        public async Task<IEnumerable<EmployeeDto>> GetAllAsync()
-        {
-            var employees = await _employeeRepository.GetAllAsync();
-            return employees.Select(EmployeeMapper.MapToDto);
-        }
+      
 
         public async Task<EmployeeDto> GetByIdAsync(string id)
         {
@@ -159,28 +155,9 @@ namespace CleanArchitecture.UseCases.Services
             return EmployeeMapper.MapToDto(employee);
         }
 
-        public async Task UpdateAsync(EmployeeUpdateDto employeeUpdateDto)
-        {
-            var employee = await _employeeRepository.GetByIdAsync(employeeUpdateDto.Id);
-            if (employee == null)
-            {
-                throw new KeyNotFoundException($"Employee with ID = {employeeUpdateDto.Id} not found.");
-            }
+        
 
-            EmployeeMapper.MapToEntity(employeeUpdateDto, employee);
-            await _employeeRepository.UpdateAsync(employee);
-        }
-
-        public async Task DeleteAsync(string id)
-        {
-            var employee = await _employeeRepository.GetByIdAsync(id);
-            if (employee == null)
-            {
-                throw new KeyNotFoundException($"Employee with ID = {id} not found.");
-            }
-
-            await _employeeRepository.DeleteAsync(employee);
-        }
+     
 
         // Get all notifications for the employee
     /*    public async Task<List<Notification>> GetNotificationsAsync(string employeeEmail)

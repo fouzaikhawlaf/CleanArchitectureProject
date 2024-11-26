@@ -8,7 +8,7 @@ namespace CleanArchitecture.Entities.Enum
 {
     public enum ProductType
     {
-        Physical,
+        Material,
         Service
     }
 }

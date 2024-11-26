@@ -12,9 +12,9 @@ namespace CleanArchitecture.Entities.Users
     {
         [Key] // Assurez-vous d'avoir cet attribut pour définir la clé primaire
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public string? RoleId { get; set; }
-        public string? RoleName { get; set; } // Admin, Manager, RH, Employer, Commerciale
-               
+        public string RoleId { get; set; } = string.Empty;
+        public string RoleName { get; set; } = string.Empty; // Admin, Manager, RH, Employer, Commerciale
+
         public ICollection<UserRole> ? UserRoles { get; set; }
     }
 }

@@ -20,11 +20,11 @@ namespace CleanArchitecture.Entities.Orders.DeliveryNotes
         public OrderClient? OrderClient { get; set; }
 
         public DateTime DeliveryDate { get; set; }
-        public string? DeliveryDetails { get; set; }
+        public string DeliveryDetails { get; set; } = string.Empty;
         public bool IsDelivered { get; set; }
         public bool IsArchived { get; set; } // New field for archiving status
         public List<DeliveryItem> DeliveryNoteItems { get; set; } = new List<DeliveryItem>(); // Liste des articles livrés
-        public string? Status { get; set; } // Statut du bon de livraison (ex: "En cours", "Livré", etc.)
+        public string Status { get; set; } = string.Empty; // Statut du bon de livraison (ex: "En cours", "Livré", etc.)
     }
 
 }

@@ -18,7 +18,7 @@ namespace CleanArchitecture.UseCases.Dtos.OrderDtos
         public double TotalTVA { get; set; }
         public double Discount { get; set; }
         public bool IsDelivered { get; set; } = false; // Order delivery status
-        public List<OrderItemDto> Items { get; set; } // Liste des produits dans la commande
+        public List<OrderItemDto>? Items { get; set; } // Liste des produits dans la commande
     }
 }
 

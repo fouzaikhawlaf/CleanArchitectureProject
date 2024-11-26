@@ -17,11 +17,13 @@ namespace CleanArchitecture.UseCases.Dtos.ClientDtos
         public string BillingAddress { get; set; } = string.Empty;
         public bool IsArchived { get; set; }
         public string PaymentTerms { get; set; } = string.Empty;
+        public string Notes { get; set; } = string.Empty;
+        public string Preferences { get; set; } = string.Empty;
         public double CreditLimit { get; set; }
         public string IndustryType { get; set; } = string.Empty;
         public string Tax { get; set; } = string.Empty;
         public EntityType Type { get; set; } // Ajout de l'énumération
         public List<Sale> Sales { get; set; } = new List<Sale>();
-        public string UpdatedBy { get; set; }  // Person responsible for creating the client
+       
     }
 }

@@ -21,7 +21,7 @@ namespace CleanArchitecture.Entities.Orders
         // Foreign Key to Order
         [ForeignKey("OrderId")]
         public int OrderId { get; set; }
-        public string? ProductName { get; set; }
+        public string ProductName { get; set; } = string.Empty;
         public int Quantity { get; set; }
         public double Price { get; set; } // Ensure this property exists
         public TVAType TVARate { get; set; }

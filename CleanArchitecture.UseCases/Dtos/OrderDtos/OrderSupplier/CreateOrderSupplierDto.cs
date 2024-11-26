@@ -16,7 +16,7 @@ namespace CleanArchitecture.UseCases.Dtos.OrderDtos.OrderSupplier
         public TVAType TVARate { get; set; }
         public double TotalTVA { get; set; }
         public double Promotion { get; set; }
-        public List<CreateOrderItemDto> Items { get; set; } // Liste des produits à ajouter à la commande
+        public List<CreateOrderItemDto>? Items { get; set; } // Liste des produits à ajouter à la commande
     }
 
 }

@@ -8,11 +8,11 @@ namespace CleanArchitecture.UseCases.Dtos.ProjectDtos.EmployeeDtos
 {
     public class EmployeeUpdateDto
     {
-        public string? Id { get; set; } // Ensure this is included to identify the employee to update
-        public string? FirstName { get; set; }
-        public string? LastName { get; set; }
-        public string? Email { get; set; }
-        public string? Department { get; set; }
+        public string Id { get; set; } = string.Empty;// Ensure this is included to identify the employee to update
+        public string FirstName { get; set; } = string.Empty;
+        public string LastName { get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty;
+        public string Department { get; set; } = string.Empty;
         public DateTime HireDate { get; set; }
     }
 }

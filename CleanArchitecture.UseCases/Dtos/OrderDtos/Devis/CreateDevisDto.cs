@@ -16,7 +16,7 @@ namespace CleanArchitecture.UseCases.Dtos.OrderDtos.Devis
         public double TVA { get; set; }  // Total tax amount (can be calculated automatically)
         public double TotalTVA { get; set; }  // Total amount including tax (can be calculated automatically)
         public bool IsAccepted { get; set; }  // Whether the quote is accepted by the client
-        public string? Status { get; set; }  // Status of the Devis (Pending, Accepted, Rejected, etc.)
+        public string Status { get; set; } = string.Empty; // Status of the Devis (Pending, Accepted, Rejected, etc.)
 
         // You can add validation attributes here if necessary, e.g., [Required], [Range], etc.
     }

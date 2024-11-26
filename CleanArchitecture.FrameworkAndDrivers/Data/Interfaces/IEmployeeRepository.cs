@@ -11,11 +11,9 @@ namespace CleanArchitecture.FrameworkAndDrivers.Data.Interfaces
     public interface IEmployeeRepository : IGenericRepository<Employee>
     {
         Task<IEnumerable<Employee>> GetEmployeesByProjectIdAsync(int projectId);
-        Task AddAsync(Employee employee);
-        Task<IEnumerable<Employee>> GetAllAsync();
+    
         Task<Employee> GetByIdAsync(string id);
-        Task UpdateAsync(Employee employee);
-        Task DeleteAsync(Employee employee);
+        
     }
     
     

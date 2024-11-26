@@ -8,8 +8,8 @@ namespace CleanArchitecture.UseCases.Dtos.LeaveRequestDtos
 {
     public class CreateLeaveRequestDto
     {
-        public string EmployeeId { get; set; }
-        public string Reason { get; set; }
+        public string EmployeeId { get; set; } = string.Empty;
+        public string Reason { get; set; } = string.Empty;
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
     }

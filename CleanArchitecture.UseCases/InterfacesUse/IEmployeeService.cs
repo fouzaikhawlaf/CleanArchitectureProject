@@ -18,11 +18,9 @@ namespace CleanArchitecture.UseCases.InterfacesUse
         Task RemoveEmployeeFromProjectAsync(string employeeId, int projectId);
 
 
-        Task<EmployeeDto> CreateAsync(EmployeeCreateDto employeeCreateDto);
-        Task<IEnumerable<EmployeeDto>> GetAllAsync();
+
         Task<EmployeeDto> GetByIdAsync(string id);
-        Task UpdateAsync(EmployeeUpdateDto employeeUpdateDto);
-        Task DeleteAsync(string id);
+     
 
         Task<List<TaskProject>> GetAssignedTasksAsync(string employeeEmail);
         Task UpdateTaskStatusAsync(string employeeEmail, int taskId, string status);

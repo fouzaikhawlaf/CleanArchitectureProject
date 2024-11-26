@@ -21,7 +21,7 @@ namespace CleanArchitecture.Entities.Sales
         public int ClientId { get; set; }     // Référence à l'identifiant du client
         public DateTime SaleDate { get; set; }  // Date de la vente
         public double TotalAmount { get; set; } // Montant total de la vente
-        public string? Status { get; set; } // Ajoutez cette ligne
+        public string Status { get; set; } = string.Empty;// Ajoutez cette ligne
         public bool IsArchived { get; set; } // Ajoutez cette ligne si nécessaire
                                              // Relations
       
@@ -33,7 +33,7 @@ namespace CleanArchitecture.Entities.Sales
       
         public Product? Product { get; set; }        // Relation avec l'entité produit
         [NotMapped]
-        public string? ProductName { get; set; } // Assurez-vous que cette propriété existe
+        public string ProductName { get; set; } = string.Empty;// Assurez-vous que cette propriété existe
     }
 
 

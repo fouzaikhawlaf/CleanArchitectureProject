@@ -30,22 +30,9 @@ namespace CleanArchitecture.Infrastructure.Data.Repository
             return client;
         }
 
-        public async Task<IEnumerable<Client>> GetClients(string sortBy, bool ascending)
+        public async Task<IEnumerable<Client>> GetClients()
         {
             var clients = _context.Clients.AsQueryable();
-
-            if (!string.IsNullOrEmpty(sortBy))
-            {
-                if (ascending)
-                {
-                    clients = clients.OrderBy(c => EF.Property<object>(c, sortBy));
-                }
-                else
-                {
-                    clients = clients.OrderByDescending(c => EF.Property<object>(c, sortBy));
-                }
-            }
-
             return await clients.ToListAsync();
         }
 

@@ -9,18 +9,18 @@ namespace CleanArchitecture.UseCases.Dtos.LeaveRequestDtos
 {
     public class LeaveRequestDto
     {
-        public string LeaveRequestId { get; set; }
-        public string EmployeeName { get; set; }
-        public string Reason { get; set; }
+        public string LeaveRequestId { get; set; } = string.Empty;
+        public string EmployeeName { get; set; } = string.Empty;
+        public string Reason { get; set; } = string.Empty;
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public LeaveStatus Status { get; set; }
-        public string ApprovedBy { get; set; }
-        public string EmployeeId { get; set; }  // Identifiant de l'employé
-    
+        public string ApprovedBy { get; set; } = string.Empty;
+        public string EmployeeId { get; set; } = string.Empty;// Identifiant de l'employé
+
 
         public DateTime CreatedDate { get; set; }  // Date de création
         public DateTime? UpdatedDate { get; set; }  // Date de mise à jour (peut être nullable)
-        public string ManagerComment { get; set; }  // Commentaires du manager
+        public string ManagerComment { get; set; } = string.Empty;// Commentaires du manager
     }
 }

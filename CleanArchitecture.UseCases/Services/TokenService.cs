@@ -24,7 +24,7 @@ namespace CleanArchitecture.UseCases.Services
 
 
 
-        public string GenerateAccessToken(Employee user)
+        public string GenerateAccessToken(Employee user, DateTime expiry)
         {
             if (user == null || string.IsNullOrWhiteSpace(user.Email))
             {
@@ -53,7 +53,7 @@ namespace CleanArchitecture.UseCases.Services
                 issuer: _configuration["JwtSettings:Issuer"],
                 audience: _configuration["JwtSettings:Audience"],
                 claims: claims,
-                expires: DateTime.UtcNow.AddMinutes(Convert.ToDouble(_configuration["JwtSettings:JwtExpireMinutes"])),
+                 expires: expiry, // Pass the expiration time here
                 signingCredentials: credentials
             );
 

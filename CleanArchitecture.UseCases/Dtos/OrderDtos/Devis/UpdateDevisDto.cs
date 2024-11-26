@@ -15,7 +15,7 @@ namespace CleanArchitecture.UseCases.Dtos.OrderDtos.Devis
         public double TVA { get; set; }  // Updated total tax amount
         public double TotalTVA { get; set; }  // Updated total amount including tax
         public bool IsAccepted { get; set; }  // Whether the quote is accepted by the client
-        public string? Status { get; set; }  // Updated status of the Devis (Pending, Accepted, Rejected, etc.)
+        public string Status { get; set; } = string.Empty;// Updated status of the Devis (Pending, Accepted, Rejected, etc.)
 
         // Optional fields for partial updates can be nullable, or you can apply business rules in the service layer
     }

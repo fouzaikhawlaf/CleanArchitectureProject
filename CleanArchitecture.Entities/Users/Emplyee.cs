@@ -14,17 +14,17 @@ namespace CleanArchitecture.Entities.Users
     public class Employee : IdentityUser
     {
         // Nom complet de l'utilisateur
-        public string? FirstName { get; set; }
-        public string? LastName { get; set; }
-        public string? FullName => $"{FirstName} {LastName}";
+        public string FirstName { get; set; } = string.Empty;
+        public string LastName { get; set; } = string.Empty;
+        public string FullName => $"{FirstName} {LastName}";
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public int LeaveBalance { get; set; }
         public bool IsArchived { get; set; } // Si c'est une propriété
         public bool emailSent { get; set; } = false; // Si c'est une propriété
         public bool MustChangePassword { get; set; } = false;
-        public string? Department { get; set; }
+        public string Department { get; set; } = string.Empty;
         // Token pour rafraîchir la session
-        public string? RefreshToken { get; set; }
+        public string RefreshToken { get; set; } = string.Empty;
         public DateTime RefreshTokenExpiryTime { get; set; }
 
         // Foreign key for Admin
@@ -37,7 +37,7 @@ namespace CleanArchitecture.Entities.Users
         public List<Notification> Notifications { get; set; } = new List<Notification>();
 
         // Relations avec UserProfile et UserAccount
-        public UserProfile UserProfile { get; set; }
+        public UserProfile UserProfile { get; set; } 
        
 
         // Projets et tâches assignés

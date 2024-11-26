@@ -15,8 +15,8 @@ namespace CleanArchitecture.Entities.Invoices
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int InvoiceId { get; set; }  // Primary key
-        public string? InvoiceNumber { get; set; }  // Unique invoice number
-        public DateTime InvoiceDate { get; set; }  // Date of invoice creation
+        public string? InvoiceNumber { get; set; }= string.Empty;  // Unique invoice number
+        public DateTime InvoiceDate { get; set; }   // Date of invoice creation
         public double TaxRate { get; set; }
         public double TotalAmountWithTax { get; set; }
         public double TotalAmount { get; set; }  // Total invoice amount

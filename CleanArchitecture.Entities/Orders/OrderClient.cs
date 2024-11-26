@@ -20,7 +20,7 @@ namespace CleanArchitecture.Entities.Orders
         [ForeignKey(nameof(Client))]
         public int ClientID { get; set; }
         public Client? Client { get; set; }
-        public string? ClientName { get; set; } // Ajout du nom du client spécifiquement pour la commande
+        public string ClientName { get; set; } = string.Empty;// Ajout du nom du client spécifiquement pour la commande
         public double SaleAmount { get; set; }
         public double TotalAmount { get; set; }
         public double TotalTVA { get; set; }

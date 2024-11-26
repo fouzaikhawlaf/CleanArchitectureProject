@@ -16,18 +16,7 @@ namespace CleanArchitecture.WebAPI.Controllers
         }
 
         // CREATE: api/Employee
-        [HttpPost]
-        public async Task<ActionResult<EmployeeDto>> CreateEmployee(EmployeeCreateDto employeeCreateDto)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            var createdEmployee = await _employeeService.CreateAsync(employeeCreateDto);
-            return CreatedAtAction(nameof(GetEmployee), new { id = createdEmployee.Id }, createdEmployee);
-        }
-
+     
         // READ: api/Employee
         [HttpGet]
         public async Task<ActionResult<IEnumerable<EmployeeDto>>> GetEmployees()
@@ -48,50 +37,8 @@ namespace CleanArchitecture.WebAPI.Controllers
             return Ok(employee);
         }
 
-        // UPDATE: api/Employee/{id}
-        [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateEmployee(string id, EmployeeUpdateDto employeeUpdateDto)
-        {
-            if (id != employeeUpdateDto.Id)
-            {
-                return BadRequest("Employee ID mismatch");
-            }
-
-            try
-            {
-                await _employeeService.UpdateAsync(employeeUpdateDto);
-                return NoContent();
-            }
-            catch (KeyNotFoundException)
-            {
-                return NotFound();
-            }
-            catch (Exception )
-            {
-                // Log the exception
-                return StatusCode(500, "Internal server error");
-            }
-        }
-
-        // DELETE: api/Employee/{id}
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteEmployee(string id)
-        {
-            try
-            {
-                await _employeeService.DeleteAsync(id);
-                return NoContent();
-            }
-            catch (KeyNotFoundException)
-            {
-                return NotFound();
-            }
-            catch (Exception )
-            {
-                // Log the exception
-                return StatusCode(500, "Internal server error");
-            }
-        }
+      
+       
 
         // GET: api/Employee/{id}/workload
         [HttpGet("{id}/workload")]

@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CleanArchitecture.WebAPI.Controllers
 {
-    [Authorize]
+  
     [EnableCors("AllowSpecificOrigin")]
     [ApiController]
     [Route("api/[controller]")]

@@ -32,7 +32,7 @@ namespace CleanArchitecture.Entities.Orders
         public OrderState Status { get; set; }
         public bool IsArchived { get; set; }
         public bool IsDelivered { get; set; }
-        public string? SupplierName { get; set; }  // Supplier name from OrderSupplier
+        public string SupplierName { get; set; } = string.Empty; // Supplier name from OrderSupplier
         public ICollection<BonDeReception> BonDeReceptions { get; set; } = new List<BonDeReception>();
         public ICollection<OrderItem>? Items { get; set; }
     }

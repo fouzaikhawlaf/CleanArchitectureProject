@@ -17,7 +17,7 @@ namespace CleanArchitecture.Entities.Transaction
         public int TransactionId { get; set; }  // Identifiant unique pour chaque transaction.
         public DateTime TransactionDate { get; set; }  // Date et heure de la transaction.
         public double Amount { get; set; }  // Montant de la transaction.
-        public string? Description { get; set; }  // Description de la transaction.
+        public string Description { get; set; } = string.Empty; // Description de la transaction.
         public TransactionType Type { get; set; }  // Type de transaction (ex : Dépôt, Retrait, etc.).
         [ForeignKey("BankAccountId")]
         public int BankAccountId { get; set; }  // Identifiant du compte bancaire concerné.

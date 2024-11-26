@@ -17,7 +17,7 @@ namespace CleanArchitecture.Entities.Orders.DeliveryNotes
         public DeliveryNote? DeliveryNote { get; set; }
         [ForeignKey("ProductId")]
         public int ProductId { get; set; } // ID of the product
-        public string? ProductName { get; set; }
+        public string ProductName { get; set; } = string.Empty;
         public int Quantity { get; set; }
         public double Price { get; set; }
         public virtual Product? Product { get; set; } // Navigation property to Product

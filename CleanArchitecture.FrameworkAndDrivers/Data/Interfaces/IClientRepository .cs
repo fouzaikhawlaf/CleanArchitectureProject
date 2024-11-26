@@ -12,7 +12,7 @@ namespace CleanArchitecture.FrameworksAndDrivers.Data.Interfaces
     {
 
         Task<Client?> ArchiveClient(int clientId);
-        Task<IEnumerable<Client>> GetClients(string sortBy, bool ascending);
+        Task<IEnumerable<Client>> GetClients();
         Task<IEnumerable<Client>> SearchClients(string query, string sortBy, bool ascending);
     }
 }

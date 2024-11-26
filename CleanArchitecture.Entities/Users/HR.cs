@@ -9,6 +9,6 @@ namespace CleanArchitecture.Entities.Users
     public class HR :Employee
     {
         // Propriétés spécifiques au rôle HR
-        public string HRDepartment { get; set; }
+        public string HRDepartment { get; set; } = string.Empty;
     }
 }

@@ -80,7 +80,7 @@ namespace CleanArchitecture.Web.Controllers
                     return NotFound("Facture non trouvée.");
                 }
 
-                _invoiceClientService.UpdateAsync(id,updateDto);
+               await _invoiceClientService.UpdateAsync(id,updateDto);
                 return NoContent(); // 204 No Content si la mise à jour est réussie
             }
             catch (Exception ex)
@@ -114,7 +114,7 @@ namespace CleanArchitecture.Web.Controllers
     // Classe de requête pour générer une facture
     public class GenerateInvoiceRequest
     {
-        public string OrderClientUrl { get; set; }
-        public string BonDeLivraisonUrl { get; set; }
+        public string OrderClientUrl { get; set; } = string.Empty;
+        public string BonDeLivraisonUrl { get; set; } = string.Empty;
     }
 }

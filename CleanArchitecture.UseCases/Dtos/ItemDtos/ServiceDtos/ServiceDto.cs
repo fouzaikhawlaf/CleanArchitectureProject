@@ -9,8 +9,8 @@ namespace CleanArchitecture.UseCases.Dtos.ItemDtos.ServiceDtos
     public class ServiceDto : ItemDto
     {
       
-        public string? Name { get; set; }
-        public string? Description { get; set; }
+      
+        public string Description { get; set; } = string.Empty;
         public bool IsArchived { get; set; }
         public double Total { get; set; }
         // Ajoute d'autres propriétés si nécessaire

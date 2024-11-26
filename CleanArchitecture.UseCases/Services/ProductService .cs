@@ -34,13 +34,32 @@ namespace CleanArchitecture.UseCases.Services
 
         protected override Product MapToEntity(CreateProductDto createDto)
         {
-            return createDto.MapToEntity();
+            var product = createDto.MapToEntity();
+
+            // Ajouter des validations si nécessaire
+            if (product.ProductType == 0 && (createDto.Quantity == null || createDto.Quantity <= 0))
+            {
+                throw new ArgumentException("La quantité est requise pour un produit de type matériel.");
+            }
+
+            // 'Total' est automatiquement calculé par l'entité Product
+            return product;
         }
 
         protected override void MapToEntity(UpdateProductDto updateDto, Product product)
         {
             updateDto.MapToEntity(product);
+
+            // Ajouter des validations si nécessaire
+            if (product.ProductType == 0 && (updateDto.Quantity == null || updateDto.Quantity <= 0))
+            {
+                throw new ArgumentException("La quantité est requise pour un produit de type matériel.");
+            }
+
+            // Pas d'assignation directe à 'Total', il est calculé automatiquement
         }
+
+
 
         public async Task<IEnumerable<ProductDto>> SearchProductsAsync(string keyword, string sortBy, bool ascending)
         {

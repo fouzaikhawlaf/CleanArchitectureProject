@@ -3,9 +3,11 @@ using CleanArchitecture.UseCases.Dtos.ItemDtos.ServiceDtos;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CleanArchitecture.Controllers
 {
+  
     [ApiController]
     [Route("api/[controller]")]
     public class ServiceController : ControllerBase

@@ -8,12 +8,11 @@ namespace CleanArchitecture.UseCases.Dtos.InvoicesDto
 {
     public class InvoiceDto
     {
-        public string ClientName { get; set; }
-        public string ClientAddress { get; set; }
-        public List<InvoiceItemDto> Products { get; set; }
-        public double TaxRate { get; set; }
-        public string DeliveryDetails { get; set; }
-        public string Status { get; set; } // Ajoutez cette ligne si elle n'existe pas
+        
+        public List<InvoiceItemDto>? Products { get; set; }
+     
+        public string DeliveryDetails { get; set; } = string.Empty;
+        public string Status { get; set; } = string.Empty; // Ajoutez cette ligne si elle n'existe pas
         public double TotalAmount { get; set; }
         public double TotalAmountWithTax { get; set; }
     }

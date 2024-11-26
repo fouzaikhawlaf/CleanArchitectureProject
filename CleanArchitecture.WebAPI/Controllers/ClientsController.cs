@@ -8,34 +8,37 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CleanArchitecture.WebAPI.Controllers
 {
-    [Authorize]
+   
     [EnableCors("AllowSpecificOrigin")]
     [ApiController]
     [Route("api/[controller]")]
     public class ClientsController : ControllerBase
     {
         private readonly IClientService _clientService;
-       
-        public ClientsController(IClientService clientService)
+        private readonly ILogger<ClientsController> _logger;
+
+        // Inject ILogger<ClientsController> into the constructor
+        public ClientsController(IClientService clientService, ILogger<ClientsController> logger)
         {
             _clientService = clientService;
-           
+            _logger = logger ?? throw new ArgumentNullException(nameof(logger));  // Ensure logger is not null
         }
-
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<ClientDto>>> GetClients([FromQuery] string sortBy = "Name", [FromQuery] bool ascending = true)
+        public async Task<ActionResult<IEnumerable<ClientDto>>> GetClients()
         {
             try
             {
-                var clients = await _clientService.GetClients(sortBy, ascending);
+                // Fetch all clients without sorting or pagination
+                var clients = await _clientService.GetClients();
                 return Ok(clients);
             }
-            catch (Exception )
+            catch (Exception)
             {
-                // Log the exception (ex)
+                // Handle exceptions
                 return StatusCode(StatusCodes.Status500InternalServerError, "Error retrieving data from the database");
             }
         }
+
 
         [HttpGet("{id:int}")]
         public async Task<ActionResult<ClientDto>> GetClient(int id)
@@ -61,20 +64,37 @@ namespace CleanArchitecture.WebAPI.Controllers
             try
             {
                 if (clientDto == null)
-                    return BadRequest();
+                {
+                    _logger.LogWarning("ClientDto is null");
+                    return BadRequest("Client data is required.");
+                }
+
+                if (!ModelState.IsValid)
+                {
+                    _logger.LogWarning("ModelState is invalid: {Errors}",
+                        string.Join(", ", ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage)));
+                    return BadRequest(ModelState);
+                }
 
                 var createdClient = await _clientService.AddAsync(clientDto);
 
-                // Start the workflow for the newly created client
-             
+                if (createdClient == null)
+                {
+                    _logger.LogError("Error creating client.");
+                    return StatusCode(StatusCodes.Status500InternalServerError, "Error creating client.");
+                }
+
+                _logger.LogInformation("Client created successfully with ID: {ClientID}", createdClient.ClientID);
 
                 return CreatedAtAction(nameof(GetClient), new { id = createdClient.ClientID }, createdClient);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, "Error creating new client record");
+                _logger.LogError(ex, "An error occurred while creating the client.");
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error creating new client record.");
             }
         }
+
 
 
         [HttpPut("{id:int}")]

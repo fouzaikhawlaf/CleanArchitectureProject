@@ -29,7 +29,10 @@ namespace CleanArchitecture.Entities.Produit
         public ICollection<Purchase> Purchases { get; set; } = new List<Purchase>(); // Ensure non-nullable
         public ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
         public int Quantity { get; set; } // Add this property
-        public virtual ICollection<Stock> ? Stocks { get; set; } // Relation avec les entités Stock
+   
+        public double Total => Price * Quantity; // Calcul automatique du total
+    
+    public virtual ICollection<Stock> ? Stocks { get; set; } // Relation avec les entités Stock
 
         public ICollection<InvoiceLineItem> ? InvoiceLineItems { get; set; }
     }

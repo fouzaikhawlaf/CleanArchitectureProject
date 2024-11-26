@@ -17,7 +17,7 @@ namespace CleanArchitecture.Entities.Orders
         public int ProductId { get; set; }
         public Item Item { get; set; }
 
-        public string? ProductName { get; set; }
+        public string ProductName { get; set; } = string.Empty;
         public int ReceivedQuantity { get; set; } // Quantité reçue
         public double UnitPrice { get; set; } // Prix unitaire
 

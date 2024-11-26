@@ -90,11 +90,19 @@ namespace CleanArchitecture.FrameworkAndDrivers.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Notes")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("PaymentTerms")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Preferences")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -165,6 +173,7 @@ namespace CleanArchitecture.FrameworkAndDrivers.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("ProductName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Quantity")
@@ -194,6 +203,7 @@ namespace CleanArchitecture.FrameworkAndDrivers.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ApprovedBy")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreatedDate")
@@ -206,6 +216,7 @@ namespace CleanArchitecture.FrameworkAndDrivers.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("EmployeeId")
+                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime>("EndDate")
@@ -253,9 +264,11 @@ namespace CleanArchitecture.FrameworkAndDrivers.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("Message")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UserId")
+                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
@@ -298,6 +311,7 @@ namespace CleanArchitecture.FrameworkAndDrivers.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("OrderSupplierName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("QuantityReceived")
@@ -307,6 +321,7 @@ namespace CleanArchitecture.FrameworkAndDrivers.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("SupplierName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -331,6 +346,7 @@ namespace CleanArchitecture.FrameworkAndDrivers.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("ProductName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("ReceivedQuantity")
@@ -366,6 +382,7 @@ namespace CleanArchitecture.FrameworkAndDrivers.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("ProductName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Quantity")
@@ -395,6 +412,7 @@ namespace CleanArchitecture.FrameworkAndDrivers.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("DeliveryDetails")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsArchived")
@@ -407,6 +425,7 @@ namespace CleanArchitecture.FrameworkAndDrivers.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Status")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -511,6 +530,7 @@ namespace CleanArchitecture.FrameworkAndDrivers.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("ProductName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Quantity")
@@ -541,22 +561,35 @@ namespace CleanArchitecture.FrameworkAndDrivers.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("Category")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Discriminator")
                         .IsRequired()
                         .HasMaxLength(8)
                         .HasColumnType("nvarchar(8)");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<double>("Price")
                         .HasColumnType("float");
+
+                    b.Property<string>("PriceType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("TVARate")
                         .HasColumnType("int");
 
                     b.Property<double>("TaxRate")
                         .HasColumnType("float");
+
+                    b.Property<string>("Unit")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -603,15 +636,18 @@ namespace CleanArchitecture.FrameworkAndDrivers.Migrations
                         .HasColumnType("float");
 
                     b.Property<string>("Description")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("EndDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("ManagerId")
+                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("RiskLevel")
@@ -639,18 +675,22 @@ namespace CleanArchitecture.FrameworkAndDrivers.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("AssignedToId")
+                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Description")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("EmployeeId")
+                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime?>("EndDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("ProjectId")
@@ -663,6 +703,7 @@ namespace CleanArchitecture.FrameworkAndDrivers.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Title")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -740,6 +781,7 @@ namespace CleanArchitecture.FrameworkAndDrivers.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Status")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<double>("TotalAmount")
@@ -765,9 +807,11 @@ namespace CleanArchitecture.FrameworkAndDrivers.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SupplierId"));
 
                     b.Property<string>("Address")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsArchived")
@@ -777,6 +821,7 @@ namespace CleanArchitecture.FrameworkAndDrivers.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("PaymentTerms")
@@ -811,6 +856,7 @@ namespace CleanArchitecture.FrameworkAndDrivers.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Description")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("TransactionDate")
@@ -840,9 +886,11 @@ namespace CleanArchitecture.FrameworkAndDrivers.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AdminId"));
 
                     b.Property<string>("Email")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nom")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("AdminId");
@@ -869,6 +917,7 @@ namespace CleanArchitecture.FrameworkAndDrivers.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Department")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
@@ -884,12 +933,14 @@ namespace CleanArchitecture.FrameworkAndDrivers.Migrations
                         .HasColumnType("nvarchar(13)");
 
                     b.Property<string>("FirstName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsArchived")
                         .HasColumnType("bit");
 
                     b.Property<string>("LastName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("LeaveBalance")
@@ -925,6 +976,7 @@ namespace CleanArchitecture.FrameworkAndDrivers.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("RefreshToken")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("RefreshTokenExpiryTime")
@@ -997,6 +1049,7 @@ namespace CleanArchitecture.FrameworkAndDrivers.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("RoleName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("RoleId");
@@ -1010,18 +1063,22 @@ namespace CleanArchitecture.FrameworkAndDrivers.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Address")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("DateOfBirth")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("FirstName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("LastName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PhoneNumber")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("UserId");
@@ -1252,6 +1309,7 @@ namespace CleanArchitecture.FrameworkAndDrivers.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("SupplierName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasIndex("BonDeReceptionId");
@@ -1269,6 +1327,7 @@ namespace CleanArchitecture.FrameworkAndDrivers.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("ClientName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("DevisId")
@@ -1318,6 +1377,7 @@ namespace CleanArchitecture.FrameworkAndDrivers.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("SupplierName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<double>("TotalAmount")
@@ -1371,6 +1431,7 @@ namespace CleanArchitecture.FrameworkAndDrivers.Migrations
                     b.HasBaseType("CleanArchitecture.Entities.Produit.Item");
 
                     b.Property<string>("Description")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<TimeSpan>("Duration")
@@ -1450,7 +1511,9 @@ namespace CleanArchitecture.FrameworkAndDrivers.Migrations
                 {
                     b.HasOne("CleanArchitecture.Entities.Users.Employee", "Employee")
                         .WithMany("LeaveRequests")
-                        .HasForeignKey("EmployeeId");
+                        .HasForeignKey("EmployeeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("CleanArchitecture.Entities.Projects.Project", "Project")
                         .WithMany()
@@ -1467,7 +1530,9 @@ namespace CleanArchitecture.FrameworkAndDrivers.Migrations
                 {
                     b.HasOne("CleanArchitecture.Entities.Users.Employee", "User")
                         .WithMany("Notifications")
-                        .HasForeignKey("UserId");
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("User");
                 });
@@ -1588,7 +1653,8 @@ namespace CleanArchitecture.FrameworkAndDrivers.Migrations
                     b.HasOne("CleanArchitecture.Entities.Users.Manager", "Manager")
                         .WithMany("ManagedProjects")
                         .HasForeignKey("ManagerId")
-                        .OnDelete(DeleteBehavior.Restrict);
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
 
                     b.Navigation("Manager");
                 });
@@ -1597,16 +1663,21 @@ namespace CleanArchitecture.FrameworkAndDrivers.Migrations
                 {
                     b.HasOne("CleanArchitecture.Entities.Users.Employee", "AssignedTo")
                         .WithMany()
-                        .HasForeignKey("AssignedToId");
+                        .HasForeignKey("AssignedToId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("CleanArchitecture.Entities.Users.Manager", null)
                         .WithMany("DepartmentTasks")
-                        .HasForeignKey("AssignedToId");
+                        .HasForeignKey("AssignedToId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("CleanArchitecture.Entities.Users.Employee", "Employee")
                         .WithMany("AssignedTasks")
                         .HasForeignKey("EmployeeId")
-                        .OnDelete(DeleteBehavior.Restrict);
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
 
                     b.HasOne("CleanArchitecture.Entities.Projects.Project", "Project")
                         .WithMany("Tasks")

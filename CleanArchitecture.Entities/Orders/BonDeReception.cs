@@ -17,8 +17,8 @@ namespace CleanArchitecture.Entities.Orders
         public DateTime ReceivedDate { get; set; }
        
         public OrderSupplier? OrderSupplier { get; set; } // Navigation property
-        public string? SupplierName { get; set; }  // Supplier name from OrderSupplier
-        public string? OrderSupplierName { get; set; } // Supplier name from OrderSupplier
+        public string SupplierName { get; set; } = string.Empty;  // Supplier name from OrderSupplier
+        public string OrderSupplierName { get; set; } = string.Empty; // Supplier name from OrderSupplier
         public int QuantityReceived { get; set; }
         public bool IsArchived { get; set; }
         public bool IsConfirmed { get; set; }
