@@ -1,1 +1,7 @@
 ".vs/" 
+# Ignorer les fichiers Visual Studio
+.vs/
+*.suo
+*.v17
+*.sqlite
+*.dtbcache.v2
